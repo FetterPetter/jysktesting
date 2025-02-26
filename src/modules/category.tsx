@@ -183,12 +183,7 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
             marginTop: "20px",
             borderRadius: "8px",
           }}
-        >
-          <h3>{selectedItem.name}</h3>
-          <p>{`Height: ${selectedItem.details.height}`}</p>
-          <p>{`Material: ${selectedItem.details.material}`}</p>
-          <p>{`Core: ${selectedItem.details.core}`}</p>
-        </div>
+        ></div>
       )}
     </div>
   );
