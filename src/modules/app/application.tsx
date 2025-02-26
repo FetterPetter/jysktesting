@@ -6,7 +6,7 @@ const App: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   return (
     <div className="container">
-      <h1 className="header">Jysk Håndbok</h1>
+      <h1 className="header">Jysk tutorial</h1>
       <div className="button-container">
         {Object.keys(categories).map((category) => (
           <button
