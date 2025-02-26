@@ -91,7 +91,7 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
                 handleCheckboxChange(category as "Gold" | "Plus" | "Basic")
               }
               style={{
-                transform: "scale(3.5)",
+                transform: "scale(2.8)",
                 marginRight: "8px",
                 cursor: "pointer",
                 transition: "all 0.3s ease",
