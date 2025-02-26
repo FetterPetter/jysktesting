@@ -4,7 +4,6 @@ import Category from "../category";
 
 const App: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-
   return (
     <div className="container">
       <h1 className="header">Jysk Håndbok</h1>

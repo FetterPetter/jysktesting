@@ -8,7 +8,7 @@ interface ItemCardProps {
 const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
   return (
     <div className="item-card">
-      <img src={item.image} alt={item.name} />
+      <img src={item.url} alt={item.name} />
       <h3>{item.name}</h3>
       <ul>
         {Object.keys(item.details).map((key) => (

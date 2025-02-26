@@ -1,7 +1,7 @@
 export interface Item {
   id: number;
   name: string;
-  image: string;
+  url: string;
   details: Record<string, string | number>; // Flexible details
 }
 
@@ -10,13 +10,13 @@ export const categories: Record<string, Item[]> = {
     {
       id: 1,
       name: "Glomma",
-      image: "/images/Glomma.jpg",
+      url: "/Jyskh-ndbok/images/Glomma.jpg",
       details: { hardness: "Fast", height: "18cm", core: "30 kg/m³" },
     },
     {
       id: 2,
       name: "Firm Madrass",
-      image: "/images/madrass2.jpg",
+      url: "/Jyskh-ndbok/images/Kvita.jpg",
       details: { hardness: "Firm", height: "22cm" },
     },
   ],
@@ -24,13 +24,13 @@ export const categories: Record<string, Item[]> = {
     {
       id: 3,
       name: "Winter Dyne",
-      image: "/images/dyne1.jpg",
+      url: "/images/dyne1.jpg",
       details: { warmth: "Warm", weight: "2kg" },
     },
     {
       id: 4,
       name: "Summer Dyne",
-      image: "/images/dyne2.jpg",
+      url: "/images/dyne2.jpg",
       details: { warmth: "Cool", weight: "1.2kg" },
     },
   ],
@@ -38,13 +38,13 @@ export const categories: Record<string, Item[]> = {
     {
       id: 5,
       name: "Memory Foam Pute",
-      image: "/images/pute1.jpg",
+      url: "/images/pute1.jpg",
       details: { support: "High", material: "Memory Foam" },
     },
     {
       id: 6,
       name: "Feather Pute",
-      image: "/images/pute2.jpg",
+      url: "/images/pute2.jpg",
       details: { softness: "Medium", material: "Feathers" },
     },
   ],
@@ -52,13 +52,13 @@ export const categories: Record<string, Item[]> = {
     {
       id: 7,
       name: "Luxury Overmadrass",
-      image: "/images/overmadrass1.jpg",
+      url: "/images/overmadrass1.jpg",
       details: { thickness: "5cm", material: "Latex" },
     },
     {
       id: 8,
       name: "Basic Overmadrass",
-      image: "/images/overmadrass2.jpg",
+      url: "/images/overmadrass2.jpg",
       details: { thickness: "3cm", material: "Foam" },
     },
   ],
