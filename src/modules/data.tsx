@@ -7,78 +7,78 @@ export interface Item {
 }
 
 export const categories: Record<string, Item[]> = {
-  /* Madrass: [
-     {
-       id: 1,
-       name: "Glomma",
-       kategori: "Gold",
-       url: "/Jyskh-ndbok/images/Glomma.jpg",
-       details: {
-         type: "Air Memoryskum",
-         hardness: "Fast",
-         height: "18cm",
-         core: "30+30 kg/m³",
+  /*  Madrass: [
+      {
+        id: 1,
+        name: "Glomma",
+        kategori: "Gold",
+        url: "/Jyskh-ndbok/images/Glomma.jpg",
+        details: {
+          type: "Air Memoryskum",
+          hardness: "Fast",
+          height: "18cm",
+          core: "30+30 kg/m³",
+        },
+      },
+      {
+        id: 2,
+        name: "Kvita",
+        kategori: "Gold",
+        url: "/Jyskh-ndbok/images/Kvita.jpg",
+        details: {
+          type: "Air Memoryskum",
+          hardness: "Fast",
+          height: "22cm",
+          core: "30+40+30 kg/m³",
+        },
+      },
+      {
+        id: 3,
+        name: "Firm Madrass",
+        kategori: "Gold",
+        url: "/Jyskh-ndbok/images/Kvita.jpg",
+        details: { hardness: "myk", height: "122cm" },
+      },
+      {
+        id: 4,
+        name: "Firm Madrass",
+        kategori: "Gold",
+        url: "/Jyskh-ndbok/images/Kvita.jpg",
+        details: { hardness: "Firm", height: "22cm" },
+      },
+    ],
+      Dyne: [
+       {
+         id: 3,
+         name: "Winter Dyne",
+         kategori: "Gold",
+         url: "/images/dyne1.jpg",
+         details: { warmth: "Warm", weight: "2kg" },
        },
-     },
-     {
-       id: 2,
-       name: "Kvita",
-       kategori: "Gold",
-       url: "/Jyskh-ndbok/images/Kvita.jpg",
-       details: {
-         type: "Air Memoryskum",
-         hardness: "Fast",
-         height: "22cm",
-         core: "30+40+30 kg/m³",
+       {
+         id: 4,
+         name: "Summer Dyne",
+         kategori: "Gold",
+         url: "/images/dyne2.jpg",
+         details: { warmth: "Cool", weight: "1.2kg" },
        },
-     },
-     {
-       id: 3,
-       name: "Firm Madrass",
-       kategori: "Gold",
-       url: "/Jyskh-ndbok/images/Kvita.jpg",
-       details: { hardness: "myk", height: "122cm" },
-     },
-     {
-       id: 4,
-       name: "Firm Madrass",
-       kategori: "Gold",
-       url: "/Jyskh-ndbok/images/Kvita.jpg",
-       details: { hardness: "Firm", height: "22cm" },
-     },
-   ],
-    Dyne: [
-     {
-       id: 3,
-       name: "Winter Dyne",
-       kategori: "Gold",
-       url: "/images/dyne1.jpg",
-       details: { warmth: "Warm", weight: "2kg" },
-     },
-     {
-       id: 4,
-       name: "Summer Dyne",
-       kategori: "Gold",
-       url: "/images/dyne2.jpg",
-       details: { warmth: "Cool", weight: "1.2kg" },
-     },
-   ],
-   Pute: [
-     {
-       id: 5,
-       name: "Memory Foam Pute",
-       kategori: "Gold",
-       url: "/images/pute1.jpg",
-       details: { support: "High", material: "Memory Foam" },
-     },
-     {
-       id: 6,
-       name: "Feather Pute",
-       kategori: "Gold",
-       url: "/images/pute2.jpg",
-       details: { softness: "Medium", material: "Feathers" },
-     },
-   ],*/
+     ],
+     Pute: [
+       {
+         id: 5,
+         name: "Memory Foam Pute",
+         kategori: "Gold",
+         url: "/images/pute1.jpg",
+         details: { support: "High", material: "Memory Foam" },
+       },
+       {
+         id: 6,
+         name: "Feather Pute",
+         kategori: "Gold",
+         url: "/images/pute2.jpg",
+         details: { softness: "Medium", material: "Feathers" },
+       },
+     ],*/
   Overmadrass: [
     {
       id: 7,
