@@ -4,7 +4,7 @@ export interface Item {
   kategori: string;
   url: string;
   details: Record<string, string | number>;
-  message: string; // Updated message field
+  message: string;
 }
 
 export const categories: Record<string, Item[]> = {

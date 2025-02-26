@@ -12,41 +12,34 @@ const categoryColors: Record<string, string> = {
 };
 
 const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
-  // State to toggle message visibility
   const [showMessage, setShowMessage] = useState(false);
 
-  // Ref for the item card to detect clicks outside
   const itemCardRef = useRef<HTMLDivElement>(null);
 
-  // State to track whether the item is clicked (to apply white background)
   const [isClicked, setIsClicked] = useState(false);
 
-  // Toggle function to show the message
   const toggleMessage = () => {
-    setIsClicked((prev) => !prev); // Toggle click state
-    setShowMessage((prev) => !prev); // Toggle message visibility
+    setIsClicked((prev) => !prev);
+    setShowMessage((prev) => !prev);
   };
 
-  // Close message if clicked outside the item card
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
         itemCardRef.current &&
         !itemCardRef.current.contains(event.target as Node)
       ) {
-        setShowMessage(false); // Close message if clicked outside
-        setIsClicked(false); // Reset click state
+        setShowMessage(false);
+        setIsClicked(false);
       }
     };
 
-    // Add event listener for clicks
     document.addEventListener("mousedown", handleClickOutside);
 
-    // Clean up the event listener when component unmounts
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []); // Empty dependency array ensures this runs once when the component mounts
+  }, []);
 
   return (
     <div
@@ -57,15 +50,15 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
         borderRadius: "10px",
         padding: "10px",
         marginBottom: "10px",
-        cursor: "pointer", // Adds a pointer cursor on hover
-        position: "relative", // This ensures the message can be positioned absolutely relative to the card
-        height: "auto", // Let the height adjust based on content
-        backgroundColor: isClicked ? "#fff" : "#f4f4f4", // White background when clicked, light gray when not clicked
+        cursor: "pointer",
+        position: "relative",
+        height: "auto",
+        backgroundColor: isClicked ? "#fff" : "#f4f4f4",
         display: "flex",
-        flexDirection: "column", // Flexbox column layout to allow items to stack
-        justifyContent: "space-between", // Space out the contents
+        flexDirection: "column",
+        justifyContent: "space-between",
       }}
-      onClick={toggleMessage} // Toggle message visibility and clicked state when clicked
+      onClick={toggleMessage}
     >
       <img
         src={item.url}
@@ -73,8 +66,8 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
         className="item-image"
         style={{
           width: "100%",
-          height: "150px", // Adjust image size as needed
-          objectFit: "cover", // Ensures image covers the area without distortion
+          height: "150px",
+          objectFit: "cover",
         }}
       />
       <h3>{item.name}</h3>
@@ -113,23 +106,23 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
         <div
           style={{
             position: "absolute",
-            top: "0", // Cover the entire item card
+            top: "0",
             left: "0",
             width: "100%",
-            height: "100%", // Full height of the item card
-            backgroundColor: `${categoryColors[item.kategori] || "#ccc"}`, // Solid background color to cover the item content
-            color: "#000", // Dark text color for better contrast, especially for Gold
+            height: "100%",
+            backgroundColor: `${categoryColors[item.kategori] || "#ccc"}`,
+            color: "#000",
             display: "flex",
-            alignItems: "center", // Center the message vertically
-            justifyContent: "center", // Center the message horizontally
-            fontSize: "20px", // Increase font size for better readability
+            alignItems: "center",
+            justifyContent: "center",
+            fontSize: "20px",
             textAlign: "center",
-            padding: "15px", // Add padding to avoid text being too close to the edges
+            padding: "15px",
             borderRadius: "10px",
-            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.2)", // Slight shadow for better visual depth
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.2)",
             zIndex: 10,
-            overflowY: "auto", // Make sure the message is scrollable if it's too long
-            lineHeight: "1.5", // Improve readability
+            overflowY: "auto",
+            lineHeight: "1.5",
           }}
         >
           <p
