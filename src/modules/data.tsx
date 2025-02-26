@@ -430,4 +430,231 @@ export const categories: Record<string, Item[]> = {
         "6 cm tykk overmadrass med latekskjerne som effektivt leder bort overskuddsvarme. Vaskbart trekk i 100% polyester (60% resirkulert). Behandlet med biocidet GREENFIRST®.",
     },
   ],
+  Madrass: [
+    {
+      id: 1,
+      name: "Billefjord",
+      kategori: "Basic",
+      url: "/Jyskh-ndbok/images/Billefjord.jpg",
+      details: {
+        height: "20 cm",
+        material: "Polyetherskum",
+        core: "30 kg/m³",
+        firmness: "Medium",
+        firm: 50,
+      },
+      message:
+        "En komfortabel madrass med polyetherskumkjerne for en god og myk søvnopplevelse. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 2,
+      name: "Hasla",
+      kategori: "Basic",
+      url: "/Jyskh-ndbok/images/Hasla.jpg",
+      details: {
+        height: "20 cm",
+        material: "Polyesterskum",
+        core: "35 kg/m³",
+        firmness: "Medium",
+        firm: 55,
+      },
+      message:
+        "Komfortabel madrass med polyesterskumkjerne. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 3,
+      name: "Lillelv",
+      kategori: "Gold",
+      url: "/Jyskh-ndbok/images/Lillelv.jpg",
+      details: {
+        height: "28 cm",
+        material: "Latex",
+        core: "80 kg/m³",
+        firmness: "Fast",
+        firm: 90,
+      },
+      message:
+        "Luksuriøs madrass med naturlig latexkjerne for optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 4,
+      name: "Glomma",
+      kategori: "Gold",
+      url: "/Jyskh-ndbok/images/Glomma.jpg",
+      details: {
+        height: "30 cm",
+        material: "Memoryskum",
+        core: "75 kg/m³",
+        firmness: "Fast",
+        firm: 85,
+      },
+      message:
+        "En luksuriøs madrass med memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 5,
+      name: "Kjosen",
+      kategori: "Plus",
+      url: "/Jyskh-ndbok/images/Kjosen.jpg",
+      details: {
+        height: "28 cm",
+        material: "Latex",
+        core: "80 kg/m³",
+        firmness: "Medium",
+        firm: 75,
+      },
+      message:
+        "Komfortabel madrass med latexkjerne for god støtte og avlastning. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 6,
+      name: "Hulda",
+      kategori: "Plus",
+      url: "/Jyskh-ndbok/images/Hulda.jpg",
+      details: {
+        height: "28 cm",
+        material: "Memoryskum",
+        core: "70 kg/m³",
+        firmness: "Medium",
+        firm: 70,
+      },
+      message:
+        "Madrass med memoryskum for god støtte og komfort. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 7,
+      name: "Kvita",
+      kategori: "Gold",
+      url: "/Jyskh-ndbok/images/Kvita.jpg",
+      details: {
+        height: "32 cm",
+        material: "Latex",
+        core: "85 kg/m³",
+        firmness: "Fast",
+        firm: 90,
+      },
+      message:
+        "Luksuriøs madrass med naturlig latexkjerne for fantastisk komfort og støtte. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 8,
+      name: "Hovda",
+      kategori: "Gold",
+      url: "/Jyskh-ndbok/images/Hovda.jpg",
+      details: {
+        height: "35 cm",
+        material: "Memoryskum",
+        core: "85 kg/m³",
+        firmness: "Fast",
+        firm: 90,
+      },
+      message:
+        "En luksuriøs madrass med memoryskum som gir en myk og støttende liggeflate. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 9,
+      name: "Vendo",
+      kategori: "Gold",
+      url: "/Jyskh-ndbok/images/Vendo.jpg",
+      details: {
+        height: "30 cm",
+        material: "Latex",
+        core: "80 kg/m³",
+        firmness: "Fast",
+        firm: 95,
+      },
+      message:
+        "Luksuriøs madrass med latexkjerne for fantastisk støtte og komfort. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 10,
+      name: "Kamelva",
+      kategori: "Basic",
+      url: "/Jyskh-ndbok/images/Kamelva.jpg",
+      details: {
+        height: "28 cm",
+        material: "Memoryskum",
+        core: "70 kg/m³",
+        firmness: "Medium",
+        firm: 75,
+      },
+      message:
+        "Komfortabel madrass med memoryskumkjerne for god støtte og komfort. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 11,
+      name: "Eima",
+      kategori: "Gold",
+      url: "/Jyskh-ndbok/images/Eima.jpg",
+      details: {
+        height: "32 cm",
+        material: "Latex",
+        core: "85 kg/m³",
+        firmness: "Fast",
+        firm: 90,
+      },
+      message:
+        "Luksuriøs madrass med latexkjerne for optimal komfort og støtte. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 12,
+      name: "",
+      kategori: "Plus",
+      url: "/Jyskh-ndbok/images/Stripa.jpg",
+      details: {
+        height: "28 cm",
+        material: "Latex",
+        core: "80 kg/m³",
+        firmness: "Fast",
+        firm: 90,
+      },
+      message:
+        "Madrass med fast latexkjerne for ekstra støtte og komfort. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 13,
+      name: "Stripa ekstra fast",
+      kategori: "Plus",
+      url: "/Jyskh-ndbok/images/StripaEkstraFast.jpg",
+      details: {
+        height: "28 cm",
+        material: "Latex",
+        core: "90 kg/m³",
+        firmness: "Fast",
+        firm: 100,
+      },
+      message:
+        "Ekstra hard madrass med latexkjerne for maksimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 14,
+      name: "Lutra",
+      kategori: "Plus",
+      url: "/Jyskh-ndbok/images/Lutra.jpg",
+      details: {
+        height: "28 cm",
+        material: "Memoryskum",
+        core: "75 kg/m³",
+        firmness: "Medium",
+        firm: 75,
+      },
+      message:
+        "Madrass med memoryskum som gir optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 15,
+      name: "Driva",
+      kategori: "Gold",
+      url: "/Jyskh-ndbok/images/Driva.jpg",
+      details: {
+        height: "35 cm",
+        material: "Latex",
+        core: "85 kg/m³",
+        firmness: "Fast",
+        firm: 90,
+      },
+      message:
+        "Luksuriøs madrass med latexkjerne for ekstra støtte og komfort. Vaskbart trekk i 100% polyester.",
+    },
+  ],
 };
