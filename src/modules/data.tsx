@@ -8,36 +8,309 @@ export interface Item {
 }
 
 export const categories: Record<string, Item[]> = {
-  Overmadrass: [
+  Senger: [
+    {
+      id: 1,
+      name: "Tyssa",
+      kategori: "Gold",
+      url: "/Jyskh-ndbok/images/Tyssa.jpg",
+      details: {
+        material: "Latex",
+        core: "80 kg/m³",
+        firmness: "Fast",
+        firm: 95,
+      },
+      message:
+        "Kontinentalseng med 30 cm høyde, laget av lateks som gir fantastisk støtte og komfort. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 2,
+      name: "Verma",
+      kategori: "Basic",
+      url: "/Jyskh-ndbok/images/Verma.jpg",
+      details: {
+        material: "Memoryskum",
+        core: "60 kg/m³",
+        firmness: "Medium",
+        firm: 60,
+      },
+      message:
+        "Kontinentalseng med memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester (70% resirkulert).",
+    },
+    {
+      id: 3,
+      name: "Nevla",
+      kategori: "Gold",
+      url: "/Jyskh-ndbok/images/Nevla.jpg",
+      details: {
+        material: "Kaldskum",
+        core: "100 kg/m³",
+        firmness: "Fast",
+        firm: 85,
+      },
+      message:
+        "En luksuriøs kontinentalseng med kaldskumkjerne for optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 4,
+      name: "Osaelva",
+      kategori: "Gold",
+      url: "/Jyskh-ndbok/images/Osaelva.jpg",
+      details: {
+        material: "Latex",
+        core: "85 kg/m³",
+        firmness: "Fast",
+        firm: 90,
+      },
+      message:
+        "Kontinentalseng med 32 cm høyde, laget av naturlig lateks for en behagelig og støttende søvnopplevelse.",
+    },
+    {
+      id: 5,
+      name: "Sokna",
+      kategori: "Gold",
+      url: "/Jyskh-ndbok/images/Sokna.jpg",
+      details: {
+        material: "Memoryskum",
+        core: "70 kg/m³",
+        firmness: "Medium",
+        firm: 70,
+      },
+      message:
+        "Kontinentalseng med memoryskum som gir en myk og komfortabel liggeflate. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 6,
+      name: "Hemla",
+      kategori: "Gold",
+      url: "/Jyskh-ndbok/images/Hemla.jpg",
+      details: {
+        material: "Kaldskum",
+        core: "90 kg/m³",
+        firmness: "Fast",
+        firm: 85,
+      },
+      message:
+        "Kontinentalseng med kaldskumkjerne for optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+    },
     {
       id: 7,
-      name: "Marren",
-      kategori: "Basic",
-      url: "/Jyskh-ndbok/images/Marren.jpg",
-      details: { height: "2.5cm", material: "Memoryskum", core: "30 kg/m³" },
+      name: "Veksa",
+      kategori: "Plus",
+      url: "/Jyskh-ndbok/images/Veksa.jpg",
+      details: {
+        material: "Latex",
+        core: "80 kg/m³",
+        firmness: "Fast",
+        firm: 90,
+      },
       message:
-        "En 2.5 cm tykk overmadrass laget med memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester (62% resirkulert).",
+        "Kontinentalseng med 30 cm høyde, laget av lateks som gir fantastisk støtte og komfort. Vaskbart trekk i 100% polyester.",
     },
     {
       id: 8,
-      name: "Vingan",
+      name: "Lygna",
+      kategori: "Gold",
+      url: "/Jyskh-ndbok/images/Lygna.jpg",
+      details: {
+        material: "Memoryskum",
+        core: "75 kg/m³",
+        firmness: "Medium",
+        firm: 75,
+      },
+      message:
+        "Kontinentalseng med memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 9,
+      name: "Reipa",
+      kategori: "Gold",
+      url: "/Jyskh-ndbok/images/Reipa.jpg",
+      details: {
+        material: "Kaldskum",
+        core: "100 kg/m³",
+        firmness: "Fast",
+        firm: 90,
+      },
+      message:
+        "En luksuriøs kontinentalseng med kaldskumkjerne for optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 10,
+      name: "Temprakon Lya",
+      kategori: "Gold",
+      url: "/Jyskh-ndbok/images/TemprakonLya.jpg",
+      details: {
+        material: "Latex",
+        core: "80 kg/m³",
+        firmness: "Fast",
+        firm: 95,
+      },
+      message:
+        "Kontinentalseng med 30 cm høyde, laget av lateks som gir fantastisk støtte og komfort. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 11,
+      name: "Skaupa",
       kategori: "Basic",
-      url: "/Jyskh-ndbok/images/Vingan.jpg",
-      details: { height: "4cm", material: "Polyeterskum", core: "25 kg/m³" },
+      url: "/Jyskh-ndbok/images/Skaupa.jpg",
+      details: {
+        material: "Polyeterskum",
+        core: "25 kg/m³",
+        firmness: "Medium",
+        firm: 40,
+      },
       message:
         "4 cm tykk madrass med polyeterskumkjerne. Vaskbart trekk i myk, 100% polyestermikrofiber (100% resirkulert).",
     },
     {
-      id: 9,
+      id: 12,
+      name: "Fjelna",
+      kategori: "Plus",
+      url: "/Jyskh-ndbok/images/Fjelna.jpg",
+      details: {
+        material: "Polyeterskum",
+        core: "25 kg/m³",
+        firmness: "Medium",
+        firm: 40,
+      },
+      message:
+        "4 cm tykk madrass med polyeterskumkjerne. Vaskbart trekk i myk, 100% polyestermikrofiber (100% resirkulert).",
+    },
+    {
+      id: 13,
+      name: "Spongi",
+      kategori: "Plus",
+      url: "/Jyskh-ndbok/images/Spongi.jpg",
+      details: {
+        material: "Kaldskum",
+        core: "48 kg/m³",
+        firmness: "Fast",
+        firm: 80,
+      },
+      message:
+        "Kontinentalseng med kaldskumkjerne for optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 14,
+      name: "Grimse",
+      kategori: "Plus",
+      url: "/Jyskh-ndbok/images/Grimse.jpg",
+      details: {
+        material: "Polyester",
+        core: "20 kg/m³",
+        firmness: "Medium",
+        firm: 50,
+      },
+      message:
+        "4 cm tykk madrass med polyesterskumkjerne for en myk og komfortabel liggeflate. Vaskbart trekk.",
+    },
+    {
+      id: 15,
+      name: "Kvenna",
+      kategori: "Plus",
+      url: "/Jyskh-ndbok/images/Kvenna.jpg",
+      details: {
+        material: "Latex",
+        core: "60 kg/m³",
+        firmness: "Medium",
+        firm: 70,
+      },
+      message:
+        "Kontinentalseng med latexkjerne som gir en fantastisk komfort og støtte. Vaskbart trekk i 100% polyester.",
+    },
+    {
+      id: 16,
+      name: "Dingla",
+      kategori: "Plus",
+      url: "/Jyskh-ndbok/images/Dingla.jpg",
+      details: {
+        material: "Polyesterskum",
+        core: "30 kg/m³",
+        firmness: "Myk",
+        firm: 60,
+      },
+      message:
+        "3 cm tykk madrass med polyesterskumkjerne som gir en myk og behagelig søvn. Vaskbart trekk.",
+    },
+    {
+      id: 17,
+      name: "Horsla",
+      kategori: "Gold",
+      url: "/Jyskh-ndbok/images/Horsla.jpg",
+      details: {
+        material: "Polyetherskum",
+        core: "25 kg/m³",
+        firmness: "Medium",
+        firm: 60,
+      },
+      message:
+        "4 cm tykk madrass med polyetherskumkjerne. Vaskbart trekk i myk, 100% polyestermikrofiber.",
+    },
+    {
+      id: 18,
+      name: "Leirkup",
+      kategori: "Gold",
+      url: "/Jyskh-ndbok/images/Leirkup.jpg",
+      details: {
+        material: "Latex",
+        core: "80 kg/m³",
+        firmness: "Fast",
+        firm: 90,
+      },
+      message:
+        "Luksuriøs kontinentalseng med latexkjerne for optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+    },
+  ],
+
+  Overmadrass: [
+    {
+      id: 11,
+      name: "Marren",
+      kategori: "Basic",
+      url: "/Jyskh-ndbok/images/Marren.jpg",
+      details: {
+        height: "2.5cm",
+        material: "Memoryskum",
+        core: "30 kg/m³",
+        firmness: "Myk",
+        firm: 10,
+      },
+      message:
+        "En 2.5 cm tykk overmadrass laget med memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester (62% resirkulert).",
+    },
+    {
+      id: 12,
+      name: "Vingan",
+      kategori: "Basic",
+      url: "/Jyskh-ndbok/images/Vingan.jpg",
+      details: {
+        height: "4cm",
+        material: "Polyeterskum",
+        core: "25 kg/m³",
+        firmness: "Medium",
+        firm: 40,
+      },
+      message:
+        "4 cm tykk madrass med polyeterskumkjerne. Vaskbart trekk i myk, 100% polyestermikrofiber (100% resirkulert).",
+    },
+    {
+      id: 13,
       name: "Kjella",
       kategori: "Plus",
       url: "/Jyskh-ndbok/images/Kjella.jpg",
-      details: { height: "6cm", material: "Kaldskum", core: "48 kg/m³" },
+      details: {
+        height: "6cm",
+        material: "Kaldskum",
+        core: "48 kg/m³",
+        firmness: "Fast",
+        firm: 80,
+      },
       message:
         "6 cm tykk overmadrass med kaldskumkjerne for komfort og støtte. Vaskbart trekk i 100% polyester (51% resirkulert), behandlet med biocidet GREENFIRST®. ",
     },
     {
-      id: 10,
+      id: 14,
       name: "Kvisten",
       kategori: "Plus",
       url: "/Jyskh-ndbok/images/Kvisten.jpg",
@@ -45,12 +318,14 @@ export const categories: Record<string, Item[]> = {
         height: "6cm",
         material: "Memoryskum",
         core: "40 kg/m³",
+        firmness: "Myk",
+        firm: 20,
       },
       message:
         "6 cm tykk overmadrass med memoryskum og 7 komfortsoner for ergonomisk støtte. Vaskbart trekk i 100% polyester (34% resirkulert), behandlet med aloe vera.",
     },
     {
-      id: 11,
+      id: 15,
       name: "Gulen",
       kategori: "Gold",
       url: "/Jyskh-ndbok/images/Gulen.jpg",
@@ -58,12 +333,14 @@ export const categories: Record<string, Item[]> = {
         height: "8cm",
         material: "Air Memoryskum",
         core: "30 kg/m³",
+        firmness: "Medium",
+        firm: 50,
       },
       message:
-        "8 cm tykk overmadrass med AIR memoryskum som tilpasser seg kroppens konturer, selv i kjøligere omgivelser. Trekket er quiltet med bambuskull og behandlet med biocidet GREENFIRST®.",
+        "8 cm tykk overmadrass med AIR memoryskum som tilpasser seg kroppens konturer, selv i kjøligere omgivelser. Trekket er quiltet med bambuskull og behandlet med biocidet GREENFIRST®. ",
     },
     {
-      id: 12,
+      id: 16,
       name: "Frya",
       kategori: "Gold",
       url: "/Jyskh-ndbok/images/Frya.jpg",
@@ -71,12 +348,14 @@ export const categories: Record<string, Item[]> = {
         height: "4.5cm",
         material: "Air Memoryskum",
         core: "30 kg/m³",
+        firmness: "Medium",
+        firm: 45,
       },
       message:
         "4.5 cm tykk overmadrass med AIR memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester.",
     },
     {
-      id: 13,
+      id: 17,
       name: "Bokselvi",
       kategori: "Gold",
       url: "/Jyskh-ndbok/images/Bokselvi.jpg",
@@ -84,12 +363,14 @@ export const categories: Record<string, Item[]> = {
         height: "3,5+4,5 cm",
         material: "Air Memoryskum med kjølende gel + polyeterskum",
         core: "35 kg/m³",
+        firmness: "Medium",
+        firm: 55,
       },
       message:
         "8 cm tykk overmadrass med AIR memoryskum og polyeterskum. Kjølende gel i overkroppsområdet for ekstra komfort. Vaskbart trekk med polyetylen for umiddelbar kjølende effekt.",
     },
     {
-      id: 14,
+      id: 18,
       name: "Gursken",
       kategori: "Gold",
       url: "/Jyskh-ndbok/images/Gursken.jpg",
@@ -97,12 +378,14 @@ export const categories: Record<string, Item[]> = {
         height: "6cm",
         material: "Gelskum",
         core: "40 kg/m³",
+        firmness: "Medium",
+        firm: 50,
       },
       message:
         "6 cm tykk overmadrass med gelskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester (54% resirkulert).",
     },
     {
-      id: 15,
+      id: 19,
       name: "Haslan",
       kategori: "Plus",
       url: "/Jyskh-ndbok/images/Haslan.jpg",
@@ -110,12 +393,14 @@ export const categories: Record<string, Item[]> = {
         height: "3cm",
         material: "Lateks",
         core: "70 kg/m³",
+        firmness: "Fast",
+        firm: 90,
       },
       message:
         "3 cm tykk overmadrass med pustende latekskjerne som effektivt leder bort overskuddsvarme. Vaskbart trekk i 100% polyester (54% resirkulert).",
     },
     {
-      id: 16,
+      id: 20,
       name: "Framvaren",
       kategori: "Gold",
       url: "/Jyskh-ndbok/images/Framvaren.jpg",
@@ -123,12 +408,14 @@ export const categories: Record<string, Item[]> = {
         height: "8cm",
         material: "Memoryskum",
         core: "50 kg/m³",
+        firmness: "Myk",
+        firm: 15,
       },
       message:
         "Eksklusiv 8 cm tykk overmadrass med memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk med polyetylen for en kjølende effekt.",
     },
     {
-      id: 17,
+      id: 21,
       name: "Hopen",
       kategori: "Gold",
       url: "/Jyskh-ndbok/images/Hopen.jpg",
@@ -136,6 +423,8 @@ export const categories: Record<string, Item[]> = {
         height: "6cm",
         material: "Lateks",
         core: "70 kg/m³",
+        firmness: "Fast",
+        firm: 95,
       },
       message:
         "6 cm tykk overmadrass med latekskjerne som effektivt leder bort overskuddsvarme. Vaskbart trekk i 100% polyester (60% resirkulert). Behandlet med biocidet GREENFIRST®.",

@@ -12,25 +12,37 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
   const [sortDirection, setSortDirection] = useState<
     "ascending" | "descending"
   >("ascending");
-
   const [selectedCategories, setSelectedCategories] = useState({
     Gold: true,
     Plus: true,
     Basic: true,
   });
-
+  const [selectedFirmness, setSelectedFirmness] = useState<
+    "Myk" | "Medium" | "Fast" | "all"
+  >("all");
   const [selectedItem, setSelectedItem] = useState<Item | null>(null);
 
   const handleCheckboxChange = (category: "Gold" | "Plus" | "Basic") => {
     setSelectedCategories((prev) => ({
       ...prev,
-      [category]: !prev[category], // ✅ Now TypeScript knows 'category' is a valid key
+      [category]: !prev[category],
     }));
   };
 
-  const filteredItems = items.filter(
-    (item) => selectedCategories[item.kategori as "Gold" | "Plus" | "Basic"],
-  );
+  const handleFirmnessChange = (
+    firmness: "Myk" | "Medium" | "Fast" | "all",
+  ) => {
+    setSelectedFirmness(firmness);
+  };
+
+  const filteredItems = items
+    .filter(
+      (item) => selectedCategories[item.kategori as "Gold" | "Plus" | "Basic"],
+    )
+    .filter((item) => {
+      if (selectedFirmness === "all") return true;
+      return item.details.firmness === selectedFirmness;
+    });
 
   const sortedItems = [...filteredItems].sort((a, b) => {
     if (sortMode === "kategori") {
@@ -38,9 +50,8 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
       const bOrder = kategoriOrder[b.kategori] || 99;
       return aOrder - bOrder;
     } else if (sortMode === "firmness") {
-      const aFirmness = extractFirmness(a.details.core);
-      const bFirmness = extractFirmness(b.details.core);
-
+      const aFirmness = extractFirmness(a.details.firm);
+      const bFirmness = extractFirmness(b.details.firm);
       if (sortDirection === "ascending") {
         return aFirmness - bFirmness; // Fast -> Myk
       } else {
@@ -60,6 +71,7 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
   const handleItemClick = (item: Item) => {
     setSelectedItem(item);
   };
+
   return (
     <div>
       {/* Checkbox Controls */}
@@ -107,7 +119,66 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
         ))}
       </div>
 
-      {/* Sorting Buttons */}
+      {/* Firmness Filter Buttons */}
+      <div
+        style={{
+          marginBottom: "1rem",
+          textAlign: "center",
+          display: "flex",
+          justifyContent: "center",
+          gap: "20px",
+        }}
+      >
+        {["Myk", "Medium", "Fast"].map((firmness) => (
+          <button
+            key={firmness}
+            onClick={() =>
+              handleFirmnessChange(firmness as "Myk" | "Medium" | "Fast")
+            }
+            style={{
+              backgroundColor:
+                selectedFirmness === firmness ? "#007bff" : "#28a745",
+              color: "white",
+              border: "none",
+              padding: "14px 24px",
+              fontSize: "18px",
+              fontWeight: "bold",
+              borderRadius: "8px",
+              cursor: "pointer",
+              transition: "background 0.3s",
+              width: "150px",
+            }}
+            onMouseOver={(e) =>
+              (e.currentTarget.style.backgroundColor = "#1e7e34")
+            }
+            onMouseOut={(e) =>
+              (e.currentTarget.style.backgroundColor =
+                selectedFirmness === firmness ? "#007bff" : "#28a745")
+            }
+          >
+            {firmness.charAt(0).toUpperCase() + firmness.slice(1)}
+          </button>
+        ))}
+        <button
+          onClick={() => handleFirmnessChange("all")}
+          style={{
+            backgroundColor: selectedFirmness === "all" ? "#ff7f50" : "#28a745",
+            color: "white",
+            border: "none",
+            padding: "14px 24px",
+            fontSize: "18px",
+            fontWeight: "bold",
+            borderRadius: "8px",
+            cursor: "pointer",
+            transition: "background 0.3s",
+            width: "150px",
+          }}
+        >
+          All
+        </button>
+      </div>
+
+      {/* Sorting Button */}
       <div
         style={{
           marginBottom: "1rem",
@@ -120,7 +191,8 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
         <button
           onClick={toggleFirmnessSort}
           style={{
-            backgroundColor: "#28a745",
+            backgroundColor:
+              sortDirection === "ascending" ? "#28a745" : "#dc3545",
             color: "white",
             border: "none",
             padding: "14px 24px",
@@ -132,13 +204,15 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
             width: "150px",
           }}
           onMouseOver={(e) =>
-            (e.currentTarget.style.backgroundColor = "#1e7e34")
+            (e.currentTarget.style.backgroundColor =
+              sortDirection === "ascending" ? "#1e7e34" : "#c82333")
           }
           onMouseOut={(e) =>
-            (e.currentTarget.style.backgroundColor = "#28a745")
+            (e.currentTarget.style.backgroundColor =
+              sortDirection === "ascending" ? "#28a745" : "#dc3545")
           }
         >
-          {sortDirection === "ascending" ? "Fast til Myk" : "Myk til Fast"}
+          {sortDirection === "ascending" ? "Myk til Fast" : "Fast til Myk"}
         </button>
       </div>
 
@@ -175,7 +249,9 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
             marginTop: "20px",
             borderRadius: "8px",
           }}
-        ></div>
+        >
+          {/* You can add more item details here */}
+        </div>
       )}
     </div>
   );
