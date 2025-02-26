@@ -9,7 +9,9 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
   return (
     <div className="item-card">
       <img src={item.url} alt={item.name} />
-      <h3>{item.name}</h3>
+      <h3>
+        {item.kategori} {item.name}
+      </h3>
       <ul>
         {Object.keys(item.details).map((key) => (
           <li key={key}>
