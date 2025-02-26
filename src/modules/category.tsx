@@ -45,7 +45,7 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
             (e.currentTarget.style.backgroundColor = "#007bff")
           }
         >
-          Sort by Category
+          Gold-Plus-Basic
         </button>
 
         <button
@@ -69,7 +69,7 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
             (e.currentTarget.style.backgroundColor = "#28a745")
           }
         >
-          Sort by Firmness
+          Myk til Fast
         </button>
       </div>
 
