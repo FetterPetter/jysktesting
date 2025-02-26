@@ -19,6 +19,18 @@ export const categories: Record<string, Item[]> = {
       url: "/Jyskh-ndbok/images/Kvita.jpg",
       details: { hardness: "Firm", height: "22cm" },
     },
+    {
+      id: 3,
+      name: "Firm Madrass",
+      url: "/Jyskh-ndbok/images/Kvita.jpg",
+      details: { hardness: "myk", height: "122cm" },
+    },
+    {
+      id: 4,
+      name: "Firm Madrass",
+      url: "/Jyskh-ndbok/images/Kvita.jpg",
+      details: { hardness: "Firm", height: "22cm" },
+    },
   ],
   Dyne: [
     {
