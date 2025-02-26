@@ -12,16 +12,17 @@ export const categories: Record<string, Item[]> = {
     {
       id: 1,
       name: "Tyssa",
-      kategori: "Gold",
+      kategori: "Plus",
       url: "/Jyskh-ndbok/images/Tyssa.jpg",
       details: {
-        material: "Latex",
-        core: "80 kg/m³",
+        overmadrass: "Kaldskum eller Polyeterskum",
+        core: "30 kg/m³",
+        spring: "Pocket",
         firmness: "Fast",
-        firm: 95,
+        firm: 80,
       },
       message:
-        "Kontinentalseng med 30 cm høyde, laget av lateks som gir fantastisk støtte og komfort. Vaskbart trekk i 100% polyester.",
+        "God seng til en billig pris, prøv å bruk kode 7 for å bytte til en lignende gold madrass, feks: Osaelva ",
     },
     {
       id: 2,
@@ -29,13 +30,14 @@ export const categories: Record<string, Item[]> = {
       kategori: "Basic",
       url: "/Jyskh-ndbok/images/Verma.jpg",
       details: {
-        material: "Memoryskum",
-        core: "60 kg/m³",
-        firmness: "Medium",
-        firm: 60,
+        overmadrass: "Polyeterskum",
+        core: "30 kg/m³",
+        spring: "Bonell",
+        firmness: "Myk",
+        firm: 39,
       },
       message:
-        "Kontinentalseng med memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester (70% resirkulert).",
+        "Veldig myk seng, prøv å vis dem Plus Veksa, bruk kode 7. Forklar at bonellfjæring er ikke like bra som pocket",
     },
     {
       id: 3,
@@ -43,10 +45,11 @@ export const categories: Record<string, Item[]> = {
       kategori: "Gold",
       url: "/Jyskh-ndbok/images/Nevla.jpg",
       details: {
-        material: "Kaldskum",
-        core: "100 kg/m³",
-        firmness: "Fast",
-        firm: 85,
+        overmadrass: "Gelskum",
+        core: "25 kg/m³",
+        spring: "Pocket",
+        firmness: "Medium",
+        firm: 70,
       },
       message:
         "En luksuriøs kontinentalseng med kaldskumkjerne for optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
@@ -57,13 +60,13 @@ export const categories: Record<string, Item[]> = {
       kategori: "Gold",
       url: "/Jyskh-ndbok/images/Osaelva.jpg",
       details: {
-        material: "Latex",
-        core: "85 kg/m³",
-        firmness: "Fast",
-        firm: 90,
+        overmadrass: "Polyeterskum",
+        spring: "Pocket",
+        core: "25 kg/m³",
+        firmness: "Medium",
+        firm: 71,
       },
-      message:
-        "Kontinentalseng med 32 cm høyde, laget av naturlig lateks for en behagelig og støttende søvnopplevelse.",
+      message: "God seng til en god pris",
     },
     {
       id: 5,
@@ -72,12 +75,12 @@ export const categories: Record<string, Item[]> = {
       url: "/Jyskh-ndbok/images/Sokna.jpg",
       details: {
         material: "Memoryskum",
-        core: "70 kg/m³",
-        firmness: "Medium",
-        firm: 70,
+        spring: "Pocket",
+        core: "37 kg/m³",
+        firmness: "Fast",
+        firm: 83,
       },
-      message:
-        "Kontinentalseng med memoryskum som gir en myk og komfortabel liggeflate. Vaskbart trekk i 100% polyester.",
+      message: "God og fast seng",
     },
     {
       id: 6,
@@ -85,13 +88,13 @@ export const categories: Record<string, Item[]> = {
       kategori: "Gold",
       url: "/Jyskh-ndbok/images/Hemla.jpg",
       details: {
-        material: "Kaldskum",
-        core: "90 kg/m³",
+        overmadrass: "Memoryskum eller latex",
+        core: "35 kg/m³",
+        spring: "Adaptive Pocket",
         firmness: "Medium",
-        firm: 40,
+        firm: 45,
       },
-      message:
-        "Kontinentalseng med kaldskumkjerne for optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+      message: "En av de beste sengene vi har",
     },
     {
       id: 7,
@@ -99,13 +102,13 @@ export const categories: Record<string, Item[]> = {
       kategori: "Plus",
       url: "/Jyskh-ndbok/images/Veksa.jpg",
       details: {
-        material: "Latex",
-        core: "80 kg/m³",
-        firmness: "Fast",
-        firm: 90,
+        overmadrass: "Polyeterskum",
+        core: "30 kg/m³",
+        spring: "pocket",
+        firmness: "Myk",
+        firm: 39,
       },
-      message:
-        "Kontinentalseng med 30 cm høyde, laget av lateks som gir fantastisk støtte og komfort. Vaskbart trekk i 100% polyester.",
+      message: "--",
     },
     {
       id: 8,
