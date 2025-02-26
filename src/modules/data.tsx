@@ -87,8 +87,8 @@ export const categories: Record<string, Item[]> = {
       details: {
         material: "Kaldskum",
         core: "90 kg/m³",
-        firmness: "Fast",
-        firm: 85,
+        firmness: "Medium",
+        firm: 40,
       },
       message:
         "Kontinentalseng med kaldskumkjerne for optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
