@@ -3,82 +3,11 @@ export interface Item {
   name: string;
   kategori: string;
   url: string;
-  details: Record<string, string | number>; // Flexible details
+  details: Record<string, string | number>;
+  message: string; // Updated message field
 }
 
 export const categories: Record<string, Item[]> = {
-  /*  Madrass: [
-      {
-        id: 1,
-        name: "Glomma",
-        kategori: "Gold",
-        url: "/Jyskh-ndbok/images/Glomma.jpg",
-        details: {
-          type: "Air Memoryskum",
-          hardness: "Fast",
-          height: "18cm",
-          core: "30+30 kg/m³",
-        },
-      },
-      {
-        id: 2,
-        name: "Kvita",
-        kategori: "Gold",
-        url: "/Jyskh-ndbok/images/Kvita.jpg",
-        details: {
-          type: "Air Memoryskum",
-          hardness: "Fast",
-          height: "22cm",
-          core: "30+40+30 kg/m³",
-        },
-      },
-      {
-        id: 3,
-        name: "Firm Madrass",
-        kategori: "Gold",
-        url: "/Jyskh-ndbok/images/Kvita.jpg",
-        details: { hardness: "myk", height: "122cm" },
-      },
-      {
-        id: 4,
-        name: "Firm Madrass",
-        kategori: "Gold",
-        url: "/Jyskh-ndbok/images/Kvita.jpg",
-        details: { hardness: "Firm", height: "22cm" },
-      },
-    ],
-      Dyne: [
-       {
-         id: 3,
-         name: "Winter Dyne",
-         kategori: "Gold",
-         url: "/images/dyne1.jpg",
-         details: { warmth: "Warm", weight: "2kg" },
-       },
-       {
-         id: 4,
-         name: "Summer Dyne",
-         kategori: "Gold",
-         url: "/images/dyne2.jpg",
-         details: { warmth: "Cool", weight: "1.2kg" },
-       },
-     ],
-     Pute: [
-       {
-         id: 5,
-         name: "Memory Foam Pute",
-         kategori: "Gold",
-         url: "/images/pute1.jpg",
-         details: { support: "High", material: "Memory Foam" },
-       },
-       {
-         id: 6,
-         name: "Feather Pute",
-         kategori: "Gold",
-         url: "/images/pute2.jpg",
-         details: { softness: "Medium", material: "Feathers" },
-       },
-     ],*/
   Overmadrass: [
     {
       id: 7,
@@ -86,6 +15,8 @@ export const categories: Record<string, Item[]> = {
       kategori: "Basic",
       url: "/Jyskh-ndbok/images/Marren.jpg",
       details: { height: "2.5cm", material: "Memoryskum", core: "30 kg/m³" },
+      message:
+        "En 2.5 cm tykk overmadrass laget med memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester (62% resirkulert).",
     },
     {
       id: 8,
@@ -93,6 +24,8 @@ export const categories: Record<string, Item[]> = {
       kategori: "Basic",
       url: "/Jyskh-ndbok/images/Vingan.jpg",
       details: { height: "4cm", material: "Polyeterskum", core: "25 kg/m³" },
+      message:
+        "4 cm tykk madrass med polyeterskumkjerne. Vaskbart trekk i myk, 100% polyestermikrofiber (100% resirkulert).",
     },
     {
       id: 9,
@@ -100,6 +33,8 @@ export const categories: Record<string, Item[]> = {
       kategori: "Plus",
       url: "/Jyskh-ndbok/images/Kjella.jpg",
       details: { height: "6cm", material: "Kaldskum", core: "48 kg/m³" },
+      message:
+        "6 cm tykk overmadrass med kaldskumkjerne for komfort og støtte. Vaskbart trekk i 100% polyester (51% resirkulert), behandlet med biocidet GREENFIRST®. ",
     },
     {
       id: 10,
@@ -110,8 +45,9 @@ export const categories: Record<string, Item[]> = {
         height: "6cm",
         material: "Memoryskum",
         core: "40 kg/m³",
-        Komfortsoner: "7",
       },
+      message:
+        "6 cm tykk overmadrass med memoryskum og 7 komfortsoner for ergonomisk støtte. Vaskbart trekk i 100% polyester (34% resirkulert), behandlet med aloe vera.",
     },
     {
       id: 11,
@@ -123,6 +59,8 @@ export const categories: Record<string, Item[]> = {
         material: "Air Memoryskum",
         core: "30 kg/m³",
       },
+      message:
+        "8 cm tykk overmadrass med AIR memoryskum som tilpasser seg kroppens konturer, selv i kjøligere omgivelser. Trekket er quiltet med bambuskull og behandlet med biocidet GREENFIRST®.",
     },
     {
       id: 12,
@@ -134,6 +72,8 @@ export const categories: Record<string, Item[]> = {
         material: "Air Memoryskum",
         core: "30 kg/m³",
       },
+      message:
+        "4.5 cm tykk overmadrass med AIR memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester.",
     },
     {
       id: 13,
@@ -145,6 +85,8 @@ export const categories: Record<string, Item[]> = {
         material: "Air Memoryskum med kjølende gel + polyeterskum",
         core: "35 kg/m³",
       },
+      message:
+        "8 cm tykk overmadrass med AIR memoryskum og polyeterskum. Kjølende gel i overkroppsområdet for ekstra komfort. Vaskbart trekk med polyetylen for umiddelbar kjølende effekt.",
     },
     {
       id: 14,
@@ -156,6 +98,8 @@ export const categories: Record<string, Item[]> = {
         material: "Gelskum",
         core: "40 kg/m³",
       },
+      message:
+        "6 cm tykk overmadrass med gelskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester (54% resirkulert).",
     },
     {
       id: 15,
@@ -167,6 +111,8 @@ export const categories: Record<string, Item[]> = {
         material: "Lateks",
         core: "70 kg/m³",
       },
+      message:
+        "3 cm tykk overmadrass med pustende latekskjerne som effektivt leder bort overskuddsvarme. Vaskbart trekk i 100% polyester (54% resirkulert).",
     },
     {
       id: 16,
@@ -178,6 +124,8 @@ export const categories: Record<string, Item[]> = {
         material: "Memoryskum",
         core: "50 kg/m³",
       },
+      message:
+        "Eksklusiv 8 cm tykk overmadrass med memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk med polyetylen for en kjølende effekt.",
     },
     {
       id: 17,
@@ -189,6 +137,8 @@ export const categories: Record<string, Item[]> = {
         material: "Lateks",
         core: "70 kg/m³",
       },
+      message:
+        "6 cm tykk overmadrass med latekskjerne som effektivt leder bort overskuddsvarme. Vaskbart trekk i 100% polyester (60% resirkulert). Behandlet med biocidet GREENFIRST®.",
     },
   ],
 };

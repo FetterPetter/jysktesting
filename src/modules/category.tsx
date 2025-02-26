@@ -13,23 +13,30 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
     "ascending" | "descending"
   >("ascending");
 
+  // State for checkboxes (all checked by default)
   const [selectedCategories, setSelectedCategories] = useState({
     Gold: true,
     Plus: true,
     Basic: true,
   });
 
+  // State for selected item (clicked item to show more info)
+  const [selectedItem, setSelectedItem] = useState<Item | null>(null);
+
+  // Handle checkbox toggle
   const handleCheckboxChange = (category: "Gold" | "Plus" | "Basic") => {
     setSelectedCategories((prev) => ({
       ...prev,
-      [category]: !prev[category],
+      [category]: !prev[category], // ✅ Now TypeScript knows 'category' is a valid key
     }));
   };
 
+  // Filter items based on selected categories
   const filteredItems = items.filter(
     (item) => selectedCategories[item.kategori as "Gold" | "Plus" | "Basic"], // Fix type issue here
   );
 
+  // Sort items after filtering
   const sortedItems = [...filteredItems].sort((a, b) => {
     if (sortMode === "kategori") {
       const aOrder = kategoriOrder[a.kategori] || 99;
@@ -39,6 +46,7 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
       const aFirmness = extractFirmness(a.details.core);
       const bFirmness = extractFirmness(b.details.core);
 
+      // Toggle sorting direction: ascending or descending
       if (sortDirection === "ascending") {
         return aFirmness - bFirmness; // Fast -> Myk
       } else {
@@ -48,13 +56,18 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
     return 0;
   });
 
+  // Handle the toggle of sorting direction for firmness
   const toggleFirmnessSort = () => {
     setSortDirection((prevDirection) =>
       prevDirection === "ascending" ? "descending" : "ascending",
     );
-    setSortMode("firmness");
+    setSortMode("firmness"); // Ensure it's sorting by firmness
   };
 
+  // Handle item click (show more info)
+  const handleItemClick = (item: Item) => {
+    setSelectedItem(item); // Set the selected item to display more information
+  };
   return (
     <div>
       {/* Checkbox Controls */}
@@ -89,12 +102,12 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
               }
               onChange={() =>
                 handleCheckboxChange(category as "Gold" | "Plus" | "Basic")
-              }
+              } // Fix type issue here
               style={{
-                transform: "scale(2.8)",
+                transform: "scale(2)", // Makes checkbox bigger (scaled up by 2x)
                 marginRight: "8px",
                 cursor: "pointer",
-                transition: "all 0.3s ease",
+                transition: "all 0.3s ease", // Smooth transition effect
               }}
             />
             {category}
@@ -113,9 +126,9 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
         }}
       >
         <button
-          onClick={toggleFirmnessSort}
+          onClick={toggleFirmnessSort} // Toggling the sorting order
           style={{
-            backgroundColor: "#28a745",
+            backgroundColor: "#28a745", // Green color
             color: "white",
             border: "none",
             padding: "14px 24px",
@@ -140,7 +153,11 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
       {/* Filtered and Sorted Items */}
       <div className="grid">
         {sortedItems.length > 0 ? (
-          sortedItems.map((item) => <ItemCard key={item.id} item={item} />)
+          sortedItems.map((item) => (
+            <div key={item.id} onClick={() => handleItemClick(item)}>
+              <ItemCard item={item} />
+            </div>
+          ))
         ) : (
           <p
             style={{
@@ -155,6 +172,24 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
           </p>
         )}
       </div>
+
+      {/* Display more information when an item is selected */}
+      {selectedItem && (
+        <div
+          style={{
+            textAlign: "center",
+            padding: "20px",
+            backgroundColor: "#f1f1f1",
+            marginTop: "20px",
+            borderRadius: "8px",
+          }}
+        >
+          <h3>{selectedItem.name}</h3>
+          <p>{`Height: ${selectedItem.details.height}`}</p>
+          <p>{`Material: ${selectedItem.details.material}`}</p>
+          <p>{`Core: ${selectedItem.details.core}`}</p>
+        </div>
+      )}
     </div>
   );
 };
