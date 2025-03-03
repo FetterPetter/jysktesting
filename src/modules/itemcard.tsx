@@ -105,7 +105,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
       {showMessage && (
         <div
           style={{
-            position: "absolute",
+            position: "fixed",
             top: "0",
             left: "0",
             width: "100%",
@@ -118,18 +118,34 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
             fontSize: "20px",
             textAlign: "center",
             padding: "15px",
-            borderRadius: "10px",
+            borderRadius: "0",
             boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.2)",
-            zIndex: 10,
+            zIndex: 1000,
             overflowY: "auto",
             lineHeight: "1.5",
           }}
         >
-          <p
-            style={{ margin: 0, textShadow: "1px 1px 3px rgba(0, 0, 0, 0.4)" }}
-          >
-            {item.message}
-          </p>
+          <div>
+            {" "}
+            <h1>{item.name}</h1>
+            <ul>
+              <li>{item.message}</li>
+              <li
+                style={{
+                  fontSize: "25px",
+                }}
+              ></li>
+              <li>{item.salg}</li>
+              <li
+                style={{
+                  fontSize: "25px",
+                }}
+              >
+                Mersalgsprodukter
+              </li>
+              <li>Madrassbeskytter, laken, dyne, pute</li>
+            </ul>
+          </div>
         </div>
       )}
     </div>

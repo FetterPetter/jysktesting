@@ -5,6 +5,7 @@ export interface Item {
   url: string;
   details: Record<string, string | number>;
   message: string;
+  salg: string;
 }
 
 export const categories: Record<string, Item[]> = {
@@ -22,7 +23,8 @@ export const categories: Record<string, Item[]> = {
         firm: 80,
       },
       message:
-        "God seng til en billig pris, prøv å bruk kode 7 for å bytte til en lignende gold madrass, feks: Osaelva ",
+        "Vendbar madrass med pocket-fjærer 250/m², polstret med polyeterskum. Madrassen er inndelt i 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. 1 overmadrass, 4 cm tykk med polyeterskumkjerne. Vaskbart stretchtrekk med tykk quilting. Nederst 1 polstret ramme. Inkl. ben. Sengegavl kjøpes separat.",
+      salg: "kode 7",
     },
     {
       id: 2,
@@ -37,8 +39,10 @@ export const categories: Record<string, Item[]> = {
         firm: 39,
       },
       message:
-        "Veldig myk seng, prøv å vis dem Plus Veksa, bruk kode 7. Forklar at bonellfjæring er ikke like bra som pocket",
+        "Vendbar madrass med bonell-fjærer 110/m² polstret med polyeterskum. 1 overmadrass, 4 cm tykk overmadrass med polyeterskumkjerne. Vaskbart trekk med tykk quilting. Nederst en ramme. Inkl. ben. Sengegavl kjøpes separat.",
+      salg: "Veldig myk seng, her kan du foreslå å gå over til en som ikke bruker bonell",
     },
+
     {
       id: 3,
       name: "Nevla",
@@ -52,7 +56,8 @@ export const categories: Record<string, Item[]> = {
         firm: 70,
       },
       message:
-        "En luksuriøs kontinentalseng med kaldskumkjerne for optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+        "Vendbar madrass med pocket-fjærer 225/m², polstret med polyeterskum. Madrassen er inndelt i 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. 1 overmadrass, 6 cm tykk med fleksibel Comfort + skumkjerne som former seg komfortabelt etter kroppens konturer. Vaskbart trekk i 100% polyester (76% resirkulert). Nederst 1 rammemadrass. Inkl. ben. Sengegavl kjøpes separat.",
+      salg: "  ",
     },
     {
       id: 4,
@@ -67,6 +72,7 @@ export const categories: Record<string, Item[]> = {
         firm: 71,
       },
       message: "God seng til en god pris",
+      salg: "kode7",
     },
     {
       id: 5,
@@ -81,6 +87,7 @@ export const categories: Record<string, Item[]> = {
         firm: 83,
       },
       message: "God og fast seng",
+      salg: "kode7",
     },
     {
       id: 6,
@@ -95,6 +102,7 @@ export const categories: Record<string, Item[]> = {
         firm: 45,
       },
       message: "En av de beste sengene vi har",
+      salg: "",
     },
     {
       id: 7,
@@ -109,6 +117,7 @@ export const categories: Record<string, Item[]> = {
         firm: 39,
       },
       message: "--",
+      salg: "",
     },
     {
       id: 8,
@@ -123,6 +132,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "Kontinentalseng med memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 9,
@@ -137,6 +147,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "En luksuriøs kontinentalseng med kaldskumkjerne for optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 10,
@@ -151,6 +162,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "Kontinentalseng med 30 cm høyde, laget av lateks som gir fantastisk støtte og komfort. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 11,
@@ -165,6 +177,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "4 cm tykk madrass med polyeterskumkjerne. Vaskbart trekk i myk, 100% polyestermikrofiber (100% resirkulert).",
+      salg: "",
     },
     {
       id: 12,
@@ -179,6 +192,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "4 cm tykk madrass med polyeterskumkjerne. Vaskbart trekk i myk, 100% polyestermikrofiber (100% resirkulert).",
+      salg: "",
     },
     {
       id: 13,
@@ -187,12 +201,13 @@ export const categories: Record<string, Item[]> = {
       url: "/Jyskh-ndbok/images/Spongi.jpg",
       details: {
         material: "Kaldskum",
-        core: "48 kg/m³",
-        firmness: "Fast",
-        firm: 80,
+        core: "30 kg/m³",
+        firmness: "Medium",
+        firm: 42,
       },
       message:
         "Kontinentalseng med kaldskumkjerne for optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 14,
@@ -207,6 +222,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "4 cm tykk madrass med polyesterskumkjerne for en myk og komfortabel liggeflate. Vaskbart trekk.",
+      salg: "",
     },
     {
       id: 15,
@@ -221,6 +237,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "Kontinentalseng med latexkjerne som gir en fantastisk komfort og støtte. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 16,
@@ -235,6 +252,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "3 cm tykk madrass med polyesterskumkjerne som gir en myk og behagelig søvn. Vaskbart trekk.",
+      salg: "",
     },
     {
       id: 17,
@@ -249,6 +267,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "4 cm tykk madrass med polyetherskumkjerne. Vaskbart trekk i myk, 100% polyestermikrofiber.",
+      salg: "",
     },
     {
       id: 18,
@@ -263,6 +282,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "Luksuriøs kontinentalseng med latexkjerne for optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
   ],
 
@@ -281,6 +301,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "En 2.5 cm tykk overmadrass laget med memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester (62% resirkulert).",
+      salg: "",
     },
     {
       id: 12,
@@ -296,6 +317,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "4 cm tykk madrass med polyeterskumkjerne. Vaskbart trekk i myk, 100% polyestermikrofiber (100% resirkulert).",
+      salg: "",
     },
     {
       id: 13,
@@ -311,6 +333,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "6 cm tykk overmadrass med kaldskumkjerne for komfort og støtte. Vaskbart trekk i 100% polyester (51% resirkulert), behandlet med biocidet GREENFIRST®. ",
+      salg: "",
     },
     {
       id: 14,
@@ -326,6 +349,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "6 cm tykk overmadrass med memoryskum og 7 komfortsoner for ergonomisk støtte. Vaskbart trekk i 100% polyester (34% resirkulert), behandlet med aloe vera.",
+      salg: "",
     },
     {
       id: 15,
@@ -341,6 +365,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "8 cm tykk overmadrass med AIR memoryskum som tilpasser seg kroppens konturer, selv i kjøligere omgivelser. Trekket er quiltet med bambuskull og behandlet med biocidet GREENFIRST®. ",
+      salg: "",
     },
     {
       id: 16,
@@ -356,6 +381,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "4.5 cm tykk overmadrass med AIR memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 17,
@@ -371,6 +397,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "8 cm tykk overmadrass med AIR memoryskum og polyeterskum. Kjølende gel i overkroppsområdet for ekstra komfort. Vaskbart trekk med polyetylen for umiddelbar kjølende effekt.",
+      salg: "",
     },
     {
       id: 18,
@@ -386,6 +413,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "6 cm tykk overmadrass med gelskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester (54% resirkulert).",
+      salg: "",
     },
     {
       id: 19,
@@ -401,6 +429,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "3 cm tykk overmadrass med pustende latekskjerne som effektivt leder bort overskuddsvarme. Vaskbart trekk i 100% polyester (54% resirkulert).",
+      salg: "",
     },
     {
       id: 20,
@@ -416,6 +445,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "Eksklusiv 8 cm tykk overmadrass med memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk med polyetylen for en kjølende effekt.",
+      salg: "",
     },
     {
       id: 21,
@@ -431,6 +461,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "6 cm tykk overmadrass med latekskjerne som effektivt leder bort overskuddsvarme. Vaskbart trekk i 100% polyester (60% resirkulert). Behandlet med biocidet GREENFIRST®.",
+      salg: "",
     },
   ],
   Madrass: [
@@ -448,6 +479,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "En komfortabel madrass med polyetherskumkjerne for en god og myk søvnopplevelse. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 2,
@@ -463,6 +495,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "Komfortabel madrass med polyesterskumkjerne. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 3,
@@ -478,6 +511,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "Luksuriøs madrass med naturlig latexkjerne for optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 4,
@@ -493,6 +527,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "En luksuriøs madrass med memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 5,
@@ -508,6 +543,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "Komfortabel madrass med latexkjerne for god støtte og avlastning. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 6,
@@ -523,6 +559,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "Madrass med memoryskum for god støtte og komfort. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 7,
@@ -538,6 +575,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "Luksuriøs madrass med naturlig latexkjerne for fantastisk komfort og støtte. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 8,
@@ -553,6 +591,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "En luksuriøs madrass med memoryskum som gir en myk og støttende liggeflate. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 9,
@@ -568,6 +607,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "Luksuriøs madrass med latexkjerne for fantastisk støtte og komfort. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 10,
@@ -583,6 +623,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "Komfortabel madrass med memoryskumkjerne for god støtte og komfort. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 11,
@@ -598,6 +639,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "Luksuriøs madrass med latexkjerne for optimal komfort og støtte. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 12,
@@ -613,6 +655,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "Madrass med fast latexkjerne for ekstra støtte og komfort. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 13,
@@ -628,6 +671,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "Ekstra hard madrass med latexkjerne for maksimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 14,
@@ -643,6 +687,7 @@ export const categories: Record<string, Item[]> = {
       },
       message:
         "Madrass med memoryskum som gir optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+      salg: "",
     },
     {
       id: 15,
@@ -657,7 +702,9 @@ export const categories: Record<string, Item[]> = {
         firm: 90,
       },
       message:
-        "Luksuriøs madrass med latexkjerne for ekstra støtte og komfort. Vaskbart trekk i 100% polyester.",
+        "Luksuriøs madrass med latexkjerne for ekstra støtte og komfort. Vaskbart trekk i 100% polyester." +
+        " Salgstriks kode7 ",
+      salg: "",
     },
   ],
 };

@@ -12,23 +12,23 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
   const [sortDirection, setSortDirection] = useState<
     "ascending" | "descending"
   >("ascending");
-  const [selectedCategories, setSelectedCategories] = useState({
+  /* const [selectedCategories, setSelectedCategories] = useState({
     Gold: true,
     Plus: true,
     Basic: true,
-  });
+  });*/
   const [selectedFirmness, setSelectedFirmness] = useState<
     "Myk" | "Medium" | "Fast" | "all"
   >("all");
   const [selectedItem, setSelectedItem] = useState<Item | null>(null);
-
+  /*
   const handleCheckboxChange = (category: "Gold" | "Plus" | "Basic") => {
     setSelectedCategories((prev) => ({
       ...prev,
       [category]: !prev[category],
     }));
   };
-
+*/
   const handleFirmnessChange = (
     firmness: "Myk" | "Medium" | "Fast" | "all",
   ) => {
@@ -36,9 +36,9 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
   };
 
   const filteredItems = items
-    .filter(
+    /*.filter(
       (item) => selectedCategories[item.kategori as "Gold" | "Plus" | "Basic"],
-    )
+    )*/
     .filter((item) => {
       if (selectedFirmness === "all") return true;
       return item.details.firmness === selectedFirmness;
@@ -74,7 +74,7 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
 
   return (
     <div>
-      {/* Checkbox Controls */}
+      {/* Checkbox Controls
       <div
         style={{
           textAlign: "center",
@@ -118,7 +118,7 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
           </label>
         ))}
       </div>
-
+        */}
       {/* Firmness Filter Buttons */}
       <div
         style={{
@@ -249,9 +249,7 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
             marginTop: "20px",
             borderRadius: "8px",
           }}
-        >
-          {/* You can add more item details here */}
-        </div>
+        ></div>
       )}
     </div>
   );
