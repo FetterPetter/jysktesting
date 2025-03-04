@@ -76,13 +76,6 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
               transition: "background 0.3s",
               width: "150px",
             }}
-            onMouseOver={(e) =>
-              (e.currentTarget.style.backgroundColor = "#1e7e34")
-            }
-            onMouseOut={(e) =>
-              (e.currentTarget.style.backgroundColor =
-                selectedFirmness === firmness ? "#007bff" : "#28a745")
-            }
           >
             {firmness.charAt(0).toUpperCase() + firmness.slice(1)}
           </button>
@@ -130,14 +123,6 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
             cursor: "pointer",
             width: "150px",
           }}
-          onMouseOver={(e) =>
-            (e.currentTarget.style.backgroundColor =
-              sortDirection === "ascending" ? "#1e7e34" : "#c82333")
-          }
-          onMouseOut={(e) =>
-            (e.currentTarget.style.backgroundColor =
-              sortDirection === "ascending" ? "#28a745" : "#dc3545")
-          }
         >
           {sortDirection === "ascending" ? "Myk til Fast" : "Fast til Myk"}
         </button>
