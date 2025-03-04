@@ -136,7 +136,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
           </h1>
           <ul>
             <li>{item.message}</li>
-            <li className="extra-spacing"></li>
+            <li className="extra-spacing">Salgstriks</li>
             {/* Placeholder for spacing */}
             <li>{item.salg}</li>
           </ul>

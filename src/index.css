@@ -131,9 +131,9 @@ body {
 
 /* Extra spacing for some list items */
 .extra-spacing {
-  font-size: 1.5rem;
+  font-size: 25px;
   margin-bottom: 15px;
-  color: #007bff;
+  color: #444444;
   font-weight: bold;
 }
 
