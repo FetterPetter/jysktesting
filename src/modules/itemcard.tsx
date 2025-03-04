@@ -122,23 +122,30 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
             lineHeight: "1.5",
           }}
         >
-          <div className="item-details">
-            <h1 className="item-name">{item.name}</h1>
-            <ul>
-              <li>{item.message}</li>
-              <li className="extra-spacing"></li>
-              {/* Placeholder for spacing */}
-              <li>{item.salg}</li>
-            </ul>
+          <h1
+            className="item-name"
+            style={{
+              position: "fixed",
+              top: "20px",
+              left: "0",
+              right: "0",
+              zIndex: "1001",
+            }}
+          >
+            {item.name}
+          </h1>
+          <ul style={{ marginTop: "100px", padding: "0 20px" }}>
+            <li>{item.message}</li>
+            <li className="extra-spacing"></li>
+            {/* Placeholder for spacing */}
+            <li>{item.salg}</li>
+          </ul>
 
-            {/* Bottom Items */}
-            <ul className="bottom-items">
-              <li className="extra-spacing">Mersalgsprodukter</li>
-              <li className="bottom-item">
-                Madrassbeskytter, laken, dyne, pute
-              </li>
-            </ul>
-          </div>
+          {/* Bottom Items */}
+          <ul className="bottom-items">
+            <li className="extra-spacing">Mersalgsprodukter</li>
+            <li className="bottom-item">Madrassbeskytter, laken, dyne, pute</li>
+          </ul>
         </div>
       )}
     </div>
