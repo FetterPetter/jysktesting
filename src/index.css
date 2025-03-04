@@ -72,11 +72,6 @@ body {
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-  transition: box-shadow 0.3s ease;
-}
-
-.item-card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .item-card img {
@@ -93,7 +88,6 @@ body {
 .item-card ul {
   list-style: none;
   padding: 10px;
-  font-size: 0.9rem;
 }
 
 .item-card ul li {

@@ -115,7 +115,6 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            //fontSize: "20px",
             textAlign: "center",
             zIndex: 1000,
             overflowY: "auto",
