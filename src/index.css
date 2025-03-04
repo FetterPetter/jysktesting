@@ -108,27 +108,6 @@ body {
   color: #333;
 }
 
-/* Styling for the list of details */
-.item-details {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* This ensures that the content takes up at least the full height of the screen */
-  padding-bottom: 60px; /* Space at the bottom for the fixed items */
-  justify-content: flex-start; /* Aligns content to the top */
-}
-
-/* Styling for the items inside the <ul> */
-.item-details ul {
-  list-style: none;
-  padding: 10px;
-  margin: 0;
-  color: #444;
-}
-
-.item-details li {
-  margin-bottom: 12px;
-}
-
 /* Extra spacing for some list items */
 .extra-spacing {
   font-size: 25px;
