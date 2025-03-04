@@ -134,7 +134,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
           >
             {item.name}
           </h1>
-          <ul style={{ marginTop: "100px", padding: "0 20px" }}>
+          <ul>
             <li>{item.message}</li>
             <li className="extra-spacing"></li>
             {/* Placeholder for spacing */}

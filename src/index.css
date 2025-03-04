@@ -99,12 +99,7 @@ body {
 .item-card ul li {
   margin-bottom: 5px;
 }
-@media (max-width: 480px) {
-  .button {
-    padding: 20px 40px;
-    font-size: 1.3rem;
-  }
-} /* For the item name (h1) */
+/* For the item name (h1) */
 .item-name {
   font-size: 2rem;
   font-weight: bold;
@@ -160,19 +155,4 @@ body {
 .bottom-item {
   font-size: 1.2rem;
   color: #666;
-}
-
-/* Additional spacing for mobile or smaller devices */
-@media (max-width: 480px) {
-  .item-name {
-    font-size: 1.6rem; /* Adjust font size for smaller screens */
-  }
-
-  .item-details li {
-    font-size: 0.9rem;
-  }
-
-  .bottom-item {
-    font-size: 1rem; /* Smaller font size for mobile screens */
-  }
 }
