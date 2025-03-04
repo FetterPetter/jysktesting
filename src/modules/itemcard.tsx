@@ -115,7 +115,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            fontSize: "20px",
+            //fontSize: "20px",
             textAlign: "center",
             zIndex: 1000,
             overflowY: "auto",
@@ -135,7 +135,13 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
             {item.name}
           </h1>
           <ul>
-            <li>{item.message}</li>
+            <li
+              style={{
+                fontSize: "25px",
+              }}
+            >
+              {item.message}
+            </li>
             <li className="extra-spacing">Salgstriks</li>
             {/* Placeholder for spacing */}
             <li>{item.salg}</li>
