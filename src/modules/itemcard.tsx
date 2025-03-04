@@ -6,9 +6,9 @@ interface ItemCardProps {
 }
 
 const categoryColors: Record<string, string> = {
-  Gold: "#FFD700", // Gold color
-  Plus: "#1E90FF", // DodgerBlue
-  Basic: "#A9A9A9", // DarkGray
+  Gold: "#FFD700",
+  Plus: "#1E90FF",
+  Basic: "#A9A9A9",
 };
 
 const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
@@ -117,33 +117,26 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
             justifyContent: "center",
             fontSize: "20px",
             textAlign: "center",
-            padding: "15px",
-            borderRadius: "0",
-            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.2)",
             zIndex: 1000,
             overflowY: "auto",
             lineHeight: "1.5",
           }}
         >
-          <div>
-            {" "}
-            <h1>{item.name}</h1>
+          <div className="item-details">
+            <h1 className="item-name">{item.name}</h1>
             <ul>
               <li>{item.message}</li>
-              <li
-                style={{
-                  fontSize: "25px",
-                }}
-              ></li>
+              <li className="extra-spacing"></li>
+              {/* Placeholder for spacing */}
               <li>{item.salg}</li>
-              <li
-                style={{
-                  fontSize: "25px",
-                }}
-              >
-                Mersalgsprodukter
+            </ul>
+
+            {/* Bottom Items */}
+            <ul className="bottom-items">
+              <li className="extra-spacing">Mersalgsprodukter</li>
+              <li className="bottom-item">
+                Madrassbeskytter, laken, dyne, pute
               </li>
-              <li>Madrassbeskytter, laken, dyne, pute</li>
             </ul>
           </div>
         </div>

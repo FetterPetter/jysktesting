@@ -14,7 +14,11 @@ const App: React.FC = () => {
           <button
             key={category}
             className={`button ${selectedCategory === category ? "active" : ""}`}
-            onClick={() => setSelectedCategory(category)}
+            onClick={() =>
+              setSelectedCategory(
+                selectedCategory === category ? null : category,
+              )
+            }
           >
             {category}
           </button>

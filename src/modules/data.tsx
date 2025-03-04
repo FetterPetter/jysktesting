@@ -36,7 +36,7 @@ export const categories: Record<string, Item[]> = {
         core: "30 kg/m³",
         spring: "Bonell",
         firmness: "Myk",
-        firm: 39,
+        firm: 38,
       },
       message:
         "Vendbar madrass med bonell-fjærer 110/m² polstret med polyeterskum. 1 overmadrass, 4 cm tykk overmadrass med polyeterskumkjerne. Vaskbart trekk med tykk quilting. Nederst en ramme. Inkl. ben. Sengegavl kjøpes separat.",

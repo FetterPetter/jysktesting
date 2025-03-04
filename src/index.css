@@ -104,8 +104,75 @@ body {
     padding: 20px 40px;
     font-size: 1.3rem;
   }
+} /* For the item name (h1) */
+.item-name {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
 }
-input[type="checkbox"] {
-  transform: scale(1.2); /* Make checkboxes bigger */
-  margin-right: 5px;
+
+/* Styling for the list of details */
+.item-details {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* This ensures that the content takes up at least the full height of the screen */
+  padding-bottom: 60px; /* Space at the bottom for the fixed items */
+  justify-content: flex-start; /* Aligns content to the top */
+}
+
+/* Styling for the items inside the <ul> */
+.item-details ul {
+  list-style: none;
+  padding: 10px;
+  font-size: 1rem;
+  margin: 0;
+  color: #444;
+}
+
+.item-details li {
+  margin-bottom: 12px;
+}
+
+/* Extra spacing for some list items */
+.extra-spacing {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Bottom Items styling */
+.bottom-items {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  font-family:
+    "Courier New", Courier, monospace; /* Different font for the bottom items */
+  text-align: center;
+  background-color: #e0f7fa;
+}
+
+.bottom-item {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Additional spacing for mobile or smaller devices */
+@media (max-width: 480px) {
+  .item-name {
+    font-size: 1.6rem; /* Adjust font size for smaller screens */
+  }
+
+  .item-details li {
+    font-size: 0.9rem;
+  }
+
+  .bottom-item {
+    font-size: 1rem; /* Smaller font size for mobile screens */
+  }
 }
