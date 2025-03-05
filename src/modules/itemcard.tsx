@@ -96,9 +96,10 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
           style={{
             position: "fixed",
             top: "10%",
+            bottom: "10%",
             left: "10%",
             width: "80vw",
-            height: "90vh",
+            height: "80vh",
             backgroundColor: "#e0f7fa",
             color: "#000",
             display: "flex",
@@ -118,7 +119,6 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
               style={{
                 color: `${categoryColors[item.kategori] || "#ccc"}`,
                 textShadow: "2px 2px 3px rgba(0,0,0,0.5)",
-                WebkitTextStroke: "1px black",
               }}
             >
               {item.name}{" "}
