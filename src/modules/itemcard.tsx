@@ -95,11 +95,10 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
         <div
           style={{
             position: "fixed",
-            top: "10%",
-            bottom: "10%",
-            left: "10%",
-            width: "80vw",
-            height: "80vh",
+            top: "22%",
+            left: "3%",
+            width: "94vw",
+            height: "75vh",
             backgroundColor: "#e0f7fa",
             color: "#000",
             display: "flex",
@@ -130,8 +129,20 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
             <li>{item.salg}</li>
           </ul>
 
-          <ul className="bottom-items">
-            <li className="extra-spacing">Mersalgsprodukter:</li>
+          <ul
+            className="bottom-items"
+            style={{
+              border: `5px solid ${categoryColors[item.kategori] || "#ccc"}`,
+            }}
+          >
+            <li
+              className="extra-spacing"
+              style={{
+                color: "darkolivegreen",
+              }}
+            >
+              Mersalgsprodukter:
+            </li>
             <li className="bottom-item">Madrassbeskytter, Laken, Dyne, Pute</li>
           </ul>
         </div>
