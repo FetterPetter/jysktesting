@@ -8,7 +8,7 @@
 /* Global styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #e0f7fa;
   color: #333;
 }
 
@@ -88,9 +88,13 @@ body {
   font-family:
     "Courier New", Courier, monospace; /* Different font for the bottom items */
   text-align: center;
+  font-size: 2.4rem;
   background-color: #e0f7fa;
 }
-.bottom-item {
-  font-size: 2.2rem;
+.extra-spacing {
   color: #666;
+}
+.bottom-item {
+  color: #333333;
+  font-size: 3.4rem;
 }

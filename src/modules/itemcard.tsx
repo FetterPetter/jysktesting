@@ -150,8 +150,8 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
             </li>
           </ul>
           <ul className="bottom-items">
-            <li className="extra-spacing">Mersalgsprodukter</li>
-            <li className="bottom-item">Madrassbeskytter, laken, dyne, pute</li>
+            <li className="extra-spacing">Mersalgsprodukter:</li>
+            <li className="bottom-item">Madrassbeskytter, Laken, Dyne, Pute</li>
           </ul>
         </div>
       )}
