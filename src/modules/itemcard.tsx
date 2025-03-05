@@ -96,9 +96,9 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
           style={{
             position: "fixed",
             top: "22%",
-            left: "3%",
-            width: "94vw",
-            height: "75vh",
+            left: "10%",
+            width: "80vw",
+            height: "78vh",
             backgroundColor: "#e0f7fa",
             color: "#000",
             display: "flex",
