@@ -95,10 +95,10 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
         <div
           style={{
             position: "fixed",
-            top: "0",
-            left: "0",
-            width: "100%",
-            height: "100%",
+            top: "10%",
+            left: "10%",
+            width: "80vw",
+            height: "90vh",
             backgroundColor: `${categoryColors[item.kategori] || "#ccc"}`,
             color: "#000",
             display: "flex",
@@ -107,48 +107,20 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
             textAlign: "center",
             zIndex: 1000,
             overflowY: "auto",
+            border: "10px solid black",
+            borderRadius: "15px",
+            boxShadow: "0 5px 15px rgba(0, 0, 0, 0.3)",
           }}
         >
-          <h1
-            style={{
-              position: "fixed",
-              top: "50px",
-              fontSize: "40px",
-              zIndex: "1001",
-            }}
-          >
-            {item.name}
-          </h1>
-          <ul
-            style={{
-              position: "fixed",
-              top: "80px",
-            }}
-          >
-            <li
-              style={{
-                padding: "30px",
-                fontSize: "30px",
-              }}
-            >
-              {item.message}
-            </li>
-            <li
-              style={{
-                fontSize: "50px",
-              }}
-            >
-              Salgstriks
-            </li>
+          <div className={"top-items"}>
+            <h1>{item.name}</h1>
+            <ul>
+              <li>{item.message}</li>
+              <li>Salgstriks</li>
 
-            <li
-              style={{
-                fontSize: "25px",
-              }}
-            >
-              {item.salg}
-            </li>
-          </ul>
+              <li>{item.salg}</li>
+            </ul>
+          </div>
           <ul className="bottom-items">
             <li className="extra-spacing">Mersalgsprodukter:</li>
             <li className="bottom-item">Madrassbeskytter, Laken, Dyne, Pute</li>
