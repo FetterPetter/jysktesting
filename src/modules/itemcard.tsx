@@ -76,7 +76,6 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
         {item.kategori}
       </span>
 
-      {/* Dynamically showing details */}
       <ul
         style={{
           flexGrow: 1,
@@ -92,7 +91,6 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
         ))}
       </ul>
 
-      {/* Show the message if 'showMessage' state is true */}
       {showMessage && (
         <div
           style={{
@@ -137,7 +135,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
             </li>
             <li
               style={{
-                fontSize: "30px",
+                fontSize: "50px",
               }}
             >
               Salgstriks
@@ -151,8 +149,6 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
               {item.salg}
             </li>
           </ul>
-
-          {/* Bottom Items */}
           <ul className="bottom-items">
             <li className="extra-spacing">Mersalgsprodukter</li>
             <li className="bottom-item">Madrassbeskytter, laken, dyne, pute</li>

@@ -19,9 +19,9 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
     firmness: "Myk" | "Medium" | "Fast" | "all",
   ) => {
     if (selectedFirmness === firmness) {
-      setSelectedFirmness("all"); // Deselect the firmness
+      setSelectedFirmness("all");
     } else {
-      setSelectedFirmness(firmness); // Select the new firmness
+      setSelectedFirmness(firmness);
     }
   };
 
@@ -47,7 +47,6 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
 
   return (
     <div>
-      {/* Firmness Filter Buttons */}
       <div
         style={{
           marginBottom: "1rem",
@@ -99,7 +98,6 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
         </button>
       </div>
 
-      {/* Sorting Button */}
       <div
         style={{
           marginBottom: "1rem",
@@ -128,7 +126,6 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
         </button>
       </div>
 
-      {/* Filtered and Sorted Items */}
       <div className="grid">
         {sortedItems.length > 0 ? (
           sortedItems.map((item) => (

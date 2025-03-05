@@ -1,7 +1,6 @@
-// application.tsx
 import React, { useState } from "react";
-import { categories } from "../data"; // Import the categories data
-import Category from "../category"; // Import Category component
+import { categories } from "../data";
+import Category from "../category";
 
 const App: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -25,10 +24,8 @@ const App: React.FC = () => {
         ))}
       </div>
 
-      {/* Display selected category items */}
       {selectedCategory && (
         <div className="grid">
-          {/* Make sure the selected category is valid */}
           <Category items={categories[selectedCategory]} />
         </div>
       )}
