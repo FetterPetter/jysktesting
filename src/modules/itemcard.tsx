@@ -60,22 +60,13 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
       }}
       onClick={toggleMessage}
     >
-      <img
-        src={item.url}
-        alt={item.name}
-        className="item-image"
-        style={{
-          width: "100%",
-          height: "150px",
-          objectFit: "cover",
-        }}
-      />
+      <img src={item.url} alt={item.name} className="item-image" />
       <h3>{item.name}</h3>
       <span
         style={{
           display: "inline-block",
           backgroundColor: categoryColors[item.kategori] || "#ccc",
-          color: "white",
+          color: "black",
           fontWeight: "bold",
           padding: "5px 10px",
           borderRadius: "5px",
@@ -118,16 +109,13 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
             textAlign: "center",
             zIndex: 1000,
             overflowY: "auto",
-            lineHeight: "1.5",
           }}
         >
           <h1
-            className="item-name"
             style={{
               position: "fixed",
-              top: "20px",
-              left: "0",
-              right: "0",
+              top: "50px",
+              fontSize: "40px",
               zIndex: "1001",
             }}
           >
@@ -136,14 +124,27 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
           <ul>
             <li
               style={{
-                fontSize: "25px",
+                padding: "30px",
+                fontSize: "30px",
               }}
             >
               {item.message}
             </li>
-            <li className="extra-spacing">Salgstriks</li>
-            {/* Placeholder for spacing */}
-            <li>{item.salg}</li>
+            <li
+              style={{
+                fontSize: "30px",
+              }}
+            >
+              Salgstriks
+            </li>
+
+            <li
+              style={{
+                fontSize: "25px",
+              }}
+            >
+              {item.salg}
+            </li>
           </ul>
 
           {/* Bottom Items */}

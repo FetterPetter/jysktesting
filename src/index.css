@@ -45,12 +45,6 @@ body {
     background-color 0.3s ease,
     border-color 0.3s ease;
 }
-
-.button:hover {
-  background-color: #eee;
-  border-color: #ccc;
-}
-
 /* Active/selected button styles */
 .button.active {
   background-color: #007bff;
@@ -80,37 +74,10 @@ body {
   object-fit: cover;
 }
 
-.item-card h3 {
-  padding: 10px;
-  font-size: 1.2rem;
-}
-
 .item-card ul {
   list-style: none;
-  padding: 10px;
 }
 
-.item-card ul li {
-  margin-bottom: 5px;
-}
-/* For the item name (h1) */
-.item-name {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-/* Extra spacing for some list items */
-.extra-spacing {
-  font-size: 25px;
-  margin-bottom: 15px;
-  color: #444444;
-  font-weight: bold;
-}
-
-/* Bottom Items styling */
 .bottom-items {
   position: absolute;
   bottom: 0;
@@ -123,7 +90,6 @@ body {
   text-align: center;
   background-color: #e0f7fa;
 }
-
 .bottom-item {
   font-size: 1.2rem;
   color: #666;
