@@ -477,9 +477,9 @@ export const categories: Record<string, Item[]> = {
       details: {
         height: "7 cm",
         material: "Polyetherskum",
-        core: "30 kg/m³",
+        size: "70,75,90",
         firmness: "Medium",
-        firm: 50,
+        firm: 63,
       },
       message:
         "7 cm tykk skummadrass med polyeterskumkjerne. Vaskbart trekk i 100% polyester (57% resirkulert).",
@@ -493,13 +493,13 @@ export const categories: Record<string, Item[]> = {
       details: {
         height: "10 cm",
         material: "Polyesterskum",
-        core: "35 kg/m³",
-        firmness: "Medium",
-        firm: 55,
+        size: "70,75,90,120",
+        firmness: "Fast",
+        firm: 73,
       },
       message:
         "10 cm tykk skummadrass med polyterskumkjerne. Vaskbart trekk med lett quilting.",
-      salg: "kode 7",
+      salg: "Kundetilbakemeldinger: 4.8/5*",
     },
     {
       id: 3,
@@ -509,9 +509,9 @@ export const categories: Record<string, Item[]> = {
       details: {
         height: "14 cm",
         material: "Kaldskum",
-        core: "80 kg/m³",
-        firmness: "Fast",
-        firm: 90,
+        size: "70,75,90,120",
+        firmness: "Myk",
+        firm: 40,
       },
       message:
         "14 cm tykk skummadrass med 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. Kjerne av kaldskum. Vaskbart trekk i 100% polyester (51% resirkulert) med tykk quilting.",
@@ -525,13 +525,13 @@ export const categories: Record<string, Item[]> = {
       details: {
         height: "18 cm",
         material: "Memoryskum",
-        core: "75 kg/m³",
+        size: "75,80,90,120,140,180",
         firmness: "Fast",
-        firm: 85,
+        firm: 82,
       },
       message:
         "18 cm tykk skummadrass med kjerne av 14 cm polyeterskum og 4 cm trykkavlastende AIR memoryskum. AIR memoryskum former seg raskt etter kroppen, selv i et kjølig sovemiljø. Vaskbart trekk.",
-      salg: "kode 7",
+      salg: "Kundetilbakemeldinger: 4.6/5*",
     },
     {
       id: 5,
@@ -541,9 +541,9 @@ export const categories: Record<string, Item[]> = {
       details: {
         height: "12 cm",
         material: "Latex",
-        core: "80 kg/m³",
+        size: "70,75,80,90,120",
         firmness: "Medium",
-        firm: 75,
+        firm: 69,
       },
       message:
         "12 cm tykk skummadrass med 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. 11 cm tykk polyeterskumkjerne. Vaskbart trekk med lett quilting.",
@@ -557,13 +557,13 @@ export const categories: Record<string, Item[]> = {
       details: {
         height: "16 cm",
         material: "Polyeterskum, Memoryskum",
-        core: "70 kg/m³",
-        firmness: "Medium",
-        firm: 70,
+        size: "75,80,90,120,140,180",
+        firmness: "Fast",
+        firm: 79,
       },
       message:
         "16 cm tykk skummadrass med 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. Kjerne av 12 cm polyeterskum og 4 cm trykkavlastende memoryskum som former seg presist etter kroppens konturer. Vaskbart trekk.",
-      salg: "kode 7",
+      salg: "Kundetilbakemeldinger: 4.4/5*",
     },
     {
       id: 7,
@@ -573,15 +573,15 @@ export const categories: Record<string, Item[]> = {
       details: {
         height: "22 cm",
         material: "Polyeterskum, Memoryskum",
-        core: "85 kg/m³",
+        size: "75,80,90,120,140,150,160,180",
         firmness: "Fast",
-        firm: 90,
+        firm: 83,
       },
       message:
         "22 cm tykk skummadrass med kjerne av 2,5 cm fleksibelt Comfort+ skum, 15,5 cm polyeterskum og 4 cm trykkavlastende AIR memoryskum tilsatt fuktabsorberende bambuskull. AIR memoryskum former seg presist etter kroppens konturer, selv i et kjølig sovemiljø. Vaskbart trekk er behandlet med biocidet GREENFIRST®.\n" +
         "\n" +
         "Dette produktet er behandlet med biocidet GREENFIRST®, som inneholder virkestoffet Geraniol. Behandlingen med Geraniol gir egenskaper som motvirker støvmidd. Geraniol er klassifisert som hudsensibiliserende, og direkte hudkontakt bør unngås. Bruk alltid med sengetøy som dynetrekk, laken og putetrekk.",
-      salg: "kode 7",
+      salg: "Kundetilbakemeldinger: 4.2/5*",
     },
     {
       id: 8,
@@ -591,13 +591,13 @@ export const categories: Record<string, Item[]> = {
       details: {
         height: "24 cm",
         material: "Memoryskum",
-        core: "85 kg/m³",
+        size: "75,80,90,140,160,180",
         firmness: "Fast",
-        firm: 90,
+        firm: 89,
       },
       message:
         "24 cm tykk skummadrass med 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. Kjerne av 4 cm fleksibelt Comfort+ skum, 16 cm polyeterskum og 4 cm trykkavlastende AIR memoryskum. AIR memoryskum former seg raskt etter kroppen, selv i et kjølig sovemiljø. Madrassen har kjølende gel i overkroppsområdet. Vaskbart trekk med polyetylen på den ene siden, noe som gir en umiddelbar, kjølende effekt.",
-      salg: "kode 7",
+      salg: "Kundetilbakemeldinger: 4.1/5*",
     },
     {
       id: 9,
@@ -607,13 +607,13 @@ export const categories: Record<string, Item[]> = {
       details: {
         height: "28 cm",
         material: "Polyeter, memoryskum",
-        core: "80 kg/m³",
+        size: "80,90,140,160,180",
         firmness: "Fast",
-        firm: 95,
+        firm: 88,
       },
       message:
         "28 cm tykk skummadrass med 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. Kjerne av 4 cm fleksibelt Comfort+ skum, 19 cm polyeterskum og 3 cm trykkavlastende AIR memoryskum tilført fuktabsorberende bambuskull. AIR memoryskum former seg raskt etter kroppen, selv i et kjølig sovemiljø. Trekk med tykk quilting i ull. Ull er naturlig antibakterielt, temperaturregulerende og fuktabsorberende. Trekket inneholder TENCEL™ Lyocell-fiber som gjennom fuktighetskontroll gir en naturlig tørr følelse.",
-      salg: "kode 7",
+      salg: "Kundetilbakemeldinger: 4/5*",
     },
     {
       id: 10,
@@ -623,9 +623,9 @@ export const categories: Record<string, Item[]> = {
       details: {
         height: "18 cm",
         material: "Bonell-fjærer",
-        core: "70 kg/m³",
-        firmness: "Medium",
-        firm: 75,
+        size: "80,90,120",
+        firmness: "Fast",
+        firm: 85,
       },
       message:
         "18 cm tykk madrass med bonell-fjærer 130/m², polstret med polyeterskum. Vaskbart trekk med tykk quilting.",
@@ -639,13 +639,13 @@ export const categories: Record<string, Item[]> = {
       details: {
         height: "27 cm",
         material: "Pocket-fjærer",
-        core: "85 kg/m³",
-        firmness: "Fast",
-        firm: 90,
+        size: "75,80,90,140,160",
+        firmness: "Medium",
+        firm: 71,
       },
       message:
         "27 cm tykk madrass med pocket-fjærer 289/m² inndelt i 11 komfortsoner. Madrassen er polstret med trykkavlastende AIR memoryskum og gel skum på den ene siden og polyeterskum på den andre. AIR memoryskum former seg raskt og presist etter kroppens konturer, selv i et kjølig sovemiljø. Vaskbart trekk.",
-      salg: "kode 7",
+      salg: "Kundetilbakemeldinger: 4.6/5*",
     },
     {
       id: 12,
@@ -655,13 +655,13 @@ export const categories: Record<string, Item[]> = {
       details: {
         height: "19 cm",
         material: "Pocket-fjærer",
-        core: "80 kg/m³",
+        size: "75,80,90,120,140,160",
         firmness: "Fast",
         firm: 90,
       },
       message:
         "19 cm tykk madrass med pocket-fjærer 324/m², inndelt i 11 komfortsoner. Madrassen er polstret med polyeterskum. Vaskbart trekk med tykk, myk quilting.",
-      salg: "kode 7",
+      salg: "Kundetilbakemeldinger: 4.6/5*",
     },
     {
       id: 13,
@@ -671,13 +671,13 @@ export const categories: Record<string, Item[]> = {
       details: {
         height: "19 cm",
         material: "Pocket-fjærer",
-        core: "90 kg/m³",
+        size: "70,75,80,90,120,140,160,180",
         firmness: "Fast",
         firm: 100,
       },
       message:
         "19 cm tykk vendbar madrass med pocket-fjærer 324/m², inndelt i 11 komfortsoner. Madrassen er polstret med polyeterskum. Vaskbart trekk med tykk, myk quilting.",
-      salg: "kode 7",
+      salg: "Kundetilbakemeldinger: 4.5/5* Dette er et produkt som ønsker en spessielt fast madrass",
     },
     {
       id: 14,
@@ -687,13 +687,13 @@ export const categories: Record<string, Item[]> = {
       details: {
         height: "22 cm",
         material: "pocket-fjærer",
-        core: "75 kg/m³",
+        size: "80,90,120,140,160,180",
         firmness: "Medium",
-        firm: 75,
+        firm: 70,
       },
       message:
         "22 cm tykk vendbar madrass med pocket-fjærer 240/m² inndelt i 11 komfortsoner. Madrassen er polstret med trykkavlastende memoryskum på den ene siden og polyeterskum på den andre. Memoryskum former seg etter kroppen. Vaskbart stretchtrekk i 100% polyester (31% resirkulert) med tykk quilting.",
-      salg: "kode 7",
+      salg: "Kundetilbakemeldinger: 4.4/5*",
     },
     {
       id: 15,
@@ -703,13 +703,13 @@ export const categories: Record<string, Item[]> = {
       details: {
         height: "27 cm",
         material: "Pocket-fjær",
-        core: "85 kg/m³",
+        size: "80,90,140,160,180",
         firmness: "Fast",
-        firm: 90,
+        firm: 95,
       },
       message:
         "27 cm tykk madrass med pocket-fjærer 505/m² inndelt i 7 komfortsoner som gir en unik og ergonomisk korrekt støtte. Madrassen er polstret med pustende lateks og kaldskum på den ene siden og polyeterskum på den andre siden. Lateks leder effektiv bort overskuddsvarme. Vaskbart trekk med tykk, myk quilting.",
-      salg: "kode 7",
+      salg: "Kundetilbakemeldinger: 4.5/5 * Perfekt for en som ønsker en fast og god madrass",
     },
   ],
 };
