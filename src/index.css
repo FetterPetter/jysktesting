@@ -79,7 +79,7 @@ body {
 }
 .top-items {
   position: absolute;
-  top: 0;
+  top: 10%;
   font-size: 2rem;
 }
 
