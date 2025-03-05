@@ -80,6 +80,7 @@ body {
 .top-items {
   position: absolute;
   top: 0;
+  font-size: 2rem;
 }
 
 .bottom-items {
