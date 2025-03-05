@@ -99,7 +99,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
             left: "10%",
             width: "80vw",
             height: "90vh",
-            backgroundColor: `${categoryColors[item.kategori] || "#ccc"}`,
+            backgroundColor: "#e0f7fa",
             color: "#000",
             display: "flex",
             alignItems: "center",
@@ -107,13 +107,22 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
             textAlign: "center",
             zIndex: 1000,
             overflowY: "auto",
-            border: "3px solid black",
-            borderRadius: "15px",
+            border: `15px solid ${categoryColors[item.kategori] || "#ccc"}`,
+            borderRadius: "10px",
+            padding: "10px",
             boxShadow: "0 5px 15px rgba(0, 0, 0, 0.3)",
           }}
         >
           <div className={"top-items"}>
-            <h1>{item.name} </h1>
+            <h1
+              style={{
+                color: `${categoryColors[item.kategori] || "#ccc"}`,
+                textShadow: "2px 2px 3px rgba(0,0,0,0.5)",
+                WebkitTextStroke: "1px black",
+              }}
+            >
+              {item.name}{" "}
+            </h1>
             <p>{item.message}</p>
           </div>
           <ul>
