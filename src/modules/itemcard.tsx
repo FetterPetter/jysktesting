@@ -95,10 +95,10 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
         <div
           style={{
             position: "fixed",
-            top: "0.1%",
+            top: "2.5%",
             left: "2.5%",
             width: "95vw",
-            height: "99.98vh",
+            height: "95vh",
             backgroundColor: "#e0f7fa",
             color: "#000",
             display: "flex",
