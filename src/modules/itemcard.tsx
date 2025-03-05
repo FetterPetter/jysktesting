@@ -121,7 +121,12 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
           >
             {item.name}
           </h1>
-          <ul>
+          <ul
+            style={{
+              position: "fixed",
+              top: "80px",
+            }}
+          >
             <li
               style={{
                 padding: "30px",

@@ -71,7 +71,8 @@ export const categories: Record<string, Item[]> = {
         firmness: "Medium",
         firm: 71,
       },
-      message: "God seng til en god pris",
+      message:
+        "Vendbar madrass med pocket-fjærer 260/m², polstret med polyeterskum. Madrassen er inndelt i 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. 1 overmadrass, 8 cm tykk med polyeterskumkjerne. Vaskbart trekk med myk, tykk quilting. Nederst 1 polstret ramme. Inkl. ben. Sengegavl kjøpes separat",
       salg: "kode7",
     },
     {
@@ -86,7 +87,8 @@ export const categories: Record<string, Item[]> = {
         firmness: "Fast",
         firm: 83,
       },
-      message: "God og fast seng",
+      message:
+        "Madrass med pocket-fjærer 260/m², polstret med kaldskum og polyeterskum. Madrassen er inndelt i 5 komfortsoner som gir en presis, optimal støtte. 1 overmadrass, 7 cm tykk med pustende latekskjerne som effektivt leder bort overskuddsvarme. Stretchtrekk med myk, tykk quilting. Nederst 2 rammemadrasser med bonellfjærer 110/m². Inkl. ben. Sengegavl kjøpes separat.",
       salg: "kode7",
     },
     {
@@ -101,7 +103,8 @@ export const categories: Record<string, Item[]> = {
         firmness: "Medium",
         firm: 45,
       },
-      message: "En av de beste sengene vi har",
+      message:
+        "Vendbar madrass med adaptive pocket-fjærer 204/m², polstret med fleksibelt Comfort+ skum. Adaptive pocketfjærer tilpasser gradvis fastheten og støtten til dine skiftende sovestillinger. Madrassen er inndelt i 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. 1 overmadrass, 7 cm tykk med trykkavlastende memoryskumkjerne som former seg presist etter kroppens konturer. Trekk med tykk, myk quilting. Nederst 1 rammemadrass med pocket-fjærer 250/m², inndelt i 5 komfortsoner. Inkl. ben. Sengegavl kjøpes separat.",
       salg: "kode 7",
     },
     {
@@ -116,7 +119,8 @@ export const categories: Record<string, Item[]> = {
         firmness: "Myk",
         firm: 39,
       },
-      message: "--",
+      message:
+        "Vendbar madrass med pocket-fjærer 200/m² polstret med polyeterskum. 1 overmadrass, 7 cm tykk med polyeterskumkjerne. Vaskbart trekk med myk, tykk quilting. Nederst 1 ramme. Inkl. ben. Sengegavl kjøpes separat.",
       salg: "kode 7",
     },
     {
@@ -131,7 +135,7 @@ export const categories: Record<string, Item[]> = {
         firm: 75,
       },
       message:
-        "Kontinentalseng med memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester.",
+        "Vendbar madrass med pocket-fjærer 260/m², polstret med polyeterskum. Madrassen er inndelt i 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. 1 overmadrass, 7 cm tykk med polyeterskumkjerne. Vaskbart trekk med myk, tykk quilting. Nederst 1 rammemadrass med pocket-fjærer 205/m², inndelt i 7 komfortsoner. Inkl. ben. Sengegavl kjøpes separat.",
       salg: "kode 7",
     },
     {
@@ -146,7 +150,7 @@ export const categories: Record<string, Item[]> = {
         firm: 90,
       },
       message:
-        "En luksuriøs kontinentalseng med kaldskumkjerne for optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+        "Vndbar madrass med multipocket-fjærer 500/m², polstret med kaldskum og polyeterskum. Madrassen er inndelt i 5 komfortsoner som gir en presis, optimal støtte. 1 overmadrass, 10 cm tykk med pustende latekskjerne som effektivt leder bort overskuddsvarme. Det vaskbare stretchtrekket er med tykk quilting i polyeterskum. Trekk med fukttransporterende lyocell. Nederst 1 rammemadrass med pocket-fjærer 250/m², inndelt i 7 komfortsoner. Med sensorstyrt undersengslys. Inkl. ben. Sengegavl kjøpes separat.",
       salg: "kode 7",
     },
     {
@@ -161,7 +165,7 @@ export const categories: Record<string, Item[]> = {
         firm: 95,
       },
       message:
-        "Kontinentalseng med 30 cm høyde, laget av lateks som gir fantastisk støtte og komfort. Vaskbart trekk i 100% polyester.",
+        "Vendbar madrass med pocket-fjærer 225/m², polstret med pustende Cooltex Breeze. Madrassen er inndelt i 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. 1 overmadrass, 10 cm tykk med pustende latekskjerne som effektivt leder bort overskuddsvarme. Vaskbart stretchtrekk med myk, tykk quilting. Trekket er laget med kjølende og temperaturregulerende TEMPRAKON® space teknologi som skaper et tørt og behagelig sovemiljø. Nederst 1 rammemadrass med pocket-fjærer 225/m², inndelt i 9 komfortsoner. Inkl. ben. Sengegavl kjøpes separat.",
       salg: "kode 7",
     },
     {
@@ -176,7 +180,7 @@ export const categories: Record<string, Item[]> = {
         firm: 40,
       },
       message:
-        "4 cm tykk madrass med polyeterskumkjerne. Vaskbart trekk i myk, 100% polyestermikrofiber (100% resirkulert).",
+        "Rammemadrass med bonellfjærer 115/m², polstret med polyeterskum. Inkl. 4 cm tykk overmadrass med polyeterskumkjerne. Vaskbart stretchtrekk med tykk quilting. Ben/bøyler kjøpes separat.",
       salg: "kode 7",
     },
     {
@@ -191,7 +195,7 @@ export const categories: Record<string, Item[]> = {
         firm: 40,
       },
       message:
-        "4 cm tykk madrass med polyeterskumkjerne. Vaskbart trekk i myk, 100% polyestermikrofiber (100% resirkulert).",
+        "Dobbeltfjæret rammemadrass med 5 komfortsoner som gir korrekt og optimal støtte. Øverst pocketfjærer 250/m², polstret med polyeterskum. Nederst minibonellfjærer 150/m². Inkl. 4 cm tykk overmadrass med polyeterskumkjerne. Vaskbart stretchtrekk med lett quilting. Ben/bøyler kjøpes separat.",
       salg: "kode 7",
     },
     {
@@ -206,7 +210,7 @@ export const categories: Record<string, Item[]> = {
         firm: 42,
       },
       message:
-        "Kontinentalseng med kaldskumkjerne for optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+        "Rammemadrass med pocketfjærer 205/m², polstret med polyeterskum. Inkl. 4 cm tykk overmadrass med polyeterskumkjerne. Vaskbart stretchtrekk med lett quilting. Ben/bøyler kjøpes separat.",
       salg: "kode 7",
     },
     {
@@ -221,7 +225,7 @@ export const categories: Record<string, Item[]> = {
         firm: 50,
       },
       message:
-        "4 cm tykk madrass med polyesterskumkjerne for en myk og komfortabel liggeflate. Vaskbart trekk.",
+        "Dobbeltfjæret rammemadrass med 5 komfortsoner som gir optimal støtte. Øverst pocket-fjærer 250/m², polstret med polyeterskum. Nederst minibonell-fjærer 150/m². Inkl. 5 cm tykk overmadrass med trykkavlastende memoryskumkjerne som former seg etter kroppen. Vaskbart stretchtrekk med tykk, myk quilting. Ben/bøyler kjøpes separat.",
       salg: "kode 7",
     },
     {
@@ -236,7 +240,7 @@ export const categories: Record<string, Item[]> = {
         firm: 70,
       },
       message:
-        "Kontinentalseng med latexkjerne som gir en fantastisk komfort og støtte. Vaskbart trekk i 100% polyester.",
+        "Dobbeltfjæret rammemadrass med 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. Øverst pocket-fjærer 250/m², polstret med kaldskum og polyeterskum. Nederst minibonell-fjærer 150/m². Inkl. 8 cm tykk overmadrass med trykkavlastende memoryskumkjerne som former seg etter kroppen. Vaskbart stretchtrekk med tykk, myk quilting. Ben/bøyler kjøpes separat.",
       salg: "kode 7",
     },
     {
@@ -251,7 +255,7 @@ export const categories: Record<string, Item[]> = {
         firm: 60,
       },
       message:
-        "3 cm tykk madrass med polyesterskumkjerne som gir en myk og behagelig søvn. Vaskbart trekk.",
+        "Rammemadrass med pocket-fjærer 246/m², polstret med Comfort+ skum. Madrassen er inndelt i 5 komfortsoner som gir presis og optimal støtte. Inkl. 6 cm tykk overmadrass med fleksibel Comfort+ skumkjerne, som former seg komfortabelt etter kroppens konturer. Vaskbart trekk. Ben/bøyler kjøpes separat.",
       salg: "kode 7",
     },
     {
@@ -266,7 +270,7 @@ export const categories: Record<string, Item[]> = {
         firm: 60,
       },
       message:
-        "4 cm tykk madrass med polyetherskumkjerne. Vaskbart trekk i myk, 100% polyestermikrofiber.",
+        "Dobbeltfjæret rammemadrass med 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. Øverst multipocket-fjærer 500/m², polstret med kaldskum og polyeterskum. Nederst minibonell-fjærer 150/m². Inkl. 8 cm tykk overmadrass med pustende latekskjerne som effektivt leder bort overskuddsvarme. Vaskbart stretchtrekk med tykk, myk quilting. Ben/bøyler kjøpes separat.",
       salg: "kode 7",
     },
     {
@@ -281,7 +285,7 @@ export const categories: Record<string, Item[]> = {
         firm: 90,
       },
       message:
-        "Luksuriøs kontinentalseng med latexkjerne for optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+        "Kontinentalseng, vendbar madrass med bonell-fjærer 110/m² polstret med polyeterskum. 1 overmadrass, 4 cm tykk, med polyeterskumkjerne. Nederst 1 ramme. Inkl. ben. Sengegavl kjøpes separat.",
       salg: "kode 7",
     },
   ],
@@ -471,14 +475,14 @@ export const categories: Record<string, Item[]> = {
       kategori: "Basic",
       url: "/Jyskh-ndbok/images/Billefjord.jpg",
       details: {
-        height: "20 cm",
+        height: "7 cm",
         material: "Polyetherskum",
         core: "30 kg/m³",
         firmness: "Medium",
         firm: 50,
       },
       message:
-        "En komfortabel madrass med polyetherskumkjerne for en god og myk søvnopplevelse. Vaskbart trekk i 100% polyester.",
+        "7 cm tykk skummadrass med polyeterskumkjerne. Vaskbart trekk i 100% polyester (57% resirkulert).",
       salg: "kode 7",
     },
     {
@@ -487,14 +491,14 @@ export const categories: Record<string, Item[]> = {
       kategori: "Basic",
       url: "/Jyskh-ndbok/images/Hasla.jpg",
       details: {
-        height: "20 cm",
+        height: "10 cm",
         material: "Polyesterskum",
         core: "35 kg/m³",
         firmness: "Medium",
         firm: 55,
       },
       message:
-        "Komfortabel madrass med polyesterskumkjerne. Vaskbart trekk i 100% polyester.",
+        "10 cm tykk skummadrass med polyterskumkjerne. Vaskbart trekk med lett quilting.",
       salg: "kode 7",
     },
     {
@@ -503,14 +507,14 @@ export const categories: Record<string, Item[]> = {
       kategori: "Gold",
       url: "/Jyskh-ndbok/images/Lillelv.jpg",
       details: {
-        height: "28 cm",
-        material: "Latex",
+        height: "14 cm",
+        material: "Kaldskum",
         core: "80 kg/m³",
         firmness: "Fast",
         firm: 90,
       },
       message:
-        "Luksuriøs madrass med naturlig latexkjerne for optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+        "14 cm tykk skummadrass med 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. Kjerne av kaldskum. Vaskbart trekk i 100% polyester (51% resirkulert) med tykk quilting.",
       salg: "kode 7",
     },
     {
@@ -519,14 +523,14 @@ export const categories: Record<string, Item[]> = {
       kategori: "Gold",
       url: "/Jyskh-ndbok/images/Glomma.jpg",
       details: {
-        height: "30 cm",
+        height: "18 cm",
         material: "Memoryskum",
         core: "75 kg/m³",
         firmness: "Fast",
         firm: 85,
       },
       message:
-        "En luksuriøs madrass med memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester.",
+        "18 cm tykk skummadrass med kjerne av 14 cm polyeterskum og 4 cm trykkavlastende AIR memoryskum. AIR memoryskum former seg raskt etter kroppen, selv i et kjølig sovemiljø. Vaskbart trekk.",
       salg: "kode 7",
     },
     {
@@ -535,14 +539,14 @@ export const categories: Record<string, Item[]> = {
       kategori: "Plus",
       url: "/Jyskh-ndbok/images/Kjosen.jpg",
       details: {
-        height: "28 cm",
+        height: "12 cm",
         material: "Latex",
         core: "80 kg/m³",
         firmness: "Medium",
         firm: 75,
       },
       message:
-        "Komfortabel madrass med latexkjerne for god støtte og avlastning. Vaskbart trekk i 100% polyester.",
+        "12 cm tykk skummadrass med 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. 11 cm tykk polyeterskumkjerne. Vaskbart trekk med lett quilting.",
       salg: "kode 7",
     },
     {
@@ -551,14 +555,14 @@ export const categories: Record<string, Item[]> = {
       kategori: "Plus",
       url: "/Jyskh-ndbok/images/Hulda.jpg",
       details: {
-        height: "28 cm",
-        material: "Memoryskum",
+        height: "16 cm",
+        material: "Polyeterskum, Memoryskum",
         core: "70 kg/m³",
         firmness: "Medium",
         firm: 70,
       },
       message:
-        "Madrass med memoryskum for god støtte og komfort. Vaskbart trekk i 100% polyester.",
+        "16 cm tykk skummadrass med 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. Kjerne av 12 cm polyeterskum og 4 cm trykkavlastende memoryskum som former seg presist etter kroppens konturer. Vaskbart trekk.",
       salg: "kode 7",
     },
     {
@@ -567,14 +571,16 @@ export const categories: Record<string, Item[]> = {
       kategori: "Gold",
       url: "/Jyskh-ndbok/images/Kvita.jpg",
       details: {
-        height: "32 cm",
-        material: "Latex",
+        height: "22 cm",
+        material: "Polyeterskum, Memoryskum",
         core: "85 kg/m³",
         firmness: "Fast",
         firm: 90,
       },
       message:
-        "Luksuriøs madrass med naturlig latexkjerne for fantastisk komfort og støtte. Vaskbart trekk i 100% polyester.",
+        "22 cm tykk skummadrass med kjerne av 2,5 cm fleksibelt Comfort+ skum, 15,5 cm polyeterskum og 4 cm trykkavlastende AIR memoryskum tilsatt fuktabsorberende bambuskull. AIR memoryskum former seg presist etter kroppens konturer, selv i et kjølig sovemiljø. Vaskbart trekk er behandlet med biocidet GREENFIRST®.\n" +
+        "\n" +
+        "Dette produktet er behandlet med biocidet GREENFIRST®, som inneholder virkestoffet Geraniol. Behandlingen med Geraniol gir egenskaper som motvirker støvmidd. Geraniol er klassifisert som hudsensibiliserende, og direkte hudkontakt bør unngås. Bruk alltid med sengetøy som dynetrekk, laken og putetrekk.",
       salg: "kode 7",
     },
     {
@@ -583,14 +589,14 @@ export const categories: Record<string, Item[]> = {
       kategori: "Gold",
       url: "/Jyskh-ndbok/images/Hovda.jpg",
       details: {
-        height: "35 cm",
+        height: "24 cm",
         material: "Memoryskum",
         core: "85 kg/m³",
         firmness: "Fast",
         firm: 90,
       },
       message:
-        "En luksuriøs madrass med memoryskum som gir en myk og støttende liggeflate. Vaskbart trekk i 100% polyester.",
+        "24 cm tykk skummadrass med 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. Kjerne av 4 cm fleksibelt Comfort+ skum, 16 cm polyeterskum og 4 cm trykkavlastende AIR memoryskum. AIR memoryskum former seg raskt etter kroppen, selv i et kjølig sovemiljø. Madrassen har kjølende gel i overkroppsområdet. Vaskbart trekk med polyetylen på den ene siden, noe som gir en umiddelbar, kjølende effekt.",
       salg: "kode 7",
     },
     {
@@ -599,14 +605,14 @@ export const categories: Record<string, Item[]> = {
       kategori: "Gold",
       url: "/Jyskh-ndbok/images/Vendo.jpg",
       details: {
-        height: "30 cm",
-        material: "Latex",
+        height: "28 cm",
+        material: "Polyeter, memoryskum",
         core: "80 kg/m³",
         firmness: "Fast",
         firm: 95,
       },
       message:
-        "Luksuriøs madrass med latexkjerne for fantastisk støtte og komfort. Vaskbart trekk i 100% polyester.",
+        "28 cm tykk skummadrass med 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. Kjerne av 4 cm fleksibelt Comfort+ skum, 19 cm polyeterskum og 3 cm trykkavlastende AIR memoryskum tilført fuktabsorberende bambuskull. AIR memoryskum former seg raskt etter kroppen, selv i et kjølig sovemiljø. Trekk med tykk quilting i ull. Ull er naturlig antibakterielt, temperaturregulerende og fuktabsorberende. Trekket inneholder TENCEL™ Lyocell-fiber som gjennom fuktighetskontroll gir en naturlig tørr følelse.",
       salg: "kode 7",
     },
     {
@@ -615,14 +621,14 @@ export const categories: Record<string, Item[]> = {
       kategori: "Basic",
       url: "/Jyskh-ndbok/images/Kamelva.jpg",
       details: {
-        height: "28 cm",
-        material: "Memoryskum",
+        height: "18 cm",
+        material: "Bonell-fjærer",
         core: "70 kg/m³",
         firmness: "Medium",
         firm: 75,
       },
       message:
-        "Komfortabel madrass med memoryskumkjerne for god støtte og komfort. Vaskbart trekk i 100% polyester.",
+        "18 cm tykk madrass med bonell-fjærer 130/m², polstret med polyeterskum. Vaskbart trekk med tykk quilting.",
       salg: "kode 7",
     },
     {
@@ -631,14 +637,14 @@ export const categories: Record<string, Item[]> = {
       kategori: "Gold",
       url: "/Jyskh-ndbok/images/Eima.jpg",
       details: {
-        height: "32 cm",
-        material: "Latex",
+        height: "27 cm",
+        material: "Pocket-fjærer",
         core: "85 kg/m³",
         firmness: "Fast",
         firm: 90,
       },
       message:
-        "Luksuriøs madrass med latexkjerne for optimal komfort og støtte. Vaskbart trekk i 100% polyester.",
+        "27 cm tykk madrass med pocket-fjærer 289/m² inndelt i 11 komfortsoner. Madrassen er polstret med trykkavlastende AIR memoryskum og gel skum på den ene siden og polyeterskum på den andre. AIR memoryskum former seg raskt og presist etter kroppens konturer, selv i et kjølig sovemiljø. Vaskbart trekk.",
       salg: "kode 7",
     },
     {
@@ -647,14 +653,14 @@ export const categories: Record<string, Item[]> = {
       kategori: "Plus",
       url: "/Jyskh-ndbok/images/Stripa.jpg",
       details: {
-        height: "28 cm",
-        material: "Latex",
+        height: "19 cm",
+        material: "Pocket-fjærer",
         core: "80 kg/m³",
         firmness: "Fast",
         firm: 90,
       },
       message:
-        "Madrass med fast latexkjerne for ekstra støtte og komfort. Vaskbart trekk i 100% polyester.",
+        "19 cm tykk madrass med pocket-fjærer 324/m², inndelt i 11 komfortsoner. Madrassen er polstret med polyeterskum. Vaskbart trekk med tykk, myk quilting.",
       salg: "kode 7",
     },
     {
@@ -663,14 +669,14 @@ export const categories: Record<string, Item[]> = {
       kategori: "Plus",
       url: "/Jyskh-ndbok/images/StripaEkstraFast.jpg",
       details: {
-        height: "28 cm",
-        material: "Latex",
+        height: "19 cm",
+        material: "Pocket-fjærer",
         core: "90 kg/m³",
         firmness: "Fast",
         firm: 100,
       },
       message:
-        "Ekstra hard madrass med latexkjerne for maksimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+        "19 cm tykk vendbar madrass med pocket-fjærer 324/m², inndelt i 11 komfortsoner. Madrassen er polstret med polyeterskum. Vaskbart trekk med tykk, myk quilting.",
       salg: "kode 7",
     },
     {
@@ -679,14 +685,14 @@ export const categories: Record<string, Item[]> = {
       kategori: "Plus",
       url: "/Jyskh-ndbok/images/Lutra.jpg",
       details: {
-        height: "28 cm",
-        material: "Memoryskum",
+        height: "22 cm",
+        material: "pocket-fjærer",
         core: "75 kg/m³",
         firmness: "Medium",
         firm: 75,
       },
       message:
-        "Madrass med memoryskum som gir optimal støtte og komfort. Vaskbart trekk i 100% polyester.",
+        "22 cm tykk vendbar madrass med pocket-fjærer 240/m² inndelt i 11 komfortsoner. Madrassen er polstret med trykkavlastende memoryskum på den ene siden og polyeterskum på den andre. Memoryskum former seg etter kroppen. Vaskbart stretchtrekk i 100% polyester (31% resirkulert) med tykk quilting.",
       salg: "kode 7",
     },
     {
@@ -695,15 +701,14 @@ export const categories: Record<string, Item[]> = {
       kategori: "Gold",
       url: "/Jyskh-ndbok/images/Driva.jpg",
       details: {
-        height: "35 cm",
-        material: "Latex",
+        height: "27 cm",
+        material: "Pocket-fjær",
         core: "85 kg/m³",
         firmness: "Fast",
         firm: 90,
       },
       message:
-        "Luksuriøs madrass med latexkjerne for ekstra støtte og komfort. Vaskbart trekk i 100% polyester." +
-        " Salgstriks kode7 ",
+        "27 cm tykk madrass med pocket-fjærer 505/m² inndelt i 7 komfortsoner som gir en unik og ergonomisk korrekt støtte. Madrassen er polstret med pustende lateks og kaldskum på den ene siden og polyeterskum på den andre siden. Lateks leder effektiv bort overskuddsvarme. Vaskbart trekk med tykk, myk quilting.",
       salg: "kode 7",
     },
   ],
