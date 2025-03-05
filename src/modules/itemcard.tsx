@@ -95,10 +95,10 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
         <div
           style={{
             position: "fixed",
-            top: "22%",
-            left: "10%",
-            width: "80vw",
-            height: "78vh",
+            top: "0",
+            left: "0",
+            width: "100vw",
+            height: "100vh",
             backgroundColor: "#e0f7fa",
             color: "#000",
             display: "flex",
@@ -109,7 +109,6 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
             overflowY: "auto",
             border: `15px solid ${categoryColors[item.kategori] || "#ccc"}`,
             borderRadius: "10px",
-            padding: "10px",
             boxShadow: "0 5px 15px rgba(0, 0, 0, 0.3)",
           }}
         >
