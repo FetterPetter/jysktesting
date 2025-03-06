@@ -9,44 +9,67 @@ interface CategoryProps {
 
 const Category: React.FC<CategoryProps> = ({ items }) => {
   const [sortDirection, setSortDirection] = useState<
-    "ascending" | "descending"
-  >("ascending");
-
+    "ascending" | "descending" | null
+  >(null);
+  const [sortByAlphabet, setSortByAlphabet] = useState<
+    "ascending" | "descending" | null
+  >(null);
   const [selectedFirmness, setSelectedFirmness] = useState<
     "Myk" | "Medium" | "Fast" | "all"
   >("all");
+
   const handleFirmnessChange = (
     firmness: "Myk" | "Medium" | "Fast" | "all",
   ) => {
-    if (selectedFirmness === firmness) {
-      setSelectedFirmness("all");
-    } else {
-      setSelectedFirmness(firmness);
-    }
+    setSelectedFirmness(firmness === selectedFirmness ? "all" : firmness);
   };
-
-  const filteredItems = items.filter((item) => {
-    if (selectedFirmness === "all") return true;
-    return item.details.firmness === selectedFirmness;
-  });
-  const sortedItems = [...filteredItems].sort((a, b) => {
-    const aFirmness = extractFirmness(a.details.firm);
-    const bFirmness = extractFirmness(b.details.firm);
-    if (sortDirection === "ascending") {
-      return aFirmness - bFirmness;
-    } else {
-      return bFirmness - aFirmness;
-    }
-  });
 
   const toggleFirmnessSort = () => {
-    setSortDirection((prevDirection) =>
-      prevDirection === "ascending" ? "descending" : "ascending",
-    );
+    if (sortByAlphabet) {
+      setSortByAlphabet(null); // Nullstiller alfabetisk sortering
+      setSortDirection("ascending"); // Starter på "Myk til Fast"
+    } else {
+      setSortDirection((prev) =>
+        prev === "ascending" ? "descending" : "ascending",
+      );
+    }
   };
+
+  const toggleAlphabetSort = () => {
+    if (sortDirection) {
+      setSortDirection(null); // Nullstiller firmness-sortering
+      setSortByAlphabet("ascending"); // Starter på "A til Å"
+    } else {
+      setSortByAlphabet((prev) =>
+        prev === "ascending" ? "descending" : "ascending",
+      );
+    }
+  };
+
+  const filteredItems = items.filter((item) =>
+    selectedFirmness === "all"
+      ? true
+      : item.details.firmness === selectedFirmness,
+  );
+
+  const sortedItems = [...filteredItems].sort((a, b) => {
+    if (sortByAlphabet) {
+      return sortByAlphabet === "ascending"
+        ? a.name.localeCompare(b.name)
+        : b.name.localeCompare(a.name);
+    } else if (sortDirection) {
+      const aFirmness = extractFirmness(a.details.firm);
+      const bFirmness = extractFirmness(b.details.firm);
+      return sortDirection === "ascending"
+        ? aFirmness - bFirmness
+        : bFirmness - aFirmness;
+    }
+    return 0;
+  });
 
   return (
     <div>
+      {/* Firmness filter buttons */}
       <div
         style={{
           marginBottom: "1rem",
@@ -76,7 +99,7 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
               width: "150px",
             }}
           >
-            {firmness.charAt(0).toUpperCase() + firmness.slice(1)}
+            {firmness}
           </button>
         ))}
         <button
@@ -98,6 +121,7 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
         </button>
       </div>
 
+      {/* Sorting buttons */}
       <div
         style={{
           marginBottom: "1rem",
@@ -107,11 +131,16 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
           gap: "20px",
         }}
       >
+        {/* Firmness sorting button */}
         <button
           onClick={toggleFirmnessSort}
           style={{
             backgroundColor:
-              sortDirection === "ascending" ? "#28a745" : "#dc3545",
+              sortDirection === "ascending"
+                ? "#17a2b8" // Blå for stigende
+                : sortDirection === "descending"
+                  ? "#ffc107" // Gul for synkende
+                  : "#6c757d", // Grå hvis deaktivert
             color: "white",
             border: "none",
             padding: "14px 24px",
@@ -124,8 +153,32 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
         >
           {sortDirection === "ascending" ? "Myk til Fast" : "Fast til Myk"}
         </button>
+
+        {/* Alphabetical sorting button */}
+        <button
+          onClick={toggleAlphabetSort}
+          style={{
+            backgroundColor:
+              sortByAlphabet === "ascending"
+                ? "#17a2b8" // Blå for stigende
+                : sortByAlphabet === "descending"
+                  ? "#ffc107" // Gul for synkende
+                  : "#6c757d", // Grå hvis deaktivert
+            color: "white",
+            border: "none",
+            padding: "14px 24px",
+            fontSize: "18px",
+            fontWeight: "bold",
+            borderRadius: "8px",
+            cursor: "pointer",
+            width: "150px",
+          }}
+        >
+          {sortByAlphabet === "ascending" ? "A til Å" : "Å til A"}
+        </button>
       </div>
 
+      {/* Display sorted items */}
       <div className="grid">
         {sortedItems.length > 0 ? (
           sortedItems.map((item) => (
