@@ -154,7 +154,11 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
             width: "150px",
           }}
         >
-          {sortDirection === "ascending" ? "Myk til Fast" : "Fast til Myk"}
+          {sortDirection === "ascending"
+            ? "Myk til Fast"
+            : sortDirection === "descending"
+              ? "Fast til Myk"
+              : "Sorter Fasthet"}
         </button>
 
         {/* Alphabetical sorting button */}
@@ -178,7 +182,11 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
             width: "150px",
           }}
         >
-          {sortByAlphabet === "ascending" ? "A til Å" : "Å til A"}
+          {sortByAlphabet === "ascending"
+            ? "A til Å"
+            : sortByAlphabet === "descending"
+              ? "Å til A"
+              : "Sorter Alfabetisk"}
         </button>
       </div>
 
