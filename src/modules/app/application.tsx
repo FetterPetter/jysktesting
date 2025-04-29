@@ -7,7 +7,7 @@ const App: React.FC = () => {
 
   return (
     <div className="container">
-      <h1 className="header">Jysk tutorial</h1>
+      <h1 className="header">Jysk Håndbok</h1>
       <div className="button-container">
         {Object.keys(categories).map((category) => (
           <button
