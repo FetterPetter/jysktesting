@@ -31,7 +31,18 @@ body {
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
+.button-container.scrollable {
+  overflow-x: auto;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  padding: 10px 0;
+}
+.button-container.scrollable .button {
+  flex: 0 0 auto;
+}
+
 /* Modal styling */
 .modal-content {
   padding: 20px;
@@ -102,18 +113,20 @@ button {
 button:hover {
   color: #007bff;
 }
+
 /* Basic button styles */
 .button {
-  padding: 50px 80px; /* Increased padding for a larger touch target */
+  padding: 50px 80px;
   background-color: #fff;
   border: 2px solid #ddd;
   border-radius: 50px;
   cursor: pointer;
-  font-size: 1.2rem; /* Larger text for better readability */
+  font-size: 1.2rem;
   transition:
     background-color 0.3s ease,
     border-color 0.3s ease;
 }
+
 /* Active/selected button styles */
 .button.active {
   background-color: #007bff;
@@ -146,6 +159,7 @@ button:hover {
 .item-card ul {
   list-style: none;
 }
+
 .top-items {
   position: absolute;
   top: 10%;
@@ -159,16 +173,85 @@ button:hover {
   width: 100%;
   margin: 0;
   padding: 10px;
-  font-family:
-    "Courier New", Courier, monospace; /* Different font for the bottom items */
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
   font-size: 2.4rem;
   background-color: #bde6eb;
 }
+
 .extra-spacing {
   color: #666;
 }
+
 .bottom-item {
   color: #333333;
   font-size: 3.4rem;
+}
+
+/* ----------- MOBILE STYLES ----------- */
+@media (max-width: 600px) {
+  /* Gjør modalen full bredde på mobil */
+  .modal-backdrop > div {
+    width: 100% !important;
+    height: auto;
+    max-height: 95vh;
+    border-radius: 0;
+    padding: 1.5rem 1rem !important;
+  }
+
+  .modal-backdrop h2 {
+    font-size: 1.2rem !important;
+    padding: 0.5rem !important;
+  }
+
+  .modal-backdrop button {
+    top: 0.75rem !important;
+    right: 0.75rem !important;
+    font-size: 1.8rem !important;
+  }
+
+  /* Grid med én kolonne */
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .item-card img {
+    height: 150px;
+  }
+
+  .bottom-items {
+    font-size: 1.6rem;
+    padding: 5px;
+  }
+
+  .bottom-item {
+    font-size: 2rem;
+  }
+
+  .button {
+    padding: 20px 32px;
+    font-size: 1rem;
+    border-radius: 30px;
+  }
+
+  /* Scrollbare knapper (kategori/filter) */
+  .button-container {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 10px;
+  }
+
+  .button-container .button {
+    flex: 0 0 auto;
+    margin-right: 10px;
+  }
+
+  .modal-content {
+    font-size: 0.95rem;
+  }
+
+  .modal-title {
+    font-size: 1.3rem;
+  }
 }

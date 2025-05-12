@@ -413,7 +413,7 @@ export const categories: Record<string, Item[]> = {
         height: "6cm",
         material: "Gelskum",
         core: "40 kg/m³",
-        firmness: "Medium",
+        firmness: "Myk",
         firm: 50,
       },
       message:
