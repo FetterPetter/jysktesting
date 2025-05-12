@@ -44,7 +44,7 @@ const Modal: React.FC<ModalProps> = ({
           position: "relative",
           width: "100%",
           maxWidth: "720px",
-          height: "80vh", // Fast høyde
+          height: "80vh",
           boxShadow: "0 20px 40px rgba(0,0,0,0.3)",
           display: "flex",
           flexDirection: "column",
@@ -63,35 +63,12 @@ const Modal: React.FC<ModalProps> = ({
           }}
           aria-label="Lukk"
         >
-          <X size={36} />
+          <X className="modal-close-icon" />
         </button>
 
-        {title && (
-          <h2
-            style={{
-              marginBottom: "1rem",
-              backgroundColor: titleColor || "#ccc",
-              padding: "0.5rem 1rem",
-              borderRadius: "8px",
-              fontSize: "1.5rem",
-              fontWeight: "bold",
-              color: "#000",
-              textAlign: "center",
-              flexShrink: 0,
-            }}
-          >
-            {title}
-          </h2>
-        )}
+        {title && <h2 className="modal-title">{title}</h2>}
 
-        <div
-          style={{
-            flex: 1,
-            overflowY: "auto",
-            fontSize: "1.1rem",
-            lineHeight: "1.6",
-          }}
-        >
+        <div className="modal-content" style={{ flex: 1 }}>
           {children}
         </div>
       </div>
