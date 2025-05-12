@@ -37,8 +37,8 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
 
   const toggleAlphabetSort = () => {
     if (sortDirection) {
-      setSortDirection(null); // Nullstiller firmness-sortering
-      setSortByAlphabet("ascending"); // Starter på "A til Å"
+      setSortDirection(null);
+      setSortByAlphabet("ascending");
     } else {
       setSortByAlphabet((prev) =>
         prev === "ascending" ? "descending" : "ascending",
@@ -139,10 +139,10 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
           style={{
             backgroundColor:
               sortDirection === "ascending"
-                ? "#17a2b8" // Blå for stigende
+                ? "#17a2b8"
                 : sortDirection === "descending"
-                  ? "#ffc107" // Gul for synkende
-                  : "#6c757d", // Grå hvis deaktivert
+                  ? "#ffc107"
+                  : "#6c757d",
             color: "white",
             border: "none",
             padding: "14px 24px",
