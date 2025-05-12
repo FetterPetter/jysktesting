@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Item } from "./data";
+import { Item } from "../data";
 import ItemCard from "./itemcard";
-import { extractFirmness } from "../utils/sortHelpers";
+import { extractFirmness } from "../../utils/sortHelpers";
 
 interface CategoryProps {
   items: Item[];

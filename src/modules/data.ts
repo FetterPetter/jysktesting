@@ -6,6 +6,7 @@ export interface Item {
   details: Record<string, string | number>;
   message: string;
   salg: string;
+  oppsalg?: string;
 }
 
 export const categories: Record<string, Item[]> = {

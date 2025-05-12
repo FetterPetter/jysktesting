@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { categories } from "../data";
-import Category from "../category";
+import Category from "../components/category";
 
 const App: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
