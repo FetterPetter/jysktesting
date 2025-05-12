@@ -33,7 +33,6 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
     const wasOpen = showMessage;
     setIsClicked(!wasOpen);
     setShowMessage(!wasOpen);
-    setSelectedProduct(null);
 
     if (!wasOpen) {
       setCurrentItem(item);
@@ -51,7 +50,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
     if (typeof product === "string") {
       setSelectedProduct(product);
     } else {
-      setSelectedProduct(null);
+      setSelectedProduct(null); // We leave this to be reset only when the modal closes
       setShowMessage(false);
       setTimeout(() => {
         setCurrentItem(product);
@@ -67,7 +66,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
 
   const handleCloseModal = () => {
     setShowMessage(false);
-    setSelectedProduct(null);
+    setSelectedProduct(null); // Only reset selectedProduct here when closing the modal
   };
 
   return (
