@@ -101,7 +101,14 @@ const Modal: React.FC<ModalProps> = ({
         )}
 
         {/* Modal content */}
-        <div className="modal-content" style={{ flex: 1 }}>
+        <div
+          className="modal-content"
+          style={{
+            flex: 1,
+            overflowY: "auto",
+            paddingRight: "10px", // Litt margin for scrollbaren
+          }}
+        >
           {children}
         </div>
       </div>
