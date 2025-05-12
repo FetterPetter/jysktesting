@@ -1,7 +1,7 @@
 export interface Item {
   id: number;
   name: string;
-  kategori: string;
+  type: string;
   url: string;
   details: Record<string, string | number>;
   message: string;
@@ -14,7 +14,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 1,
       name: "Tyssa",
-      kategori: "Plus",
+      type: "Plus",
       url: "/Jyskh-ndbok/images/Tyssa.jpg",
       details: {
         overmadrass: "Kaldskum eller Polyeterskum",
@@ -30,7 +30,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 2,
       name: "Verma",
-      kategori: "Basic",
+      type: "Basic",
       url: "/Jyskh-ndbok/images/Verma.jpg",
       details: {
         overmadrass: "Polyeterskum",
@@ -47,7 +47,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 3,
       name: "Nevla",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Nevla.jpg",
       details: {
         overmadrass: "Gelskum",
@@ -63,7 +63,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 4,
       name: "Osaelva",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Osaelva.jpg",
       details: {
         overmadrass: "Polyeterskum",
@@ -79,7 +79,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 5,
       name: "Sokna",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Sokna.jpg",
       details: {
         material: "Memoryskum",
@@ -95,7 +95,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 6,
       name: "Hemla",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Hemla.jpg",
       details: {
         overmadrass: "Memoryskum eller latex",
@@ -111,7 +111,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 7,
       name: "Veksa",
-      kategori: "Plus",
+      type: "Plus",
       url: "/Jyskh-ndbok/images/Veksa.jpg",
       details: {
         overmadrass: "Polyeterskum",
@@ -127,7 +127,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 8,
       name: "Lygna",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Lygna.jpg",
       details: {
         material: "Memoryskum",
@@ -142,7 +142,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 9,
       name: "Reipa",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Reipa.jpg",
       details: {
         material: "Kaldskum",
@@ -157,7 +157,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 10,
       name: "Temprakon Lya",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/TemprakonLya.jpg",
       details: {
         material: "Latex",
@@ -172,7 +172,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 11,
       name: "Skaupa",
-      kategori: "Basic",
+      type: "Basic",
       url: "/Jyskh-ndbok/images/Skaupa.jpg",
       details: {
         material: "Polyeterskum",
@@ -187,7 +187,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 12,
       name: "Fjelna",
-      kategori: "Plus",
+      type: "Plus",
       url: "/Jyskh-ndbok/images/Fjelna.jpg",
       details: {
         material: "Polyeterskum",
@@ -202,7 +202,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 13,
       name: "Spongi",
-      kategori: "Plus",
+      type: "Plus",
       url: "/Jyskh-ndbok/images/Spongi.jpg",
       details: {
         material: "Kaldskum",
@@ -217,7 +217,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 14,
       name: "Grimse",
-      kategori: "Plus",
+      type: "Plus",
       url: "/Jyskh-ndbok/images/Grimse.jpg",
       details: {
         material: "Polyester",
@@ -232,7 +232,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 15,
       name: "Kvenna",
-      kategori: "Plus",
+      type: "Plus",
       url: "/Jyskh-ndbok/images/Kvenna.jpg",
       details: {
         material: "Latex",
@@ -247,7 +247,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 16,
       name: "Dingla",
-      kategori: "Plus",
+      type: "Plus",
       url: "/Jyskh-ndbok/images/Dingla.jpg",
       details: {
         material: "Polyesterskum",
@@ -262,7 +262,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 17,
       name: "Horsla",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Horsla.jpg",
       details: {
         material: "Polyetherskum",
@@ -277,7 +277,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 18,
       name: "Leirkup",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Leirkup.jpg",
       details: {
         material: "Latex",
@@ -295,7 +295,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 11,
       name: "Marren",
-      kategori: "Basic",
+      type: "Basic",
       url: "/Jyskh-ndbok/images/Marren.jpg",
       details: {
         height: "2.5cm",
@@ -311,7 +311,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 12,
       name: "Vingan",
-      kategori: "Basic",
+      type: "Basic",
       url: "/Jyskh-ndbok/images/Vingan.jpg",
       details: {
         height: "4cm",
@@ -327,7 +327,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 13,
       name: "Kjella",
-      kategori: "Plus",
+      type: "Plus",
       url: "/Jyskh-ndbok/images/Kjella.jpg",
       details: {
         height: "6cm",
@@ -343,7 +343,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 14,
       name: "Kvisten",
-      kategori: "Plus",
+      type: "Plus",
       url: "/Jyskh-ndbok/images/Kvisten.jpg",
       details: {
         height: "6cm",
@@ -359,7 +359,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 15,
       name: "Gulen",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Gulen.jpg",
       details: {
         height: "8cm",
@@ -375,7 +375,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 16,
       name: "Frya",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Frya.jpg",
       details: {
         height: "4.5cm",
@@ -391,7 +391,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 17,
       name: "Bokselvi",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Bokselvi.jpg",
       details: {
         height: "3,5+4,5 cm",
@@ -407,7 +407,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 18,
       name: "Gursken",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Gursken.jpg",
       details: {
         height: "6cm",
@@ -423,7 +423,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 19,
       name: "Haslan",
-      kategori: "Plus",
+      type: "Plus",
       url: "/Jyskh-ndbok/images/Haslan.jpg",
       details: {
         height: "3cm",
@@ -439,7 +439,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 20,
       name: "Framvaren",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Framvaren.jpg",
       details: {
         height: "8cm",
@@ -455,7 +455,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 21,
       name: "Hopen",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Hopen.jpg",
       details: {
         height: "6cm",
@@ -473,7 +473,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 1,
       name: "Billefjord",
-      kategori: "Basic",
+      type: "Basic",
       url: "/Jyskh-ndbok/images/Billefjord.jpg",
       details: {
         height: "7 cm",
@@ -489,7 +489,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 2,
       name: "Hasla",
-      kategori: "Basic",
+      type: "Basic",
       url: "/Jyskh-ndbok/images/Hasla.jpg",
       details: {
         height: "10 cm",
@@ -505,7 +505,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 3,
       name: "Lillelv",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Lillelv.jpg",
       details: {
         height: "14 cm",
@@ -521,7 +521,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 4,
       name: "Glomma",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Glomma.jpg",
       details: {
         height: "18 cm",
@@ -537,7 +537,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 5,
       name: "Kjosen",
-      kategori: "Plus",
+      type: "Plus",
       url: "/Jyskh-ndbok/images/Kjosen.jpg",
       details: {
         height: "12 cm",
@@ -553,7 +553,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 6,
       name: "Hulda",
-      kategori: "Plus",
+      type: "Plus",
       url: "/Jyskh-ndbok/images/Hulda.jpg",
       details: {
         height: "16 cm",
@@ -569,7 +569,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 7,
       name: "Kvita",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Kvita.jpg",
       details: {
         height: "22 cm",
@@ -587,7 +587,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 8,
       name: "Hovda",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Hovda.jpg",
       details: {
         height: "24 cm",
@@ -603,7 +603,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 9,
       name: "Vendo",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Vendo.jpg",
       details: {
         height: "28 cm",
@@ -619,7 +619,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 10,
       name: "Kamelva",
-      kategori: "Basic",
+      type: "Basic",
       url: "/Jyskh-ndbok/images/Kamelva.jpg",
       details: {
         height: "18 cm",
@@ -635,7 +635,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 11,
       name: "Eima",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Eima.jpg",
       details: {
         height: "27 cm",
@@ -651,7 +651,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 12,
       name: "Stripa",
-      kategori: "Plus",
+      type: "Plus",
       url: "/Jyskh-ndbok/images/Stripa.jpg",
       details: {
         height: "19 cm",
@@ -667,7 +667,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 13,
       name: "Stripa ekstra fast",
-      kategori: "Plus",
+      type: "Plus",
       url: "/Jyskh-ndbok/images/StripaEkstraFast.jpg",
       details: {
         height: "19 cm",
@@ -683,7 +683,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 14,
       name: "Lutra",
-      kategori: "Plus",
+      type: "Plus",
       url: "/Jyskh-ndbok/images/Lutra.jpg",
       details: {
         height: "22 cm",
@@ -699,7 +699,7 @@ export const categories: Record<string, Item[]> = {
     {
       id: 15,
       name: "Driva",
-      kategori: "Gold",
+      type: "Gold",
       url: "/Jyskh-ndbok/images/Driva.jpg",
       details: {
         height: "27 cm",

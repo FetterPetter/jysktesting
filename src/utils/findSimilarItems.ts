@@ -1,35 +1,42 @@
 import { categories, Item } from "../modules/data";
 
-export function findSimilarItems(currentItem: Item): Item[] {
-  const currentFirm = currentItem.details.firm as number;
+export function findSimilarItems(item: Item): Item[] {
+  // Find the category of the given item
+  let categoryKey: keyof typeof categories;
+  if (item.details.overmadrass) {
+    categoryKey = "Senger";
+  } else if (item.details.size) {
+    categoryKey = "Madrass";
+  } else {
+    categoryKey = "Overmadrass";
+  }
 
-  // Combine all items (from all categories) into a single array
-  // Ensure overmadrass is always treated as an array if it's not
-  const allItems = [
-    ...categories.Senger,
-    ...categories.Madrass,
-    ...(Array.isArray(categories.overmadrass) ? categories.overmadrass : []),
-  ];
+  // You can now easily log the category or handle specific logic based on the categoryKey
+  console.log("Category Key:", categoryKey); // Logs "Overmadrass", "Madrass", or "Senger"
 
-  console.log("All Items:", allItems);
+  // Get the list of items in the same category
+  const categoryItems = categories[categoryKey];
 
-  // Filter out the current item
-  const otherItems = allItems.filter((item) => item.id !== currentItem.id);
+  // Log the items in this category
+  console.log("Items in this category:", categoryItems);
 
-  // Sort items by the absolute difference in "firm" value
-  const sortedByFirmDifference = otherItems.sort((a, b) => {
-    const aFirm = a.details.firm as number;
-    const bFirm = b.details.firm as number;
+  // Continue with the filtering and sorting logic as needed
+  const similarItems = categoryItems.filter(
+    (categoryItem) => categoryItem.id !== item.id,
+  );
 
-    // Ensure firm values are numbers before comparing
-    if (isNaN(aFirm) || isNaN(bFirm)) {
-      console.error("Firm values are not numbers:", aFirm, bFirm);
-      return 0;
-    }
+  // Sort by firmness and return closest items (as you requested earlier)
+  const sortedItems = similarItems.sort((a, b) => {
+    const firmA = typeof a.details.firm === "number" ? a.details.firm : 0;
+    const firmB = typeof b.details.firm === "number" ? b.details.firm : 0;
+    const firmItem =
+      typeof item.details.firm === "number" ? item.details.firm : 0;
 
-    return Math.abs(aFirm - currentFirm) - Math.abs(bFirm - currentFirm);
+    const firmnessDifferenceA = Math.abs(firmA - firmItem);
+    const firmnessDifferenceB = Math.abs(firmB - firmItem);
+
+    return firmnessDifferenceA - firmnessDifferenceB; // Ascending order of firmness difference
   });
 
-  // Return the two items with the closest "firm" value
-  return sortedByFirmDifference.slice(0, 2);
+  return sortedItems.slice(0, 2); // Return the closest two items
 }

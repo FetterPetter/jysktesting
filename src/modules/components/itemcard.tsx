@@ -80,7 +80,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
       <div
         className="item-card"
         style={{
-          border: `3px solid ${categoryColors[item.kategori] || "#ccc"}`,
+          border: `3px solid ${categoryColors[item.type] || "#ccc"}`,
           borderRadius: "10px",
           padding: "10px",
           marginBottom: "10px",
@@ -99,7 +99,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
         <span
           style={{
             display: "inline-block",
-            backgroundColor: categoryColors[item.kategori] || "#ccc",
+            backgroundColor: categoryColors[item.type] || "#ccc",
             color: "black",
             fontWeight: "bold",
             padding: "5px 10px",
@@ -107,7 +107,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
             marginTop: "5px",
           }}
         >
-          {item.kategori}
+          {item.type}
         </span>
 
         <ul
@@ -131,7 +131,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
         isOpen={showMessage}
         onClose={handleCloseModal}
         title={currentItem.name}
-        titleColor={categoryColors[currentItem.kategori] || "#ccc"}
+        titleColor={categoryColors[currentItem.type] || "#ccc"}
       >
         <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
           {selectedProduct ? (
@@ -155,7 +155,12 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
             <>
               <p>{currentItem.message}</p>
               <h5>Lignende produkter:</h5>
-              <ul>
+              <ul
+                style={{
+                  paddingLeft: "0", // Remove the left padding
+                  listStyleType: "none", // Remove the list dots
+                }}
+              >
                 {similarItems.length > 0 ? (
                   similarItems.map((similar) => (
                     <li
@@ -165,8 +170,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
                         cursor: "pointer",
                         marginBottom: "8px",
                         padding: "10px",
-                        backgroundColor:
-                          categoryColors[similar.kategori] || "#ccc", // Set the background color based on kategori
+                        backgroundColor: categoryColors[similar.type] || "#ccc", // Set the background color based on kategori
                         color: "black", // Set the text color to black
                         fontWeight: "bold",
                         borderRadius: "5px", // Optional: To give rounded corners to the background
