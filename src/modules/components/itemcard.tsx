@@ -29,7 +29,6 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
   const [similarItems, setSimilarItems] = useState<Item[]>([]);
   const [currentItem, setCurrentItem] = useState<Item>(item);
 
-  // Toggle the modal to show product details and similar items
   const toggleMessage = () => {
     const wasOpen = showMessage;
     setIsClicked(!wasOpen);
@@ -37,13 +36,12 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
     setSelectedProduct(null);
 
     if (!wasOpen) {
-      setCurrentItem(item); // Set the current item
+      setCurrentItem(item);
       const similar = findSimilarItems(item);
-      setSimilarItems(similar); // Update state with similar items
+      setSimilarItems(similar);
     }
   };
 
-  // Handle product click to show its description
   const handleProductClick = (
     product: string | Item,
     event: React.MouseEvent,
@@ -56,19 +54,17 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
       setSelectedProduct(null);
       setShowMessage(false);
       setTimeout(() => {
-        setCurrentItem(product); // Set the new selected product
-        setSimilarItems(findSimilarItems(product)); // Fetch new similar items based on the selected product
-        setShowMessage(true); // Open the modal again
+        setCurrentItem(product);
+        setSimilarItems(findSimilarItems(product));
+        setShowMessage(true);
       }, 0);
     }
   };
 
-  // Handle returning to the item list
   const handleBackToItems = () => {
     setSelectedProduct(null);
   };
 
-  // Close the modal
   const handleCloseModal = () => {
     setShowMessage(false);
     setSelectedProduct(null);
@@ -125,7 +121,6 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
         </ul>
       </div>
 
-      {/* Modal to display the current item or the selected similar item */}
       <Modal
         isOpen={showMessage}
         onClose={handleCloseModal}
@@ -156,8 +151,8 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
               <h5>Lignende produkter:</h5>
               <ul
                 style={{
-                  paddingLeft: "0", // Remove the left padding
-                  listStyleType: "none", // Remove the list dots
+                  paddingLeft: "0",
+                  listStyleType: "none",
                 }}
               >
                 {similarItems.length > 0 ? (
@@ -169,17 +164,17 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
                         cursor: "pointer",
                         marginBottom: "8px",
                         padding: "10px",
-                        backgroundColor: categoryColors[similar.type] || "#ccc", // Set the background color based on kategori
-                        color: "black", // Set the text color to black
+                        backgroundColor: categoryColors[similar.type] || "#ccc",
+                        color: "black",
                         fontWeight: "bold",
-                        borderRadius: "5px", // Optional: To give rounded corners to the background
+                        borderRadius: "5px",
                       }}
                     >
                       {similar.name}
                     </li>
                   ))
                 ) : (
-                  <li>Ingen lignende produkter funnet</li> // Fallback message when no similar items
+                  <li>Ingen lignende produkter funnet</li>
                 )}
               </ul>
               <div style={{ marginTop: "auto" }} className="modal-footer">

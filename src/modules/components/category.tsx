@@ -26,8 +26,8 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
 
   const toggleFirmnessSort = () => {
     if (sortByAlphabet) {
-      setSortByAlphabet(null); // Nullstiller alfabetisk sortering
-      setSortDirection("ascending"); // Starter på "Myk til Fast"
+      setSortByAlphabet(null);
+      setSortDirection("ascending");
     } else {
       setSortDirection((prev) =>
         prev === "ascending" ? "descending" : "ascending",
@@ -69,7 +69,6 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
 
   return (
     <div>
-      {/* Firmness filter buttons */}
       <div
         style={{
           marginBottom: "1rem",
@@ -123,7 +122,6 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
         </button>
       </div>
 
-      {/* Sorting buttons */}
       <div
         style={{
           marginBottom: "1rem",
@@ -133,7 +131,6 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
           gap: "20px",
         }}
       >
-        {/* Firmness sorting button */}
         <button
           onClick={toggleFirmnessSort}
           style={{
@@ -161,16 +158,15 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
               : "Sorter Fasthet"}
         </button>
 
-        {/* Alphabetical sorting button */}
         <button
           onClick={toggleAlphabetSort}
           style={{
             backgroundColor:
               sortByAlphabet === "ascending"
-                ? "#17a2b8" // Blå for stigende
+                ? "#17a2b8"
                 : sortByAlphabet === "descending"
-                  ? "#ffc107" // Gul for synkende
-                  : "#6c757d", // Grå hvis deaktivert
+                  ? "#ffc107"
+                  : "#6c757d",
             color: "white",
             border: "none",
             padding: "14px 24px",
@@ -190,7 +186,6 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
         </button>
       </div>
 
-      {/* Display sorted items */}
       <div className="grid">
         {sortedItems.length > 0 ? (
           sortedItems.map((item) => (

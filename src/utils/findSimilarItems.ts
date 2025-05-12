@@ -10,7 +10,6 @@ export function findSimilarItems(item: Item): Item[] {
     (categoryItem) => categoryItem.id !== item.id,
   );
 
-  // Sort by firmness and return closest items (as you requested earlier)
   const sortedItems = similarItems.sort((a, b) => {
     const firmA = typeof a.details.firm === "number" ? a.details.firm : 0;
     const firmB = typeof b.details.firm === "number" ? b.details.firm : 0;
@@ -20,8 +19,8 @@ export function findSimilarItems(item: Item): Item[] {
     const firmnessDifferenceA = Math.abs(firmA - firmItem);
     const firmnessDifferenceB = Math.abs(firmB - firmItem);
 
-    return firmnessDifferenceA - firmnessDifferenceB; // Ascending order of firmness difference
+    return firmnessDifferenceA - firmnessDifferenceB;
   });
 
-  return sortedItems.slice(0, 2); // Return the closest two items
+  return sortedItems.slice(0, 2);
 }
