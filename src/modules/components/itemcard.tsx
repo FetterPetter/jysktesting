@@ -176,28 +176,28 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
                   <li>Ingen lignende produkter funnet</li>
                 )}
               </ul>
-              <div style={{ marginTop: "auto" }} className="modal-footer">
-                <h5>Mersalgsprodukter:</h5>
-                <ul>
-                  {["Madrassbeskytter", "Laken", "Dyne", "Pute"].map(
-                    (product) => (
-                      <li
-                        key={product}
-                        onClick={(e) => handleProductClick(product, e)}
-                        style={{
-                          cursor: "pointer",
-                          marginBottom: "8px",
-                          color: "#007bff",
-                        }}
-                      >
-                        {product}
-                      </li>
-                    ),
-                  )}
-                </ul>
-              </div>
             </>
           )}
+
+          {/* Add this div for the footer */}
+          <div style={{ marginTop: "auto" }} className="modal-footer">
+            <h5>Mersalgsprodukter:</h5>
+            <ul>
+              {["Madrassbeskytter", "Laken", "Dyne", "Pute"].map((product) => (
+                <li
+                  key={product}
+                  onClick={(e) => handleProductClick(product, e)}
+                  style={{
+                    cursor: "pointer",
+                    marginBottom: "8px",
+                    color: "#007bff",
+                  }}
+                >
+                  {product}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </Modal>
     </>

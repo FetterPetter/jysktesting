@@ -93,6 +93,7 @@ body {
   background-color: #f0f8ff;
   padding: 20px;
   border-radius: 8px;
+  margin-top: auto; /* Ensure it stays at the bottom of the container */
 }
 
 .modal-footer h5 {
