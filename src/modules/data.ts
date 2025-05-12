@@ -161,7 +161,7 @@ export const categories: Record<string, Item[]> = {
         firm: 90,
       },
       message:
-        "Vndbar madrass med multipocket-fjærer 500/m², polstret med kaldskum og polyeterskum. Madrassen er inndelt i 5 komfortsoner som gir en presis, optimal støtte. 1 overmadrass, 10 cm tykk med pustende latekskjerne som effektivt leder bort overskuddsvarme. Det vaskbare stretchtrekket er med tykk quilting i polyeterskum. Trekk med fukttransporterende lyocell. Nederst 1 rammemadrass med pocket-fjærer 250/m², inndelt i 7 komfortsoner. Med sensorstyrt undersengslys. Inkl. ben. Sengegavl kjøpes separat.",
+        "Vendbar madrass med multipocket-fjærer 500/m², polstret med kaldskum og polyeterskum. Madrassen er inndelt i 5 komfortsoner som gir en presis, optimal støtte. 1 overmadrass, 10 cm tykk med pustende latekskjerne som effektivt leder bort overskuddsvarme. Det vaskbare stretchtrekket er med tykk quilting i polyeterskum. Trekk med fukttransporterende lyocell. Nederst 1 rammemadrass med pocket-fjærer 250/m², inndelt i 7 komfortsoner. Med sensorstyrt undersengslys. Inkl. ben. Sengegavl kjøpes separat.",
       salg: "kode 7",
     },
     {
