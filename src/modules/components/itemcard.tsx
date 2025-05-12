@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Item } from "../data";
 import Modal from "./Modal";
+import { findSimilarItems } from "../../utils/findSimilarItems";
 
 interface ItemCardProps {
   item: Item;
@@ -23,27 +24,55 @@ const productDescriptions: Record<string, string> = {
 
 const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
   const [showMessage, setShowMessage] = useState(false);
-  const [selectedProduct, setSelectedProduct] = useState<string | null>(null); // Ny state for valgt produkt
+  const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const [isClicked, setIsClicked] = useState(false);
+  const [similarItems, setSimilarItems] = useState<Item[]>([]);
+  const [currentItem, setCurrentItem] = useState<Item>(item);
 
+  // Toggle the modal to show product details and similar items
   const toggleMessage = () => {
-    setIsClicked((prev) => !prev);
-    setShowMessage((prev) => !prev);
-    setSelectedProduct(null); // Resett valgt produkt når du åpner modalen
+    const wasOpen = showMessage;
+    setIsClicked(!wasOpen);
+    setShowMessage(!wasOpen);
+    setSelectedProduct(null);
+
+    if (!wasOpen) {
+      setCurrentItem(item); // Set the current item
+      const similar = findSimilarItems(item); // Get similar items
+      console.log("Similar Items: ", similar); // Log the result
+      setSimilarItems(similar); // Update state with similar items
+    }
   };
 
-  const handleProductClick = (product: string, event: React.MouseEvent) => {
-    event.stopPropagation(); // Forhindrer at eventen bubbler opp og lukker modalen
-    setSelectedProduct(product); // Sett valgt produkt
+  // Handle product click to show its description
+  const handleProductClick = (
+    product: string | Item,
+    event: React.MouseEvent,
+  ) => {
+    event.stopPropagation();
+
+    if (typeof product === "string") {
+      setSelectedProduct(product);
+    } else {
+      setSelectedProduct(null);
+      setShowMessage(false);
+      setTimeout(() => {
+        setCurrentItem(product); // Set the new selected product
+        setSimilarItems(findSimilarItems(product)); // Fetch new similar items based on the selected product
+        setShowMessage(true); // Open the modal again
+      }, 0);
+    }
   };
 
+  // Handle returning to the item list
   const handleBackToItems = () => {
-    setSelectedProduct(null); // Gå tilbake til hovedmodalen
+    setSelectedProduct(null);
   };
 
+  // Close the modal
   const handleCloseModal = () => {
-    setShowMessage(false); // Lukk modalen når man klikker på "X"
-    setSelectedProduct(null); // Resett valgt produkt når modalen lukkes
+    setShowMessage(false);
+    setSelectedProduct(null);
   };
 
   return (
@@ -97,12 +126,12 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
         </ul>
       </div>
 
-      {/* Modalen som vises når showMessage er true */}
+      {/* Modal to display the current item or the selected similar item */}
       <Modal
         isOpen={showMessage}
         onClose={handleCloseModal}
-        title={item.name}
-        titleColor={categoryColors[item.kategori] || "#ccc"}
+        title={currentItem.name}
+        titleColor={categoryColors[currentItem.kategori] || "#ccc"}
       >
         <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
           {selectedProduct ? (
@@ -124,10 +153,32 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
             </div>
           ) : (
             <>
-              <h4>Detaljer:</h4>
-              <p>{item.message}</p>
-
-              {/* 👇 Footer alltid i bunn */}
+              <p>{currentItem.message}</p>
+              <h5>Lignende produkter:</h5>
+              <ul>
+                {similarItems.length > 0 ? (
+                  similarItems.map((similar) => (
+                    <li
+                      key={similar.id}
+                      onClick={(e) => handleProductClick(similar, e)}
+                      style={{
+                        cursor: "pointer",
+                        marginBottom: "8px",
+                        padding: "10px",
+                        backgroundColor:
+                          categoryColors[similar.kategori] || "#ccc", // Set the background color based on kategori
+                        color: "black", // Set the text color to black
+                        fontWeight: "bold",
+                        borderRadius: "5px", // Optional: To give rounded corners to the background
+                      }}
+                    >
+                      {similar.name}
+                    </li>
+                  ))
+                ) : (
+                  <li>Ingen lignende produkter funnet</li> // Fallback message when no similar items
+                )}
+              </ul>
               <div style={{ marginTop: "auto" }} className="modal-footer">
                 <h5>Mersalgsprodukter:</h5>
                 <ul>

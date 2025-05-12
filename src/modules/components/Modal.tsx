@@ -106,7 +106,7 @@ const Modal: React.FC<ModalProps> = ({
           style={{
             flex: 1,
             overflowY: "auto",
-            paddingRight: "10px", // Litt margin for scrollbaren
+            paddingRight: "10px",
           }}
         >
           {children}
