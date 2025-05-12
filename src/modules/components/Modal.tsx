@@ -39,14 +39,15 @@ const Modal: React.FC<ModalProps> = ({
       <div
         style={{
           background: "white",
-          padding: "2rem",
+          padding: "1.5rem",
           borderRadius: "20px",
           position: "relative",
           width: "100%",
-          maxWidth: "720px", // <-- Økt størrelse
-          maxHeight: "90vh",
-          overflowY: "auto",
+          maxWidth: "720px",
+          height: "80vh", // Fast høyde
           boxShadow: "0 20px 40px rgba(0,0,0,0.3)",
+          display: "flex",
+          flexDirection: "column",
         }}
       >
         <button
@@ -62,13 +63,13 @@ const Modal: React.FC<ModalProps> = ({
           }}
           aria-label="Lukk"
         >
-          <X size={32} /> {/* <-- Større X */}
+          <X size={36} />
         </button>
 
         {title && (
           <h2
             style={{
-              marginBottom: "1.5rem",
+              marginBottom: "1rem",
               backgroundColor: titleColor || "#ccc",
               padding: "0.5rem 1rem",
               borderRadius: "8px",
@@ -76,12 +77,23 @@ const Modal: React.FC<ModalProps> = ({
               fontWeight: "bold",
               color: "#000",
               textAlign: "center",
+              flexShrink: 0,
             }}
           >
             {title}
           </h2>
         )}
-        <div style={{ fontSize: "1.1rem", lineHeight: "1.6" }}>{children}</div>
+
+        <div
+          style={{
+            flex: 1,
+            overflowY: "auto",
+            fontSize: "1.1rem",
+            lineHeight: "1.6",
+          }}
+        >
+          {children}
+        </div>
       </div>
     </div>,
     document.body,

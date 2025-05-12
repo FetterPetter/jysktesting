@@ -100,11 +100,11 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
       {/* Modalen som vises når showMessage er true */}
       <Modal
         isOpen={showMessage}
-        onClose={handleCloseModal} // Bruker den nye lukke-funksjonen
+        onClose={handleCloseModal}
         title={item.name}
-        titleColor={categoryColors[item.kategori] || "#ccc"} // Sender fargen som prop
+        titleColor={categoryColors[item.kategori] || "#ccc"}
       >
-        <div className="modal-content">
+        <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
           {selectedProduct ? (
             <div>
               <button
@@ -126,19 +126,26 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
             <>
               <h4>Detaljer:</h4>
               <p>{item.message}</p>
-              <ul></ul>
 
-              <div className="modal-footer">
+              {/* 👇 Footer alltid i bunn */}
+              <div style={{ marginTop: "auto" }} className="modal-footer">
                 <h5>Mersalgsprodukter:</h5>
                 <ul>
-                  <li
-                    onClick={(e) => handleProductClick("Madrassbeskytter", e)}
-                  >
-                    Madrassbeskytter
-                  </li>
-                  <li onClick={(e) => handleProductClick("Laken", e)}>Laken</li>
-                  <li onClick={(e) => handleProductClick("Dyne", e)}>Dyne</li>
-                  <li onClick={(e) => handleProductClick("Pute", e)}>Pute</li>
+                  {["Madrassbeskytter", "Laken", "Dyne", "Pute"].map(
+                    (product) => (
+                      <li
+                        key={product}
+                        onClick={(e) => handleProductClick(product, e)}
+                        style={{
+                          cursor: "pointer",
+                          marginBottom: "8px",
+                          color: "#007bff",
+                        }}
+                      >
+                        {product}
+                      </li>
+                    ),
+                  )}
                 </ul>
               </div>
             </>
