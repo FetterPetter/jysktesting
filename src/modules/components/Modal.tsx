@@ -6,7 +6,7 @@ interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
   title?: string;
-  titleColor: string; // Farge for tittelen
+  titleColor?: string;
   children: React.ReactNode;
 }
 
@@ -28,22 +28,25 @@ const Modal: React.FC<ModalProps> = ({
         left: 0,
         width: "100vw",
         height: "100vh",
-        backgroundColor: "rgba(0, 0, 0, 0.5)", // Mørk bakgrunn
+        backgroundColor: "rgba(0, 0, 0, 0.5)",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         zIndex: 9999,
+        padding: "1rem",
       }}
     >
       <div
         style={{
           background: "white",
           padding: "2rem",
-          borderRadius: "16px",
+          borderRadius: "20px",
           position: "relative",
-          maxWidth: "600px",
-          width: "90%",
-          boxShadow: "0 20px 40px rgba(0,0,0,0.2)",
+          width: "100%",
+          maxWidth: "720px", // <-- Økt størrelse
+          maxHeight: "90vh",
+          overflowY: "auto",
+          boxShadow: "0 20px 40px rgba(0,0,0,0.3)",
         }}
       >
         <button
@@ -55,30 +58,33 @@ const Modal: React.FC<ModalProps> = ({
             background: "transparent",
             border: "none",
             cursor: "pointer",
+            zIndex: 1,
           }}
+          aria-label="Lukk"
         >
-          <X size={24} />
+          <X size={32} /> {/* <-- Større X */}
         </button>
+
         {title && (
           <h2
             style={{
-              marginBottom: "1rem",
-              backgroundColor: titleColor, // Bruker fargen for tittelen
-              color: "#fff", // Hvit tekst
-              padding: "10px",
+              marginBottom: "1.5rem",
+              backgroundColor: titleColor || "#ccc",
+              padding: "0.5rem 1rem",
               borderRadius: "8px",
               fontSize: "1.5rem",
               fontWeight: "bold",
+              color: "#000",
               textAlign: "center",
             }}
           >
             {title}
           </h2>
         )}
-        <div>{children}</div>
+        <div style={{ fontSize: "1.1rem", lineHeight: "1.6" }}>{children}</div>
       </div>
     </div>,
-    document.body, // Bruker portal for å vise modal utenfor det normale DOM-treet
+    document.body,
   );
 };
 
