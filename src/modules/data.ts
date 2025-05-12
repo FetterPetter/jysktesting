@@ -16,7 +16,7 @@ export const categories: Record<string, Item[]> = {
       id: 1,
       name: "Tyssa",
       type: "Plus",
-      katergori: "Seng",
+      katergori: "Senger",
       url: "/Jyskh-ndbok/images/Tyssa.jpg",
       details: {
         overmadrass: "Kaldskum eller Polyeterskum",
@@ -33,7 +33,7 @@ export const categories: Record<string, Item[]> = {
       id: 2,
       name: "Verma",
       type: "Basic",
-      katergori: "Seng",
+      katergori: "Senger",
       url: "/Jyskh-ndbok/images/Verma.jpg",
       details: {
         overmadrass: "Polyeterskum",
@@ -51,7 +51,7 @@ export const categories: Record<string, Item[]> = {
       id: 3,
       name: "Nevla",
       type: "Gold",
-      katergori: "Seng",
+      katergori: "Senger",
       url: "/Jyskh-ndbok/images/Nevla.jpg",
       details: {
         overmadrass: "Gelskum",
@@ -68,7 +68,7 @@ export const categories: Record<string, Item[]> = {
       id: 4,
       name: "Osaelva",
       type: "Gold",
-      katergori: "Seng",
+      katergori: "Senger",
       url: "/Jyskh-ndbok/images/Osaelva.jpg",
       details: {
         overmadrass: "Polyeterskum",
@@ -85,7 +85,7 @@ export const categories: Record<string, Item[]> = {
       id: 5,
       name: "Sokna",
       type: "Gold",
-      katergori: "Seng",
+      katergori: "Senger",
       url: "/Jyskh-ndbok/images/Sokna.jpg",
       details: {
         material: "Memoryskum",
@@ -102,7 +102,7 @@ export const categories: Record<string, Item[]> = {
       id: 6,
       name: "Hemla",
       type: "Gold",
-      katergori: "Seng",
+      katergori: "Senger",
       url: "/Jyskh-ndbok/images/Hemla.jpg",
       details: {
         overmadrass: "Memoryskum eller latex",
@@ -119,7 +119,7 @@ export const categories: Record<string, Item[]> = {
       id: 7,
       name: "Veksa",
       type: "Plus",
-      katergori: "Seng",
+      katergori: "Senger",
       url: "/Jyskh-ndbok/images/Veksa.jpg",
       details: {
         overmadrass: "Polyeterskum",
@@ -136,7 +136,7 @@ export const categories: Record<string, Item[]> = {
       id: 8,
       name: "Lygna",
       type: "Gold",
-      katergori: "Seng",
+      katergori: "Senger",
       url: "/Jyskh-ndbok/images/Lygna.jpg",
       details: {
         material: "Memoryskum",
@@ -152,7 +152,7 @@ export const categories: Record<string, Item[]> = {
       id: 9,
       name: "Reipa",
       type: "Gold",
-      katergori: "Seng",
+      katergori: "Senger",
       url: "/Jyskh-ndbok/images/Reipa.jpg",
       details: {
         material: "Kaldskum",
@@ -168,7 +168,7 @@ export const categories: Record<string, Item[]> = {
       id: 10,
       name: "Temprakon Lya",
       type: "Gold",
-      katergori: "Seng",
+      katergori: "Senger",
       url: "/Jyskh-ndbok/images/TemprakonLya.jpg",
       details: {
         material: "Latex",
@@ -184,7 +184,7 @@ export const categories: Record<string, Item[]> = {
       id: 11,
       name: "Skaupa",
       type: "Basic",
-      katergori: "Seng",
+      katergori: "Senger",
       url: "/Jyskh-ndbok/images/Skaupa.jpg",
       details: {
         material: "Polyeterskum",
@@ -200,7 +200,7 @@ export const categories: Record<string, Item[]> = {
       id: 12,
       name: "Fjelna",
       type: "Plus",
-      katergori: "Seng",
+      katergori: "Senger",
       url: "/Jyskh-ndbok/images/Fjelna.jpg",
       details: {
         material: "Polyeterskum",
@@ -216,7 +216,7 @@ export const categories: Record<string, Item[]> = {
       id: 13,
       name: "Spongi",
       type: "Plus",
-      katergori: "Seng",
+      katergori: "Senger",
       url: "/Jyskh-ndbok/images/Spongi.jpg",
       details: {
         material: "Kaldskum",
@@ -232,7 +232,7 @@ export const categories: Record<string, Item[]> = {
       id: 14,
       name: "Grimse",
       type: "Plus",
-      katergori: "Seng",
+      katergori: "Senger",
       url: "/Jyskh-ndbok/images/Grimse.jpg",
       details: {
         material: "Polyester",
@@ -248,7 +248,7 @@ export const categories: Record<string, Item[]> = {
       id: 15,
       name: "Kvenna",
       type: "Plus",
-      katergori: "Seng",
+      katergori: "Senger",
       url: "/Jyskh-ndbok/images/Kvenna.jpg",
       details: {
         material: "Latex",
@@ -264,7 +264,7 @@ export const categories: Record<string, Item[]> = {
       id: 16,
       name: "Dingla",
       type: "Plus",
-      katergori: "Seng",
+      katergori: "Senger",
       url: "/Jyskh-ndbok/images/Dingla.jpg",
       details: {
         material: "Polyesterskum",
@@ -280,7 +280,7 @@ export const categories: Record<string, Item[]> = {
       id: 17,
       name: "Horsla",
       type: "Gold",
-      katergori: "Seng",
+      katergori: "Senger",
       url: "/Jyskh-ndbok/images/Horsla.jpg",
       details: {
         material: "Polyetherskum",
@@ -296,7 +296,7 @@ export const categories: Record<string, Item[]> = {
       id: 18,
       name: "Leirkup",
       type: "Gold",
-      katergori: "Seng",
+      katergori: "Senger",
       url: "/Jyskh-ndbok/images/Leirkup.jpg",
       details: {
         material: "Latex",
