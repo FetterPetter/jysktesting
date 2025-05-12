@@ -53,6 +53,27 @@ body {
   font-size: 1.5rem; /* Økt tekststørrelse */
 }
 
+/* Styling for close button (X) */
+.modal-close-icon {
+  font-size: 3rem; /* Økt størrelse på "X"-knappen */
+  color: #ff0000; /* Rød farge for knappen */
+  cursor: pointer;
+  transition:
+    color 0.3s,
+    transform 0.3s,
+    box-shadow 0.3s; /* Smidige overganger for hover og transform */
+  padding: 15px; /* Økt padding for bedre klikkbarhet */
+  border-radius: 50%; /* Rund form på knappen */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Myk skygge for knappen */
+}
+
+/* Hover-effekt for X-knappen */
+.modal-close-icon:hover {
+  color: #cc0000; /* Mørkere rød farge ved hover */
+  transform: scale(1.2); /* Gjør knappen litt større ved hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Økt skyggeeffekt ved hover */
+}
+
 .modal-title {
   font-size: 2.5rem; /* Større tittel */
   color: #000; /* Sort farge på tittelen */

@@ -61,11 +61,24 @@ const Modal: React.FC<ModalProps> = ({
             border: "none",
             cursor: "pointer",
             zIndex: 1,
-            fontSize: "2rem", // Økt størrelse på close-knappen
           }}
           aria-label="Lukk"
         >
-          <X className="modal-close-icon" />
+          <X
+            size={36}
+            color="#ff0000"
+            style={{
+              transition: "transform 0.2s, color 0.2s",
+            }}
+            onMouseOver={(e) => {
+              (e.currentTarget as SVGElement).style.transform = "scale(1.2)";
+              (e.currentTarget as SVGElement).style.color = "#cc0000";
+            }}
+            onMouseOut={(e) => {
+              (e.currentTarget as SVGElement).style.transform = "scale(1)";
+              (e.currentTarget as SVGElement).style.color = "#ff0000";
+            }}
+          />
         </button>
 
         {/* Title with dynamic color */}
