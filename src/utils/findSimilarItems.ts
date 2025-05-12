@@ -1,20 +1,11 @@
 import { categories, Item } from "../modules/data";
 
 export function findSimilarItems(item: Item): Item[] {
-  // Find the category of the given item
   let categoryKey: keyof typeof categories;
   categoryKey = item.katergori;
 
-  // You can now easily log the category or handle specific logic based on the categoryKey
-  console.log("Category Key:", categoryKey); // Logs "Overmadrass", "Madrass", or "Senger"
-
-  // Get the list of items in the same category
   const categoryItems = categories[categoryKey];
 
-  // Log the items in this category
-  console.log("Items in this category:", categoryItems);
-
-  // Continue with the filtering and sorting logic as needed
   const similarItems = categoryItems.filter(
     (categoryItem) => categoryItem.id !== item.id,
   );

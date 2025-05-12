@@ -38,8 +38,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
 
     if (!wasOpen) {
       setCurrentItem(item); // Set the current item
-      const similar = findSimilarItems(item); // Get similar items
-      console.log("Similar Items: ", similar); // Log the result
+      const similar = findSimilarItems(item);
       setSimilarItems(similar); // Update state with similar items
     }
   };
