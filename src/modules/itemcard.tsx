@@ -10,7 +10,6 @@ const categoryColors: Record<string, string> = {
   Plus: "#1E90FF",
   Basic: "#A9A9A9",
 };
-
 const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
   const [showMessage, setShowMessage] = useState(false);
 
