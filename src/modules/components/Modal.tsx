@@ -6,7 +6,7 @@ interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
   title?: string;
-  titleColor?: string;
+  titleColor?: string; // Bruker denne for å sette fargen på tittelen
   children: React.ReactNode;
 }
 
@@ -14,7 +14,7 @@ const Modal: React.FC<ModalProps> = ({
   isOpen,
   onClose,
   title,
-  titleColor,
+  titleColor = "#ccc", // Standard farge hvis titleColor ikke er spesifisert
   children,
 }) => {
   if (!isOpen) return null;
@@ -50,6 +50,7 @@ const Modal: React.FC<ModalProps> = ({
           flexDirection: "column",
         }}
       >
+        {/* Close button */}
         <button
           onClick={onClose}
           style={{
@@ -60,14 +61,33 @@ const Modal: React.FC<ModalProps> = ({
             border: "none",
             cursor: "pointer",
             zIndex: 1,
+            fontSize: "2rem", // Økt størrelse på close-knappen
           }}
           aria-label="Lukk"
         >
           <X className="modal-close-icon" />
         </button>
 
-        {title && <h2 className="modal-title">{title}</h2>}
+        {/* Title with dynamic color */}
+        {title && (
+          <h2
+            className="modal-title"
+            style={{
+              color: "#000", // Sort farge på tekst
+              fontWeight: "bold", // Fet skrift
+              textAlign: "center", // Sentrering
+              padding: "10px 20px", // Padding rundt tittelen
+              border: "2px solid", // Boks rundt tittelen
+              borderColor: titleColor, // Dynamisk farge for border
+              backgroundColor: titleColor, // Dynamisk bakgrunnsfarge for tittelen
+              borderRadius: "8px", // Rundede hjørner på tittelen
+            }}
+          >
+            {title}
+          </h2>
+        )}
 
+        {/* Modal content */}
         <div className="modal-content" style={{ flex: 1 }}>
           {children}
         </div>

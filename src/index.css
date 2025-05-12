@@ -50,14 +50,19 @@ body {
   padding: 20px;
   font-family: "Arial", sans-serif;
   color: #333;
-  font-size: 1.25rem; /* Større tekst */
+  font-size: 1.5rem; /* Økt tekststørrelse */
 }
 
 .modal-title {
-  font-size: 2rem; /* Større tittel */
-  color: #1e90ff;
+  font-size: 2.5rem; /* Større tittel */
+  color: #000; /* Sort farge på tittelen */
   font-weight: bold;
-  margin-bottom: 15px; /* Økt avstand fra innholdet */
+  margin-bottom: 20px; /* Økt avstand fra innholdet */
+  text-align: center; /* Sentrere tittelen */
+  padding: 10px 20px; /* Padding rundt tittelen */
+  border: 2px solid; /* Boks rundt tittelen */
+  border-radius: 8px; /* Rundede hjørner på boksen */
+  background-color: #ccc; /* Fallback bakgrunnsfarge */
 }
 
 .modal-list {
@@ -66,19 +71,19 @@ body {
 }
 
 .modal-list li {
-  margin-bottom: 15px; /* Økt avstand mellom elementene */
-  font-size: 1.2rem; /* Større tekst for listeelementer */
+  margin-bottom: 20px; /* Økt avstand mellom elementene */
+  font-size: 1.5rem; /* Større tekst for listeelementer */
 }
 
 .modal-footer {
   margin-top: 20px;
   background-color: #f0f8ff;
-  padding: 15px; /* Økt padding for større bunnområde */
+  padding: 20px; /* Økt padding for større bunnområde */
   border-radius: 8px;
 }
 
 .modal-footer h5 {
-  font-size: 1.4rem; /* Større tittel i footer */
+  font-size: 1.6rem; /* Større tittel i footer */
   font-weight: bold;
   color: #333;
 }
@@ -89,13 +94,13 @@ body {
 }
 
 .modal-footer li {
-  margin-bottom: 10px;
-  font-size: 1.2rem; /* Større tekst i footer-listen */
+  margin-bottom: 15px;
+  font-size: 1.5rem; /* Større tekst i footer-listen */
 }
 
 .modal-content ul li {
   cursor: pointer;
-  padding: 12px 18px; /* Økt padding for bedre klikkbarhet */
+  padding: 15px 20px; /* Økt padding for bedre klikkbarhet */
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
@@ -106,17 +111,24 @@ body {
 
 /* Modal close button */
 button {
-  font-size: 2rem; /* Større størrelse på "X"-knappen */
-  background: none;
-  border: none;
-  color: #333;
+  font-size: 3rem; /* Økt størrelse på "X"-knappen */
+  background: #fff; /* Hvit bakgrunn for kontrast */
+  border: 2px solid #007bff; /* Blå kantlinje for knappen */
+  border-radius: 50%; /* Rund form på knappen */
+  color: #007bff; /* Blå tekstfarge */
   cursor: pointer;
-  transition: color 0.3s;
-  padding: 10px; /* Økt størrelse på knappen */
+  transition:
+    color 0.3s,
+    background-color 0.3s,
+    transform 0.3s; /* Smidige overganger */
+  padding: 15px; /* Økt padding for større knapp */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Myk skygge for knappen */
 }
 
 button:hover {
-  color: #007bff;
+  background-color: #007bff; /* Blå bakgrunn når du hover */
+  color: #fff; /* Hvit tekstfarge når du hover */
+  transform: scale(1.1); /* Litt større ved hover */
 }
 
 /* Basic button styles */
@@ -201,62 +213,62 @@ button:hover {
     height: auto;
     max-height: 95vh;
     border-radius: 0;
-    padding: 1.5rem 1rem !important;
+    padding: 2rem 1rem !important;
   }
 
   .modal-backdrop h2 {
-    font-size: 1.5rem !important; /* Økt tittelstørrelse på mobil */
-    padding: 0.5rem !important;
+    font-size: 2rem !important; /* Økt tittelstørrelse på mobil */
+    padding: 1rem !important;
   }
 
   .modal-backdrop button {
-    top: 0.75rem !important;
-    right: 0.75rem !important;
-    font-size: 2rem !important; /* Større "X"-knapp på mobil */
+    font-size: 3.5rem !important; /* Større "X"-knapp på mobil */
+    padding: 20px; /* Økt padding på mobil */
+    border-width: 3px; /* Litt tykkere kantlinje på mobil */
   }
 
-  /* Grid med én kolonne */
+  /* Grid med tre kolonner på mobil */
   .grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: repeat(3, 1fr); /* Tre kolonner på mobil */
+    gap: 20px;
   }
 
   .item-card img {
-    height: 150px;
+    height: 180px;
   }
 
   .bottom-items {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     padding: 5px;
   }
 
   .bottom-item {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .button {
-    padding: 20px 32px;
-    font-size: 1rem;
-    border-radius: 30px;
+    padding: 25px 40px;
+    font-size: 1.4rem;
+    border-radius: 35px;
   }
 
   /* Scrollbare knapper (kategori/filter) */
   .button-container {
     overflow-x: auto;
     flex-wrap: nowrap;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
   }
 
   .button-container .button {
     flex: 0 0 auto;
-    margin-right: 10px;
+    margin-right: 12px;
   }
 
   .modal-content {
-    font-size: 1.1rem; /* Økt tekststørrelse på mobil */
+    font-size: 1.4rem; /* Økt tekststørrelse på mobil */
   }
 
   .modal-title {
-    font-size: 1.6rem; /* Økt tittelstørrelse på mobil */
+    font-size: 2rem; /* Økt tittelstørrelse på mobil */
   }
 }
