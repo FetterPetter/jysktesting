@@ -3,13 +3,7 @@ import { categories, Item } from "../modules/data";
 export function findSimilarItems(item: Item): Item[] {
   // Find the category of the given item
   let categoryKey: keyof typeof categories;
-  if (item.details.overmadrass) {
-    categoryKey = "Senger";
-  } else if (item.details.size) {
-    categoryKey = "Madrass";
-  } else {
-    categoryKey = "Overmadrass";
-  }
+  categoryKey = item.katergori;
 
   // You can now easily log the category or handle specific logic based on the categoryKey
   console.log("Category Key:", categoryKey); // Logs "Overmadrass", "Madrass", or "Senger"
