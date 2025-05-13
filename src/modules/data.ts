@@ -325,7 +325,7 @@ export const categories: Record<string, Item[]> = {
         firm: 10,
       },
       message:
-        "En 2.5 cm tykk overmadrass laget med memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester (62% resirkulert).",
+        "En 2,5 cm tykk overmadrass laget med memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester (62% resirkulert).",
       salg: "kode 7",
     },
     {
@@ -410,7 +410,7 @@ export const categories: Record<string, Item[]> = {
         firm: 45,
       },
       message:
-        "4.5 cm tykk overmadrass med AIR memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester.",
+        "4,5 cm tykk overmadrass med AIR memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester.",
       salg: "kode 7",
     },
     {
