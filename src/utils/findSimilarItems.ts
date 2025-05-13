@@ -4,24 +4,26 @@ export function findSimilarItems(item: Item): Item[] {
   const categoryKey: keyof typeof categories = item.katergori;
   const categoryItems = categories[categoryKey];
 
+  // Fjern originalproduktet
   const otherItems = categoryItems.filter(
     (categoryItem) => categoryItem.id !== item.id,
   );
 
-  let allowedType: string;
+  // Definer tillatte typer avhengig av originalens type
+  let allowedTypes: string[] = [];
 
   if (item.type === "Basic") {
-    allowedType = "Plus";
+    allowedTypes = ["Plus", "Gold"];
   } else if (item.type === "Plus") {
-    allowedType = "Gold";
+    allowedTypes = ["Gold"];
   } else if (item.type === "Gold") {
-    allowedType = "Gold";
+    allowedTypes = ["Gold"];
   } else {
     return [];
   }
 
-  const filteredByType = otherItems.filter(
-    (categoryItem) => categoryItem.type === allowedType,
+  const filteredByType = otherItems.filter((categoryItem) =>
+    allowedTypes.includes(categoryItem.type),
   );
 
   const sortedItems = filteredByType.sort((a, b) => {
