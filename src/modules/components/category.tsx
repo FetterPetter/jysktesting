@@ -7,6 +7,21 @@ interface CategoryProps {
   items: Item[];
 }
 
+const ALL_SIZES = [
+  "70x190",
+  "70x200",
+  "75x200",
+  "80x200",
+  "90x200",
+  "90x210",
+  "120x200",
+  "140x200",
+  "150x200",
+  "160x200",
+  "180x200",
+  "180x210",
+];
+
 const Category: React.FC<CategoryProps> = ({ items }) => {
   const [sortDirection, setSortDirection] = useState<
     "ascending" | "descending" | null
@@ -17,6 +32,7 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
   const [selectedFirmness, setSelectedFirmness] = useState<
     "Myk" | "Medium" | "Fast" | "all"
   >("all");
+  const [selectedSize, setSelectedSize] = useState<string>("all");
 
   const handleFirmnessChange = (
     firmness: "Myk" | "Medium" | "Fast" | "all",
@@ -46,11 +62,21 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
     }
   };
 
-  const filteredItems = items.filter((item) =>
-    selectedFirmness === "all"
-      ? true
-      : item.details.firmness === selectedFirmness,
-  );
+  const handleSizeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedSize(e.target.value);
+  };
+
+  const filteredItems = items.filter((item) => {
+    const okFirmness =
+      selectedFirmness === "all"
+        ? true
+        : item.details.firmness === selectedFirmness;
+    const okSize =
+      selectedSize === "all"
+        ? true
+        : Array.isArray(item.sizes) && item.sizes.includes(selectedSize);
+    return okFirmness && okSize;
+  });
 
   const sortedItems = [...filteredItems].sort((a, b) => {
     if (sortByAlphabet) {
@@ -69,48 +95,44 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
 
   return (
     <div>
+      {/* Fasthets-filter */}
       <div
         style={{
           marginBottom: "1rem",
-          textAlign: "center",
           display: "flex",
           justifyContent: "center",
           gap: "20px",
+          flexWrap: "wrap",
         }}
       >
-        {["Myk", "Medium", "Fast"].map((firmness) => (
+        {["Myk", "Medium", "Fast"].map((f) => (
           <button
-            key={firmness}
-            onClick={() =>
-              handleFirmnessChange(firmness as "Myk" | "Medium" | "Fast")
-            }
+            key={f}
+            onClick={() => handleFirmnessChange(f as any)}
             style={{
-              backgroundColor:
-                selectedFirmness === firmness ? "#007bff" : "#28a745",
-              color: "white",
+              backgroundColor: selectedFirmness === f ? "#007bff" : "#28a745",
+              color: "#fff",
               border: "none",
               padding: "14px 24px",
               fontSize: "18px",
               fontWeight: "bold",
-              fontFamily: "Fira Sans",
               borderRadius: "8px",
               cursor: "pointer",
               transition: "background 0.3s",
               width: "150px",
             }}
           >
-            {firmness}
+            {f}
           </button>
         ))}
         <button
-          onClick={() => handleFirmnessChange("all")}
+          onClick={() => setSelectedFirmness("all")}
           style={{
             backgroundColor: selectedFirmness === "all" ? "#007bff" : "#28a745",
-            color: "white",
+            color: "#fff",
             border: "none",
             padding: "14px 24px",
             fontSize: "18px",
-            fontFamily: "Fira Sans",
             fontWeight: "bold",
             borderRadius: "8px",
             cursor: "pointer",
@@ -122,13 +144,15 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
         </button>
       </div>
 
+      {/* Felles container for sorteringsknapper + dropdown */}
       <div
         style={{
-          marginBottom: "1rem",
-          textAlign: "center",
+          marginBottom: "1.5rem",
           display: "flex",
           justifyContent: "center",
+          alignItems: "center",
           gap: "20px",
+          flexWrap: "wrap",
         }}
       >
         <button
@@ -140,11 +164,10 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
                 : sortDirection === "descending"
                   ? "#ffc107"
                   : "#6c757d",
-            color: "white",
+            color: "#fff",
             border: "none",
             padding: "14px 24px",
             fontSize: "18px",
-            fontFamily: "Fira Sans",
             fontWeight: "bold",
             borderRadius: "8px",
             cursor: "pointer",
@@ -167,11 +190,10 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
                 : sortByAlphabet === "descending"
                   ? "#ffc107"
                   : "#6c757d",
-            color: "white",
+            color: "#fff",
             border: "none",
             padding: "14px 24px",
             fontSize: "18px",
-            fontFamily: "Fira Sans",
             fontWeight: "bold",
             borderRadius: "8px",
             cursor: "pointer",
@@ -184,15 +206,32 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
               ? "Å til A"
               : "Sorter Alfabetisk"}
         </button>
+
+        <select
+          value={selectedSize}
+          onChange={handleSizeChange}
+          style={{
+            padding: "14px 20px",
+            fontSize: "18px",
+            borderRadius: "8px",
+            border: "1px solid #ccc",
+            cursor: "pointer",
+            minWidth: "180px",
+          }}
+        >
+          <option value="all">Alle størrelser</option>
+          {ALL_SIZES.map((size) => (
+            <option key={size} value={size}>
+              {size}
+            </option>
+          ))}
+        </select>
       </div>
 
+      {/* Produkt-grid */}
       <div className="grid">
         {sortedItems.length > 0 ? (
-          sortedItems.map((item) => (
-            <div key={item.id}>
-              <ItemCard item={item} />
-            </div>
-          ))
+          sortedItems.map((item) => <ItemCard key={item.id} item={item} />)
         ) : (
           <p
             style={{
@@ -203,7 +242,7 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
               padding: "20px",
             }}
           >
-            No items available for the selected categories.
+            Ingen produkter funnet for valgt filterkombinasjon.
           </p>
         )}
       </div>

@@ -5,6 +5,7 @@ export interface Item {
   type: string;
   url: string;
   details: Record<string, string | number>;
+  sizes?: string[];
   message: string;
   salg: string;
   oppsalg?: string;
@@ -18,6 +19,8 @@ export const categories: Record<string, Item[]> = {
       type: "Plus",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Tyssa.jpg",
+
+      sizes: ["90x200", "120x200", "140x200", "150x200", "160x200", "180x200"],
       details: {
         overmadrass: "Kaldskum eller Polyeterskum",
         core: "30 kg/m³",
@@ -34,6 +37,8 @@ export const categories: Record<string, Item[]> = {
       type: "Basic",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Verma.jpg",
+      sizes: ["90x200", "120x200", "140x200", "150x200", "180x200"],
+
       details: {
         overmadrass: "Polyeterskum",
         core: "30 kg/m³",
@@ -51,6 +56,8 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Nevla.jpg",
+      sizes: ["90x200", "120x200", "140x200", "150x200", "160x200", "180x200"],
+
       details: {
         overmadrass: "Gelskum",
         core: "25 kg/m³",
@@ -67,6 +74,8 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Osaelva.jpg",
+      sizes: ["90x200", "120x200", "150x200", "180x200"],
+
       details: {
         overmadrass: "Polyeterskum",
         core: "25 kg/m³",
@@ -83,6 +92,16 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Sokna.jpg",
+      sizes: [
+        "90x200",
+        "120x200",
+        "140x200",
+        "150x200",
+        "160x200",
+        "180x200",
+        "180x210",
+      ],
+
       details: {
         material: "Memoryskum",
         core: "37 kg/m³",
@@ -99,6 +118,16 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Hemla.jpg",
+      sizes: [
+        "90x200",
+        "120x200",
+        "140x200",
+        "150x200",
+        "160x200",
+        "180x200",
+        "180x210",
+      ],
+
       details: {
         overmadrass: "Memoryskum eller latex",
         core: "35 kg/m³",
@@ -115,6 +144,8 @@ export const categories: Record<string, Item[]> = {
       type: "Plus",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Veksa.jpg",
+      sizes: ["90x200", "120x200", "140x200", "150x200", "160x200", "180x200"],
+
       details: {
         overmadrass: "Polyeterskum",
         core: "30 kg/m³",
@@ -131,6 +162,8 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Lygna.jpg",
+      sizes: ["90x200", "120x200", "140x200", "150x200", "160x200", "180x200"],
+
       details: {
         material: "Memoryskum",
         core: "75 kg/m³",
@@ -147,6 +180,8 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Reipa.jpg",
+      sizes: ["90x200", "120x200", "140x200", "160x200", "180x200"],
+
       details: {
         material: "Kaldskum",
         core: "100 kg/m³",
@@ -163,6 +198,8 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/TemprakonLya.jpg",
+      sizes: ["90x200", "140x200", "150x200", "180x200", "180x210"],
+
       details: {
         material: "Latex",
         core: "80 kg/m³",
@@ -179,6 +216,8 @@ export const categories: Record<string, Item[]> = {
       type: "Basic",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Skaupa.jpg",
+      sizes: ["75x200", "90x200", "120x200", "140x200"],
+
       details: {
         material: "Polyeterskum",
         core: "25 kg/m³",
@@ -195,6 +234,17 @@ export const categories: Record<string, Item[]> = {
       type: "Plus",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Fjelna.jpg",
+      sizes: [
+        "75x200",
+        "80x200",
+        "90x200",
+        "120x200",
+        "140x200",
+        "150x200",
+        "160x200",
+        "180x200",
+      ],
+
       details: {
         material: "Polyeterskum",
         core: "25 kg/m³",
@@ -211,6 +261,8 @@ export const categories: Record<string, Item[]> = {
       type: "Plus",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Spongi.jpg",
+      sizes: ["75x200", "90x200", "120x200", "150x200", "180x200"],
+
       details: {
         material: "Kaldskum",
         core: "30 kg/m³",
@@ -227,6 +279,8 @@ export const categories: Record<string, Item[]> = {
       type: "Plus",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Grimse.jpg",
+      sizes: ["80x200", "90x200", "120x200", "140x200", "160x200", "180x200"],
+
       details: {
         material: "Polyester",
         core: "20 kg/m³",
@@ -243,6 +297,8 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Kvenna.jpg",
+      sizes: ["80x200", "90x200", "120x200", "140x200", "160x200", "180x200"],
+
       details: {
         material: "Latex",
         core: "60 kg/m³",
@@ -259,6 +315,8 @@ export const categories: Record<string, Item[]> = {
       type: "Plus",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Dingla.jpg",
+      sizes: ["80x200", "90x200", "120x200", "140x200", "160x200", "180x200"],
+
       details: {
         material: "Polyesterskum",
         core: "30 kg/m³",
@@ -275,6 +333,8 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Horsla.jpg",
+      sizes: ["80x200", "90x200", "120x200", "140x200", "160x200", "180x200"],
+
       details: {
         material: "Polyetherskum",
         core: "25 kg/m³",
@@ -291,6 +351,8 @@ export const categories: Record<string, Item[]> = {
       type: "Basic",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Leirkup.jpg",
+      sizes: ["90x200", "120x200", "140x200", "150x200", "160x200", "180x200"],
+
       details: {
         material: "Latex",
         core: "80 kg/m³",
@@ -310,6 +372,8 @@ export const categories: Record<string, Item[]> = {
       type: "Basic",
       katergori: "Overmadrass",
       url: "/Jyskh-ndbok/images/Marren.jpg",
+      sizes: ["80x200", "90x200", "140x200", "160x200", "180x200"],
+
       details: {
         height: "2.5cm",
         material: "Memoryskum",
@@ -327,6 +391,17 @@ export const categories: Record<string, Item[]> = {
       type: "Basic",
       katergori: "Overmadrass",
       url: "/Jyskh-ndbok/images/Vingan.jpg",
+      sizes: [
+        "75x200",
+        "80x200",
+        "90x200",
+        "120x200",
+        "140x200",
+        "150x200",
+        "160x200",
+        "180x200",
+      ],
+
       details: {
         height: "4cm",
         material: "Polyeterskum",
@@ -344,6 +419,17 @@ export const categories: Record<string, Item[]> = {
       type: "Plus",
       katergori: "Overmadrass",
       url: "/Jyskh-ndbok/images/Kjella.jpg",
+      sizes: [
+        "75x200",
+        "80x200",
+        "90x200",
+        "120x200",
+        "140x200",
+        "150x200",
+        "160x200",
+        "180x200",
+      ],
+
       details: {
         height: "6cm",
         material: "Kaldskum",
@@ -361,6 +447,17 @@ export const categories: Record<string, Item[]> = {
       type: "Plus",
       katergori: "Overmadrass",
       url: "/Jyskh-ndbok/images/Kvisten.jpg",
+      sizes: [
+        "75x200",
+        "80x200",
+        "90x200",
+        "120x200",
+        "140x200",
+        "150x200",
+        "160x200",
+        "180x200",
+      ],
+
       details: {
         height: "6cm",
         material: "Memoryskum",
@@ -378,6 +475,19 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Overmadrass",
       url: "/Jyskh-ndbok/images/Gulen.jpg",
+      sizes: [
+        "75x200",
+        "80x200",
+        "90x200",
+        "90x210",
+        "120x200",
+        "140x200",
+        "150x200",
+        "160x200",
+        "180x200",
+        "180x210",
+      ],
+
       details: {
         height: "8cm",
         material: "Air Memoryskum",
@@ -395,6 +505,17 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Overmadrass",
       url: "/Jyskh-ndbok/images/Frya.jpg",
+      sizes: [
+        "75x200",
+        "80x200",
+        "90x200",
+        "120x200",
+        "140x200",
+        "150x200",
+        "160x200",
+        "180x200",
+      ],
+
       details: {
         height: "4.5cm",
         material: "Air Memoryskum",
@@ -412,6 +533,17 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Overmadrass",
       url: "/Jyskh-ndbok/images/Bokselvi.jpg",
+      sizes: [
+        "75x200",
+        "80x200",
+        "90x200",
+        "120x200",
+        "140x200",
+        "150x200",
+        "160x200",
+        "180x200",
+      ],
+
       details: {
         height: "3,5+4,5 cm",
         material: "Air Memoryskum med kjølende gel + polyeterskum",
@@ -429,6 +561,17 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Overmadrass",
       url: "/Jyskh-ndbok/images/Gursken.jpg",
+      sizes: [
+        "75x200",
+        "80x200",
+        "90x200",
+        "120x200",
+        "140x200",
+        "150x200",
+        "160x200",
+        "180x200",
+      ],
+
       details: {
         height: "6cm",
         material: "Gelskum",
@@ -446,6 +589,8 @@ export const categories: Record<string, Item[]> = {
       type: "Plus",
       katergori: "Overmadrass",
       url: "/Jyskh-ndbok/images/Haslan.jpg",
+      sizes: ["90x200", "120x200", "140x200", "160x200", "180x200"],
+
       details: {
         height: "3cm",
         material: "Lateks",
@@ -463,6 +608,18 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Overmadrass",
       url: "/Jyskh-ndbok/images/Framvaren.jpg",
+      sizes: [
+        "75x200",
+        "80x200",
+        "90x200",
+        "120x200",
+        "140x200",
+        "150x200",
+        "160x200",
+        "180x200",
+        "180x210",
+      ],
+
       details: {
         height: "8cm",
         material: "Memoryskum",
@@ -480,6 +637,17 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Overmadrass",
       url: "/Jyskh-ndbok/images/Hopen.jpg",
+      sizes: [
+        "75x200",
+        "80x200",
+        "90x200",
+        "120x200",
+        "140x200",
+        "150x200",
+        "160x200",
+        "180x200",
+      ],
+
       details: {
         height: "6cm",
         material: "Lateks",
@@ -499,10 +667,11 @@ export const categories: Record<string, Item[]> = {
       type: "Basic",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Billefjord.jpg",
+      sizes: ["70x190", "75x200", "90x200"],
+
       details: {
         height: "7 cm",
         material: "Polyetherskum",
-        size: "70,75,90",
         firmness: "Myk",
         firm: 63,
       },
@@ -516,10 +685,11 @@ export const categories: Record<string, Item[]> = {
       type: "Basic",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Hasla.jpg",
+      sizes: ["70x190", "75x190", "75x200", "90x200", "120x200"],
+
       details: {
         height: "10 cm",
         material: "Polyesterskum",
-        size: "70,75,90,120",
         firmness: "Fast",
         firm: 73,
       },
@@ -533,10 +703,11 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Lillelv.jpg",
+      sizes: ["70x190", "75x200", "90x200", "120x200"],
+
       details: {
         height: "14 cm",
         material: "Kaldskum",
-        size: "70,75,90,120",
         firmness: "Myk",
         firm: 40,
       },
@@ -550,10 +721,11 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Glomma.jpg",
+      sizes: ["75x200", "80x200", "90x200", "120x200", "140x200", "180x200"],
+
       details: {
         height: "18 cm",
         material: "Memoryskum",
-        size: "75,80,90,120,140,180",
         firmness: "Fast",
         firm: 82,
       },
@@ -567,10 +739,11 @@ export const categories: Record<string, Item[]> = {
       type: "Plus",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Kjosen.jpg",
+      sizes: ["70x190", "75x200", "80x200", "90x200", "120x200"],
+
       details: {
         height: "12 cm",
         material: "Latex",
-        size: "70,75,80,90,120",
         firmness: "Medium",
         firm: 69,
       },
@@ -584,10 +757,11 @@ export const categories: Record<string, Item[]> = {
       type: "Plus",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Hulda.jpg",
+      sizes: ["75x200", "80x200", "90x200", "120x200", "140x200", "180x200"],
+
       details: {
         height: "16 cm",
         material: "Polyeterskum, Memoryskum",
-        size: "75,80,90,120,140,180",
         firmness: "Fast",
         firm: 79,
       },
@@ -601,10 +775,21 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Kvita.jpg",
+      sizes: [
+        "75x200",
+        "80x200",
+        "90x200",
+        "90x210",
+        "120x200",
+        "140x200",
+        "150x200",
+        "160x200",
+        "180x200",
+      ],
+
       details: {
         height: "22 cm",
         material: "Polyeterskum, Memoryskum",
-        size: "75,80,90,120,140,150,160,180",
         firmness: "Fast",
         firm: 83,
       },
@@ -620,10 +805,11 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Hovda.jpg",
+      sizes: ["75x200", "80x200", "90x200", "140x200", "160x200", "180x200"],
+
       details: {
         height: "24 cm",
         material: "Memoryskum",
-        size: "75,80,90,140,160,180",
         firmness: "Fast",
         firm: 89,
       },
@@ -637,10 +823,11 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Vendo.jpg",
+      sizes: ["80x200", "90x200", "140x200", "160x200", "180x200"],
+
       details: {
         height: "28 cm",
         material: "Polyeter, memoryskum",
-        size: "80,90,140,160,180",
         firmness: "Fast",
         firm: 88,
       },
@@ -654,10 +841,11 @@ export const categories: Record<string, Item[]> = {
       type: "Basic",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Kamelva.jpg",
+      sizes: ["80x200", "90x200", "120x200"],
+
       details: {
         height: "18 cm",
         material: "Bonell-fjærer",
-        size: "80,90,120",
         firmness: "Fast",
         firm: 85,
       },
@@ -671,10 +859,11 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Eima.jpg",
+      sizes: ["75x200", "80x200", "90x200", "140x200", "160x200"],
+
       details: {
         height: "27 cm",
         material: "Pocket-fjærer",
-        size: "75,80,90,140,160",
         firmness: "Medium",
         firm: 71,
       },
@@ -688,10 +877,11 @@ export const categories: Record<string, Item[]> = {
       type: "Plus",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Stripa.jpg",
+      sizes: ["75x200", "80x200", "90x200", "120x200", "140x200", "160x200"],
+
       details: {
         height: "19 cm",
         material: "Pocket-fjærer",
-        size: "75,80,90,120,140,160",
         firmness: "Fast",
         firm: 90,
       },
@@ -705,10 +895,20 @@ export const categories: Record<string, Item[]> = {
       type: "Plus",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/StripaEkstraFast.jpg",
+      sizes: [
+        "70x200",
+        "75x200",
+        "80x200",
+        "90x200",
+        "120x200",
+        "140x200",
+        "160x200",
+        "180x200",
+      ],
+
       details: {
         height: "19 cm",
         material: "Pocket-fjærer",
-        size: "70,75,80,90,120,140,160,180",
         firmness: "Fast",
         firm: 100,
       },
@@ -722,10 +922,11 @@ export const categories: Record<string, Item[]> = {
       type: "Plus",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Lutra.jpg",
+      sizes: ["90x200", "120x200", "140x200", "150x200", "160x200", "180x200"],
+
       details: {
         height: "22 cm",
         material: "pocket-fjærer",
-        size: "80,90,120,140,160,180",
         firmness: "Medium",
         firm: 70,
       },
@@ -739,10 +940,11 @@ export const categories: Record<string, Item[]> = {
       type: "Gold",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Driva.jpg",
+      sizes: ["90x200", "120x200", "140x200", "150x200", "160x200", "180x200"],
+
       details: {
         height: "27 cm",
         material: "Pocket-fjær",
-        size: "80,90,140,160,180",
         firmness: "Fast",
         firm: 95,
       },
