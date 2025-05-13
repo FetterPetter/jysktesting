@@ -21,7 +21,6 @@ export const categories: Record<string, Item[]> = {
       details: {
         overmadrass: "Kaldskum eller Polyeterskum",
         core: "30 kg/m³",
-        spring: "Pocket",
         firmness: "Fast",
         firm: 80,
       },
@@ -38,7 +37,6 @@ export const categories: Record<string, Item[]> = {
       details: {
         overmadrass: "Polyeterskum",
         core: "30 kg/m³",
-        spring: "Bonell",
         firmness: "Myk",
         firm: 38,
       },
@@ -56,7 +54,6 @@ export const categories: Record<string, Item[]> = {
       details: {
         overmadrass: "Gelskum",
         core: "25 kg/m³",
-        spring: "Pocket",
         firmness: "Medium",
         firm: 70,
       },
@@ -72,7 +69,6 @@ export const categories: Record<string, Item[]> = {
       url: "/Jyskh-ndbok/images/Osaelva.jpg",
       details: {
         overmadrass: "Polyeterskum",
-        spring: "Pocket",
         core: "25 kg/m³",
         firmness: "Medium",
         firm: 71,
@@ -89,7 +85,6 @@ export const categories: Record<string, Item[]> = {
       url: "/Jyskh-ndbok/images/Sokna.jpg",
       details: {
         material: "Memoryskum",
-        spring: "Pocket",
         core: "37 kg/m³",
         firmness: "Fast",
         firm: 83,
@@ -107,7 +102,6 @@ export const categories: Record<string, Item[]> = {
       details: {
         overmadrass: "Memoryskum eller latex",
         core: "35 kg/m³",
-        spring: "Adaptive Pocket",
         firmness: "Medium",
         firm: 45,
       },
@@ -124,7 +118,6 @@ export const categories: Record<string, Item[]> = {
       details: {
         overmadrass: "Polyeterskum",
         core: "30 kg/m³",
-        spring: "pocket",
         firmness: "Myk",
         firm: 39,
       },
