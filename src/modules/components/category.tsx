@@ -118,7 +118,7 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
             width: "150px",
           }}
         >
-          All
+          Alle
         </button>
       </div>
 

@@ -5,7 +5,7 @@ export function findSimilarItems(item: Item): Item[] {
   categoryKey = item.katergori;
 
   const categoryItems = categories[categoryKey];
-
+  console.log(categoryKey);
   const similarItems = categoryItems.filter(
     (categoryItem) => categoryItem.id !== item.id,
   );
