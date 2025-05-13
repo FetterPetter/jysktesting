@@ -1,25 +1,39 @@
 import { categories, Item } from "../modules/data";
 
 export function findSimilarItems(item: Item): Item[] {
-  let categoryKey: keyof typeof categories;
-  categoryKey = item.katergori;
-
+  const categoryKey: keyof typeof categories = item.katergori;
   const categoryItems = categories[categoryKey];
-  console.log(categoryKey);
-  const similarItems = categoryItems.filter(
+
+  const otherItems = categoryItems.filter(
     (categoryItem) => categoryItem.id !== item.id,
   );
 
-  const sortedItems = similarItems.sort((a, b) => {
+  let allowedType: string;
+
+  if (item.type === "Basic") {
+    allowedType = "Plus";
+  } else if (item.type === "Plus") {
+    allowedType = "Gold";
+  } else if (item.type === "Gold") {
+    allowedType = "Gold";
+  } else {
+    return [];
+  }
+
+  const filteredByType = otherItems.filter(
+    (categoryItem) => categoryItem.type === allowedType,
+  );
+
+  const sortedItems = filteredByType.sort((a, b) => {
     const firmA = typeof a.details.firm === "number" ? a.details.firm : 0;
     const firmB = typeof b.details.firm === "number" ? b.details.firm : 0;
-    const firmItem =
+    const firmOriginal =
       typeof item.details.firm === "number" ? item.details.firm : 0;
 
-    const firmnessDifferenceA = Math.abs(firmA - firmItem);
-    const firmnessDifferenceB = Math.abs(firmB - firmItem);
+    const diffA = Math.abs(firmA - firmOriginal);
+    const diffB = Math.abs(firmB - firmOriginal);
 
-    return firmnessDifferenceA - firmnessDifferenceB;
+    return diffA - diffB;
   });
 
   return sortedItems.slice(0, 2);
