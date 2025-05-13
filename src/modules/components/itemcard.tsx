@@ -5,6 +5,7 @@ import { findSimilarItems } from "../../utils/findSimilarItems";
 
 interface ItemCardProps {
   item: Item;
+  selectedSize: string;
 }
 
 const categoryColors: Record<string, string> = {
@@ -21,7 +22,7 @@ const productDescriptions: Record<string, string> = {
   Pute: "En pute støtter hodet og nakken under søvnen og kan bidra til en mer behagelig natts søvn.",
 };
 
-const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
+const ItemCard: React.FC<ItemCardProps> = ({ item, selectedSize }) => {
   const [showMessage, setShowMessage] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
   const [isClicked, setIsClicked] = useState(false);
@@ -35,8 +36,18 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
 
     if (!wasOpen) {
       setCurrentItem(item);
-      const similar = findSimilarItems(item);
-      setSimilarItems(similar);
+
+      const candidates = findSimilarItems(item);
+
+      const filteredBySize =
+        selectedSize === "all"
+          ? candidates
+          : candidates.filter(
+              (si) =>
+                Array.isArray(si.sizes) && si.sizes.includes(selectedSize),
+            );
+
+      setSimilarItems(filteredBySize);
     }
   };
 
