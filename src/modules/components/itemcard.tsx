@@ -15,9 +15,8 @@ const categoryColors: Record<string, string> = {
 
 const productDescriptions: Record<string, string> = {
   Madrassbeskytter:
-    "En madrassbeskytter beskytter madrassen din mot flekker, skitt og slitasje, og holder den friskere i lengre tid.",
-  Laken:
-    "Laken gir en komfortabel overflate å sove på, og beskytter samtidig madrassen mot fuktighet.",
+    "En madrassbeskytter beskytter madrassen din mot flekker, skitt og slitasje, og gjør at den holder lenger",
+  Laken: "Det er alltid godt med et nytt laken når man oppgraderer sengen",
   Dyne: "En dyne holder deg varm om natten og gir deg komfort under søvnen. Velg riktig fyll for ønsket temperatur.",
   Pute: "En pute støtter hodet og nakken under søvnen og kan bidra til en mer behagelig natts søvn.",
 };
