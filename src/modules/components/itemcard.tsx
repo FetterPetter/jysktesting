@@ -145,7 +145,30 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
             </div>
           ) : (
             <>
-              <p>{currentItem.message}</p>
+              <ul className="message-list">
+                {currentItem.message.split(".").map((sentence, index) => {
+                  const trimmed = sentence.trim();
+                  if (!trimmed) return null;
+
+                  // Finn posisjonen til første kolon
+                  const colonIndex = trimmed.indexOf(":");
+                  if (colonIndex !== -1) {
+                    const title = trimmed.slice(0, colonIndex + 1); // med kolon
+                    const rest = trimmed.slice(colonIndex + 1).trim(); // etter kolon
+
+                    return (
+                      <li key={index}>
+                        <strong>{title}</strong>
+                        <br />
+                        {rest}.
+                      </li>
+                    );
+                  } else {
+                    // Ingen kolon i setningen – vis hele setningen normalt
+                    return <li key={index}>{trimmed}.</li>;
+                  }
+                })}
+              </ul>
               <h5>Lignende produkter:</h5>
               <ul
                 style={{

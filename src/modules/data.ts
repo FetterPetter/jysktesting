@@ -14,7 +14,7 @@ export const categories: Record<string, Item[]> = {
   Senger: [
     {
       id: 1,
-      name: "Tyssa",
+      name: "Tyssa PC60",
       type: "Plus",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Tyssa.jpg",
@@ -26,12 +26,12 @@ export const categories: Record<string, Item[]> = {
         firm: 80,
       },
       message:
-        "Vendbar madrass med pocket-fjærer 250/m², polstret med polyeterskum. Madrassen er inndelt i 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. 1 overmadrass, 4 cm tykk med polyeterskumkjerne. Vaskbart stretchtrekk med tykk quilting. Nederst 1 polstret ramme. Inkl. ben. Sengegavl kjøpes separat.",
+        "Garanti: 15 år. Vendbar-madrass: pocket-fjærer 250/m², polstret med polyeterskum, 7 komfortsoner. Overmadrass: 4 cm tykk med polyeterskumkjerne, vaskbart stretchtrekk med tykk quilting. Nederst:  polstret ramme. Inkludert ben(15 cm), Sengegavl kjøpes separat.",
       salg: "kode 7",
     },
     {
       id: 2,
-      name: "Verma",
+      name: "Verma BC5",
       type: "Basic",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Verma.jpg",
@@ -43,13 +43,13 @@ export const categories: Record<string, Item[]> = {
         firm: 38,
       },
       message:
-        "Vendbar madrass med bonell-fjærer 110/m² polstret med polyeterskum. 1 overmadrass, 4 cm tykk overmadrass med polyeterskumkjerne. Vaskbart trekk med tykk quilting. Nederst en ramme. Inkl. ben. Sengegavl kjøpes separat.",
+        "Vendbar-madrass: bonell-fjærer 110/m² polstret med polyeterskum. Overmadrass: 4 cm tykk med polyeterskumkjerne, vaskbart trekk med tykk quilting. Nederst: ramme. Inkludert ben(14 cm), Sengegavl kjøpes separat.",
       salg: "Veldig myk seng, her kan du foreslå å gå over til en som ikke bruker bonell",
     },
 
     {
       id: 3,
-      name: "Nevla",
+      name: "Nevla GC5",
       type: "Gold",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Nevla.jpg",
@@ -61,12 +61,12 @@ export const categories: Record<string, Item[]> = {
         firm: 70,
       },
       message:
-        "Vendbar madrass med pocket-fjærer 225/m², polstret med polyeterskum. Madrassen er inndelt i 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. 1 overmadrass, 6 cm tykk med fleksibel Comfort + skumkjerne som former seg komfortabelt etter kroppens konturer. Vaskbart trekk i 100% polyester (76% resirkulert). Nederst 1 rammemadrass. Inkl. ben. Sengegavl kjøpes separat.",
+        "Garanti: 25 år. Vendbar-madrass: pocket-fjærer 225/m², polstret med polyeterskum, 7 komfortsoner. Overmadrass: 6 cm tykk med trykkavlastende gelskumkjerne som tilpasser seg kroppen din og leder bort overskuddsvarme, vaskbart trekk i 100% polyester. Nederst: rammemadrass(polyeterskum). Inkludert ben(14 cm) sengegavl kjøpes separat.",
       salg: "  ",
     },
     {
       id: 4,
-      name: "Osaelva",
+      name: "Osaelva GC10",
       type: "Gold",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Osaelva.jpg",
@@ -78,12 +78,12 @@ export const categories: Record<string, Item[]> = {
         firm: 71,
       },
       message:
-        "Vendbar madrass med pocket-fjærer 260/m², polstret med polyeterskum. Madrassen er inndelt i 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. 1 overmadrass, 8 cm tykk med polyeterskumkjerne. Vaskbart trekk med myk, tykk quilting. Nederst 1 polstret ramme. Inkl. ben. Sengegavl kjøpes separat",
+        "Garanti: 25 år. Vendbar-madrass: pocket-fjærer 260/m², polstret med polyeterskum 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. Overmadrass: 8 cm tykk med polyeterskumkjerne vaskbart trekk med myk, tykk quilting. Nederst: polstret ramme(polyeterskum). Inkludert ben(14 cm) sengegavl kjøpes separat",
       salg: "kode7",
     },
     {
       id: 5,
-      name: "Sokna",
+      name: "Sokna GC35",
       type: "Gold",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Sokna.jpg",
@@ -95,12 +95,12 @@ export const categories: Record<string, Item[]> = {
         firm: 83,
       },
       message:
-        "Madrass med pocket-fjærer 260/m², polstret med kaldskum og polyeterskum. Madrassen er inndelt i 5 komfortsoner som gir en presis, optimal støtte. 1 overmadrass, 7 cm tykk med pustende latekskjerne som effektivt leder bort overskuddsvarme. Stretchtrekk med myk, tykk quilting. Nederst 2 rammemadrasser med bonellfjærer 110/m². Inkl. ben. Sengegavl kjøpes separat.",
+        "Garanti: 25 år. Madrass: pocket-fjærer 260/m², polstret med kaldskum og polyeterskum 5 komfortsoner som gir en presis, optimal støtte. Overmadrass: 7 cm tykk med pustende latekskjerne som effektivt leder bort overskuddsvarme, stretchtrekk med myk, tykk quilting. Nederst: rammemadrass med bonellfjærer 110/m². Inkludert ben(14 cm)  sengegavl kjøpes separat.",
       salg: "kode7",
     },
     {
       id: 6,
-      name: "Hemla",
+      name: "Hemla GC75",
       type: "Gold",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Hemla.jpg",
@@ -112,12 +112,12 @@ export const categories: Record<string, Item[]> = {
         firm: 45,
       },
       message:
-        "Vendbar madrass med adaptive pocket-fjærer 204/m², polstret med fleksibelt Comfort+ skum. Adaptive pocketfjærer tilpasser gradvis fastheten og støtten til dine skiftende sovestillinger. Madrassen er inndelt i 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. 1 overmadrass, 7 cm tykk med trykkavlastende memoryskumkjerne som former seg presist etter kroppens konturer. Trekk med tykk, myk quilting. Nederst 1 rammemadrass med pocket-fjærer 250/m², inndelt i 5 komfortsoner. Inkl. ben. Sengegavl kjøpes separat.",
+        "Garanti: 25 år. Vendbar-madrass: adaptive pocket-fjærer 204/m², polstret med fleksibelt Comfort+ skum, Adaptive pocketfjærer tilpasser gradvis fastheten og støtten til dine skiftende sovestillinger, 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. Overmadrass: 7 cm tykk med trykkavlastende memoryskumkjerne som former seg presist etter kroppens konturer, Trekk med tykk, myk quilting. Nederst: rammemadrass med pocket-fjærer 250/m², inndelt i 5 komfortsoner. Inkludert ben(14 cm) sengegavl kjøpes separat.",
       salg: "kode 7",
     },
     {
       id: 7,
-      name: "Veksa",
+      name: "Veksa PC75",
       type: "Plus",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Veksa.jpg",
@@ -129,12 +129,12 @@ export const categories: Record<string, Item[]> = {
         firm: 39,
       },
       message:
-        "Vendbar madrass med pocket-fjærer 200/m² polstret med polyeterskum. 1 overmadrass, 7 cm tykk med polyeterskumkjerne. Vaskbart trekk med myk, tykk quilting. Nederst 1 ramme. Inkl. ben. Sengegavl kjøpes separat.",
+        "Garanti: 15 år. Vendbar-madrass: pocket-fjærer 200/m² polstret med polyeterskum. Overmadrass: 7 cm tykk med polyeterskumkjerne, vaskbart trekk med myk, tykk quilting. Nederst: ramme. Inkludert ben(14,5 cm) Sengegavl kjøpes separat.",
       salg: "kode 7",
     },
     {
       id: 8,
-      name: "Lygna",
+      name: "Lygna GC30",
       type: "Gold",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Lygna.jpg",
@@ -145,12 +145,12 @@ export const categories: Record<string, Item[]> = {
         firm: 75,
       },
       message:
-        "Vendbar madrass med pocket-fjærer 260/m², polstret med polyeterskum. Madrassen er inndelt i 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. 1 overmadrass, 7 cm tykk med polyeterskumkjerne. Vaskbart trekk med myk, tykk quilting. Nederst 1 rammemadrass med pocket-fjærer 205/m², inndelt i 7 komfortsoner. Inkl. ben. Sengegavl kjøpes separat.",
+        "Garanti: 25 år. Vendbar-madrass: pocket-fjærer 260/m², polstret med polyeterskum 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. Overmadrass: 7 cm tykk med polyeterskumkjerne, vaskbart trekk med myk, tykk quilting. Nederst: rammemadrass med pocket-fjærer 205/m², inndelt i 7 komfortsoner. Inkludert ben(19 cm) sengegavl kjøpes separat.",
       salg: "kode 7",
     },
     {
       id: 9,
-      name: "Reipa",
+      name: "Reipa GC110",
       type: "Gold",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Reipa.jpg",
@@ -161,7 +161,7 @@ export const categories: Record<string, Item[]> = {
         firm: 90,
       },
       message:
-        "Vendbar madrass med multipocket-fjærer 500/m², polstret med kaldskum og polyeterskum. Madrassen er inndelt i 5 komfortsoner som gir en presis, optimal støtte. 1 overmadrass, 10 cm tykk med pustende latekskjerne som effektivt leder bort overskuddsvarme. Det vaskbare stretchtrekket er med tykk quilting i polyeterskum. Trekk med fukttransporterende lyocell. Nederst 1 rammemadrass med pocket-fjærer 250/m², inndelt i 7 komfortsoner. Med sensorstyrt undersengslys. Inkl. ben. Sengegavl kjøpes separat.",
+        "Garanti: 25 år. Vendbar-madrass: multipocket-fjærer 500/m², polstret med kaldskum og polyeterskum 5 komfortsoner som gir en presis, optimal støtte. Overmadrass: 10 cm tykk med pustende latekskjerne som effektivt leder bort overskuddsvarme, vaskbart trekk med tykk quilting i polyeterskum. Nederst: rammemadrass med pocket-fjærer 250/m², inndelt i 7 komfortsoner, med sensorstyrt undersengslys. Inkludert ben(17 cm) sengegavl kjøpes separat.",
       salg: "kode 7",
     },
     {
@@ -177,12 +177,12 @@ export const categories: Record<string, Item[]> = {
         firm: 95,
       },
       message:
-        "Vendbar madrass med pocket-fjærer 225/m², polstret med pustende Cooltex Breeze. Madrassen er inndelt i 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. 1 overmadrass, 10 cm tykk med pustende latekskjerne som effektivt leder bort overskuddsvarme. Vaskbart stretchtrekk med myk, tykk quilting. Trekket er laget med kjølende og temperaturregulerende TEMPRAKON® space teknologi som skaper et tørt og behagelig sovemiljø. Nederst 1 rammemadrass med pocket-fjærer 225/m², inndelt i 9 komfortsoner. Inkl. ben. Sengegavl kjøpes separat.",
+        "Garanti: 25 år. Vendbar-madrass: pocket-fjærer 225/m², polstret med pustende Cooltex Breeze 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. Overmadrass: 10 cm tykk med pustende latekskjerne som effektivt leder bort overskuddsvarme, Vaskbart kjølende stretchtrekk med myk, tykk quilting. Nederst: rammemadrass med pocket-fjærer 225/m², inndelt i 9 komfortsoner. Inkludert ben(10 cm) sengegavl kjøpes separat.",
       salg: "kode 7",
     },
     {
       id: 11,
-      name: "Skaupa",
+      name: "Skaupa BB15",
       type: "Basic",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Skaupa.jpg",
@@ -193,12 +193,12 @@ export const categories: Record<string, Item[]> = {
         firm: 40,
       },
       message:
-        "Rammemadrass med bonellfjærer 115/m², polstret med polyeterskum. Inkl. 4 cm tykk overmadrass med polyeterskumkjerne. Vaskbart stretchtrekk med tykk quilting. Ben/bøyler kjøpes separat.",
+        "Rammemadrass: bonellfjærer 115/m², polstret med polyeterskum. Overmadrass: 4 cm tykk med polyeterskumkjerne, vaskbart stretchtrekk med tykk quilting. Ben/bøyler kjøpes separat.",
       salg: "kode 7",
     },
     {
       id: 12,
-      name: "Fjelna",
+      name: "Fjelna PB20",
       type: "Plus",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Fjelna.jpg",
@@ -209,12 +209,12 @@ export const categories: Record<string, Item[]> = {
         firm: 40,
       },
       message:
-        "Dobbeltfjæret rammemadrass med 5 komfortsoner som gir korrekt og optimal støtte. Øverst pocketfjærer 250/m², polstret med polyeterskum. Nederst minibonellfjærer 150/m². Inkl. 4 cm tykk overmadrass med polyeterskumkjerne. Vaskbart stretchtrekk med lett quilting. Ben/bøyler kjøpes separat.",
+        "Garanti: 15 år. Rammemadrass: Dobbeltfjæret, øverst pocketfjærer 250/m², polstret med polyeterskum, nederst minibonellfjærer 150/m². Overmadrass: 4 cm tykk med polyeterskumkjerne vaskbart stretchtrekk med lett quilting. Ben/bøyler kjøpes separat.",
       salg: "kode 7",
     },
     {
       id: 13,
-      name: "Spongi",
+      name: "Spongi PB12",
       type: "Plus",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Spongi.jpg",
@@ -225,12 +225,12 @@ export const categories: Record<string, Item[]> = {
         firm: 42,
       },
       message:
-        "Rammemadrass med pocketfjærer 205/m², polstret med polyeterskum. Inkl. 4 cm tykk overmadrass med polyeterskumkjerne. Vaskbart stretchtrekk med lett quilting. Ben/bøyler kjøpes separat.",
+        "Garanti: 15 år. Rammemadrass: pocketfjærer 205/m², polstret med polyeterskum. Overmadrass: 4 cm tykk med polyeterskumkjerne vaskbart stretchtrekk med lett quilting. Ben/bøyler kjøpes separat.",
       salg: "kode 7",
     },
     {
       id: 14,
-      name: "Grimse",
+      name: "Grimse PB30",
       type: "Plus",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Grimse.jpg",
@@ -241,13 +241,13 @@ export const categories: Record<string, Item[]> = {
         firm: 50,
       },
       message:
-        "Dobbeltfjæret rammemadrass med 5 komfortsoner som gir optimal støtte. Øverst pocket-fjærer 250/m², polstret med polyeterskum. Nederst minibonell-fjærer 150/m². Inkl. 5 cm tykk overmadrass med trykkavlastende memoryskumkjerne som former seg etter kroppen. Vaskbart stretchtrekk med tykk, myk quilting. Ben/bøyler kjøpes separat.",
+        "Garanti: 15 år. Rammemadrass: dobbeltfjæret øverst pocket-fjærer 250/m², polstret med polyeterskum, nederst minibonell-fjærer 150/m², 5 komfortsoner som gir optimal støtte. Overmadrass: 5 cm tykk med trykkavlastende memoryskumkjerne som former seg etter kroppen, vaskbart stretchtrekk med tykk, myk quilting. Ben/bøyler kjøpes separat.",
       salg: "kode 7",
     },
     {
       id: 15,
-      name: "Kvenna",
-      type: "Plus",
+      name: "Kvenna GB20",
+      type: "Gold",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Kvenna.jpg",
       details: {
@@ -257,12 +257,12 @@ export const categories: Record<string, Item[]> = {
         firm: 70,
       },
       message:
-        "Dobbeltfjæret rammemadrass med 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. Øverst pocket-fjærer 250/m², polstret med kaldskum og polyeterskum. Nederst minibonell-fjærer 150/m². Inkl. 8 cm tykk overmadrass med trykkavlastende memoryskumkjerne som former seg etter kroppen. Vaskbart stretchtrekk med tykk, myk quilting. Ben/bøyler kjøpes separat.",
+        "Garanti: 25 år. Rammemadrass: dobbeltfjæret øverst pocket-fjærer 250/m², polstret med kaldskum og polyeterskum, nederst minibonell-fjærer 150/m², 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. Overmadrass: 8 cm tykk med trykkavlastende memoryskumkjerne som former seg etter kroppen, vaskbart stretchtrekk med tykk, myk quilting. Ben/bøyler kjøpes separat.",
       salg: "kode 7",
     },
     {
       id: 16,
-      name: "Dingla",
+      name: "Dingla PB75",
       type: "Plus",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Dingla.jpg",
@@ -273,12 +273,12 @@ export const categories: Record<string, Item[]> = {
         firm: 60,
       },
       message:
-        "Rammemadrass med pocket-fjærer 246/m², polstret med Comfort+ skum. Madrassen er inndelt i 5 komfortsoner som gir presis og optimal støtte. Inkl. 6 cm tykk overmadrass med fleksibel Comfort+ skumkjerne, som former seg komfortabelt etter kroppens konturer. Vaskbart trekk. Ben/bøyler kjøpes separat.",
+        "Garanti: 15 år. Rammemadrass: pocket-fjærer 246/m², polstret med Comfort+ skum, 5 komfortsoner som gir presis og optimal støtte. Overmadrass: 6 cm tykk med fleksibel Comfort+ skumkjerne, som former seg komfortabelt etter kroppens konturer, vaskbart trekk. Ben/bøyler kjøpes separat.",
       salg: "kode 7",
     },
     {
       id: 17,
-      name: "Horsla",
+      name: "Horsla GB30",
       type: "Gold",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Horsla.jpg",
@@ -289,23 +289,23 @@ export const categories: Record<string, Item[]> = {
         firm: 60,
       },
       message:
-        "Dobbeltfjæret rammemadrass med 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. Øverst multipocket-fjærer 500/m², polstret med kaldskum og polyeterskum. Nederst minibonell-fjærer 150/m². Inkl. 8 cm tykk overmadrass med pustende latekskjerne som effektivt leder bort overskuddsvarme. Vaskbart stretchtrekk med tykk, myk quilting. Ben/bøyler kjøpes separat.",
+        "Garanti: 15 år. Rammemadrass: dobbeltfjæret, øverst multipocket-fjærer 500/m², polstret med kaldskum og polyeterskum, nederst minibonell-fjærer 150/m², 7 komfortsoner som gir en unik, ergonomisk korrekt støtte. Overmadrass: 8 cm tykk med pustende latekskjerne som effektivt leder bort overskuddsvarme, vaskbart stretchtrekk med tykk, myk quilting. Ben/bøyler kjøpes separat.",
       salg: "kode 7",
     },
     {
       id: 18,
-      name: "Leirkup",
-      type: "Gold",
+      name: "Leirkup BC10",
+      type: "Basic",
       katergori: "Senger",
       url: "/Jyskh-ndbok/images/Leirkup.jpg",
       details: {
         material: "Latex",
         core: "80 kg/m³",
-        firmness: "Fast",
-        firm: 90,
+        firmness: "Myk",
+        firm: 29,
       },
       message:
-        "Kontinentalseng, vendbar madrass med bonell-fjærer 110/m² polstret med polyeterskum. 1 overmadrass, 4 cm tykk, med polyeterskumkjerne. Nederst 1 ramme. Inkl. ben. Sengegavl kjøpes separat.",
+        "Vendbar-madrass: bonell-fjærer 110/m² polstret med polyeterskum. Overmadrass: 4 cm tykk, med polyeterskumkjerne. Nederst: ramme. Inkludert ben(14 cm) Sengegavl kjøpes separat.",
       salg: "kode 7",
     },
   ],

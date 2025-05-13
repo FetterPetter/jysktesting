@@ -78,14 +78,54 @@ body {
   background-color: #ccc;
 }
 
-.modal-list {
+.message-list {
+  margin: 20px 0;
+  padding: 15px 20px;
   list-style: none;
-  padding-left: 20px;
+  background: #f9f9f9;
+  border: 4px solid #007bff;
+  border-radius: 8px;
+  font-size: 2.2rem;
 }
 
-.modal-list li {
-  margin-bottom: 20px;
+.message-list li {
+  margin-bottom: 10px;
+}
+
+/* 2) Stiler for den “lignende produkter”-listen */
+.similar-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+  display: grid;
+  gap: 8px;
+}
+
+.similar-list li {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #e8f5e9;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.similar-list li:hover {
+  background-color: #c8e6c9;
+}
+
+/* 3) Stiler for mersalg-listen */
+.upsell-list {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.upsell-list li {
+  margin-bottom: 15px;
   font-size: 1.5rem;
+  color: #007bff;
+  cursor: pointer;
 }
 
 .modal-footer {
