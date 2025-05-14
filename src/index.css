@@ -273,65 +273,66 @@ button:hover {
 }
 
 @media (max-width: 600px) {
+  /* Modal fullbredde */
   .modal-backdrop > div {
     width: 100% !important;
-    height: auto;
-    max-height: 95vh;
+    max-width: 100% !important;
+    padding: 1.5rem !important;
     border-radius: 0;
-    padding: 2rem 1rem !important;
-  }
-
-  .modal-backdrop h2 {
-    font-size: 2rem !important;
-    padding: 1rem !important;
-  }
-
-  .modal-backdrop button {
-    font-size: 3.5rem !important;
-    padding: 20px;
-    border-width: 3px;
-  }
-
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-
-  .item-card img {
-    height: 180px;
-  }
-
-  .bottom-items {
-    font-size: 1.8rem;
-    padding: 5px;
-  }
-
-  .bottom-item {
-    font-size: 2.2rem;
-  }
-
-  .button {
-    padding: 25px 40px;
-    font-size: 1.4rem;
-    border-radius: 35px;
-  }
-
-  .button-container {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    padding-bottom: 12px;
-  }
-
-  .button-container .button {
-    flex: 0 0 auto;
-    margin-right: 12px;
-  }
-
-  .modal-content {
-    font-size: 2.4rem;
   }
 
   .modal-title {
-    font-size: 2rem;
+    font-size: 2rem !important;
+  }
+
+  .modal-content {
+    font-size: 2.2rem;
+  }
+
+  /* Knappene: wrap og la dem krympe litt */
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 10px;
+  }
+
+  .button-container .button,
+  .button-container button {
+    flex: 1 1 120px; /* kan krympe til 120px bredde */
+    min-width: 100px; /* aldri smalere enn 100px */
+    max-width: 45%; /* maks to pr rad */
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+
+  /* Grid med 3 faste kolonner */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 0 10px;
+  }
+
+  /* Item‐kort: fyll hver kolonne */
+  .item-card {
+    width: 100%;
+    max-width: none;
+  }
+
+  .item-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer i modal */
+  .modal-footer {
+    padding: 15px;
+  }
+
+  .modal-footer li {
+    font-size: 1.8rem;
   }
 }
