@@ -217,11 +217,22 @@ button:hover {
   gap: 20px;
 }
 
+.item-grid {
+  display: grid;
+  /* Tre faste kolonner */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  /* Sentrer kortene i hver celle */
+  justify-items: center;
+}
+
 .item-card {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
+  max-width: 300px;
+  width: 100%;
 }
 
 .item-card img {

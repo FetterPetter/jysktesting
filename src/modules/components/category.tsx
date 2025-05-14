@@ -230,7 +230,7 @@ const Category: React.FC<CategoryProps> = ({ items }) => {
       </div>
 
       {/* Produkt-grid */}
-      <div className="grid">
+      <div className="item-grid">
         {sortedItems.length > 0 ? (
           sortedItems.map((item) => (
             <ItemCard key={item.id} item={item} selectedSize={selectedSize} />
