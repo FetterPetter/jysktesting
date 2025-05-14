@@ -471,7 +471,7 @@ export const categories: Record<string, Item[]> = {
     },
     {
       id: 15,
-      name: "Gulen",
+      name: "Gulen GT65",
       type: "Gold",
       katergori: "Overmadrass",
       url: "/Jyskh-ndbok/images/Gulen.jpg",
@@ -501,7 +501,7 @@ export const categories: Record<string, Item[]> = {
     },
     {
       id: 16,
-      name: "Frya",
+      name: "Frya GT30",
       type: "Gold",
       katergori: "Overmadrass",
       url: "/Jyskh-ndbok/images/Frya.jpg",
@@ -529,7 +529,7 @@ export const categories: Record<string, Item[]> = {
     },
     {
       id: 17,
-      name: "Bokselvi",
+      name: "Bokselvi GT110",
       type: "Gold",
       katergori: "Overmadrass",
       url: "/Jyskh-ndbok/images/Bokselvi.jpg",
@@ -681,7 +681,7 @@ export const categories: Record<string, Item[]> = {
     },
     {
       id: 2,
-      name: "Hasla",
+      name: "Hasla BF50",
       type: "Basic",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Hasla.jpg",
@@ -717,7 +717,7 @@ export const categories: Record<string, Item[]> = {
     },
     {
       id: 4,
-      name: "Glomma",
+      name: "Glomma GF30",
       type: "Gold",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Glomma.jpg",
@@ -735,7 +735,7 @@ export const categories: Record<string, Item[]> = {
     },
     {
       id: 5,
-      name: "Kjosen",
+      name: "Kjosen PF40",
       type: "Plus",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Kjosen.jpg",
@@ -753,7 +753,7 @@ export const categories: Record<string, Item[]> = {
     },
     {
       id: 6,
-      name: "Hulda",
+      name: "Hulda PF100",
       type: "Plus",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Hulda.jpg",
@@ -771,7 +771,7 @@ export const categories: Record<string, Item[]> = {
     },
     {
       id: 7,
-      name: "Kvita",
+      name: "Kvita GF85",
       type: "Gold",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Kvita.jpg",
@@ -801,7 +801,7 @@ export const categories: Record<string, Item[]> = {
     },
     {
       id: 8,
-      name: "Hovda",
+      name: "Hovda GF110",
       type: "Gold",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Hovda.jpg",
@@ -819,7 +819,7 @@ export const categories: Record<string, Item[]> = {
     },
     {
       id: 9,
-      name: "Vendo",
+      name: "Vendo GF120",
       type: "Gold",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Vendo.jpg",
@@ -855,7 +855,7 @@ export const categories: Record<string, Item[]> = {
     },
     {
       id: 11,
-      name: "Eima",
+      name: "Eima GS45",
       type: "Gold",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Eima.jpg",
@@ -873,7 +873,7 @@ export const categories: Record<string, Item[]> = {
     },
     {
       id: 12,
-      name: "Stripa",
+      name: "Stripa PS25",
       type: "Plus",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Stripa.jpg",
@@ -891,7 +891,7 @@ export const categories: Record<string, Item[]> = {
     },
     {
       id: 13,
-      name: "Stripa ekstra fast",
+      name: "Stripa ekstra fast PS25",
       type: "Plus",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/StripaEkstraFast.jpg",
@@ -918,7 +918,7 @@ export const categories: Record<string, Item[]> = {
     },
     {
       id: 14,
-      name: "Lutra",
+      name: "Lutra PS35",
       type: "Plus",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Lutra.jpg",
@@ -936,7 +936,7 @@ export const categories: Record<string, Item[]> = {
     },
     {
       id: 15,
-      name: "Driva",
+      name: "Driva GS100",
       type: "Gold",
       katergori: "Madrass",
       url: "/Jyskh-ndbok/images/Driva.jpg",
