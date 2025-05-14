@@ -249,7 +249,7 @@ export const categories: Record<string, Item[]> = {
         material: "Polyeterskum",
         core: "25 kg/m³",
         firmness: "Medium",
-        firm: 40,
+        firm: 45,
       },
       message:
         "Garanti: 15 år. Rammemadrass: Dobbeltfjæret, øverst pocketfjærer 250/m², polstret med polyeterskum, nederst minibonellfjærer 150/m². Overmadrass: 4 cm tykk med polyeterskumkjerne vaskbart stretchtrekk med lett quilting. Ben/bøyler kjøpes separat.",
@@ -378,8 +378,8 @@ export const categories: Record<string, Item[]> = {
         height: "2.5cm",
         material: "Memoryskum",
         core: "30 kg/m³",
-        firmness: "Myk",
-        firm: 10,
+        firmness: "Medium",
+        firm: 40,
       },
       message:
         "En 2,5 cm tykk overmadrass laget med memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester (62% resirkulert).",
@@ -406,8 +406,8 @@ export const categories: Record<string, Item[]> = {
         height: "4cm",
         material: "Polyeterskum",
         core: "25 kg/m³",
-        firmness: "Medium",
-        firm: 40,
+        firmness: "Myk",
+        firm: 25,
       },
       message:
         "4 cm tykk madrass med polyeterskumkjerne. Vaskbart trekk i myk, 100% polyestermikrofiber (100% resirkulert).",
@@ -434,8 +434,8 @@ export const categories: Record<string, Item[]> = {
         height: "6cm",
         material: "Kaldskum",
         core: "48 kg/m³",
-        firmness: "Fast",
-        firm: 80,
+        firmness: "Myk",
+        firm: 30,
       },
       message:
         "6 cm tykk overmadrass med kaldskumkjerne for komfort og støtte. Vaskbart trekk i 100% polyester (51% resirkulert), behandlet med biocidet GREENFIRST®. ",
@@ -462,8 +462,8 @@ export const categories: Record<string, Item[]> = {
         height: "6cm",
         material: "Memoryskum",
         core: "40 kg/m³",
-        firmness: "Myk",
-        firm: 20,
+        firmness: "Fast",
+        firm: 70,
       },
       message:
         "6 cm tykk overmadrass med memoryskum og 7 komfortsoner for ergonomisk støtte. Vaskbart trekk i 100% polyester (34% resirkulert), behandlet med aloe vera.",
@@ -521,7 +521,7 @@ export const categories: Record<string, Item[]> = {
         material: "Air Memoryskum",
         core: "30 kg/m³",
         firmness: "Medium",
-        firm: 45,
+        firm: 49,
       },
       message:
         "4,5 cm tykk overmadrass med AIR memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester.",
@@ -577,7 +577,7 @@ export const categories: Record<string, Item[]> = {
         material: "Gelskum",
         core: "40 kg/m³",
         firmness: "Myk",
-        firm: 50,
+        firm: 20,
       },
       message:
         "6 cm tykk overmadrass med gelskum som tilpasser seg kroppens konturer. Vaskbart trekk i 100% polyester (54% resirkulert).",
@@ -596,7 +596,7 @@ export const categories: Record<string, Item[]> = {
         material: "Lateks",
         core: "70 kg/m³",
         firmness: "Fast",
-        firm: 90,
+        firm: 80,
       },
       message:
         "3 cm tykk overmadrass med pustende latekskjerne som effektivt leder bort overskuddsvarme. Vaskbart trekk i 100% polyester (54% resirkulert).",
@@ -624,8 +624,8 @@ export const categories: Record<string, Item[]> = {
         height: "8cm",
         material: "Memoryskum",
         core: "50 kg/m³",
-        firmness: "Myk",
-        firm: 15,
+        firmness: "Fast",
+        firm: 90,
       },
       message:
         "Eksklusiv 8 cm tykk overmadrass med memoryskum som tilpasser seg kroppens konturer. Vaskbart trekk med polyetylen for en kjølende effekt.",
@@ -653,7 +653,7 @@ export const categories: Record<string, Item[]> = {
         material: "Lateks",
         core: "70 kg/m³",
         firmness: "Fast",
-        firm: 95,
+        firm: 100,
       },
       message:
         "6 cm tykk overmadrass med latekskjerne som effektivt leder bort overskuddsvarme. Vaskbart trekk i 100% polyester (60% resirkulert). Behandlet med biocidet GREENFIRST®.",

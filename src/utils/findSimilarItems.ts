@@ -4,12 +4,10 @@ export function findSimilarItems(item: Item): Item[] {
   const categoryKey: keyof typeof categories = item.katergori;
   const categoryItems = categories[categoryKey];
 
-  // Fjern originalproduktet
   const otherItems = categoryItems.filter(
     (categoryItem) => categoryItem.id !== item.id,
   );
 
-  // Definer tillatte typer avhengig av originalens type
   let allowedTypes: string[] = [];
 
   if (item.type === "Basic") {
