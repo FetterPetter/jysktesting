@@ -44,7 +44,7 @@ body {
   padding: 20px;
   font-family: "Arial", sans-serif;
   color: #333;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
 }
 
 .modal-close-icon {
@@ -85,7 +85,6 @@ body {
   background: #f9f9f9;
   border: 4px solid #007bff;
   border-radius: 8px;
-  font-size: 2.4rem;
 }
 
 .message-list li {
@@ -329,7 +328,7 @@ button:hover {
   }
 
   .modal-content {
-    font-size: 1.4rem;
+    font-size: 2.4rem;
   }
 
   .modal-title {
